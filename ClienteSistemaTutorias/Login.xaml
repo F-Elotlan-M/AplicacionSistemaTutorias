@@ -1,0 +1,22 @@
+﻿<Window x:Class="ClienteSistemaTutorias.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClienteSistemaTutorias"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Universidad Veracruzana" HorizontalAlignment="Left" Margin="641,0,0,0" VerticalAlignment="Top" Background="#FF045CAC" Foreground="White" FontFamily="Verdana"/>
+        <Label Content="Sistema" HorizontalAlignment="Left" Margin="545,80,0,0" VerticalAlignment="Top" Foreground="#FF7AB6EC" FontSize="30" FontFamily="Verdana"/>
+        <Label Content="De" HorizontalAlignment="Left" Margin="585,120,0,0" VerticalAlignment="Top" Foreground="#FF4C7494" FontFamily="Verdana" FontSize="30" RenderTransformOrigin="0.5,0.5">
+        </Label>
+        <Label Content="Tutorías" HorizontalAlignment="Left" Margin="546,155,0,0" VerticalAlignment="Top" Foreground="#FF7AB6EC" FontSize="30" FontFamily="Verdana"/>
+        <TextBox x:Name="tbUsuario" HorizontalAlignment="Left" Margin="535,240,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="154"/>
+        <PasswordBox x:Name="psbPassword" HorizontalAlignment="Left" Margin="535,290,0,0" VerticalAlignment="Top" Width="154"/>
+        <Label Content="Usuario:" HorizontalAlignment="Left" Margin="581,215,0,0" VerticalAlignment="Top" Foreground="#FF4C7494" FontFamily="Verdana"/>
+        <Label Content="Contraseña:" HorizontalAlignment="Left" Margin="570,265,0,0" VerticalAlignment="Top" Foreground="#FF4C7494" FontFamily="Verdana"/>
+        <Button x:Name="btnLogin" Content="Iniciar sesión" HorizontalAlignment="Left" Margin="569,338,0,0" VerticalAlignment="Top" Background="#FF045CAC" BorderBrush="#FF7AB6EC" Foreground="White" FontFamily="Verdana"/>
+        <Rectangle HorizontalAlignment="Left" Height="434" Stroke="Black" Fill="#045cac" VerticalAlignment="Center" Width="438"/>
+    </Grid>
+</Window>
