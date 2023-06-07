@@ -1,32 +1,28 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace ClienteSistemaTutorias
 {
-    /// <summary>
-    /// Lógica de interacción para Login.xaml
-    /// </summary>
     public partial class Login : Window
     {
         public Login()
         {
             InitializeComponent();
-            /*double anchoVentana = SystemParameters.PrimaryScreenWidth;
-            double altoVentana = SystemParameters.PrimaryScreenHeight;
-            Width = anchoVentana;
-            Height = altoVentana;*/
+        }
+
+        private void iniciarSesion(object sender, RoutedEventArgs e) 
+        {
+            if (tbUsuario.Text.Length > 0 && psbPassword.Password.Length > 0) 
+            {
+                verificarInicioSesion(tbUsuario.Text, psbPassword.Password);
+            } else {
+                MessageBox.Show("Usuario y/o contraseña incorrecta", "Error");
+            }
+        }
+
+        private async void verificarInicioSesion(string usuario, string password) 
+        {
+
         }
     }
 }
