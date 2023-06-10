@@ -61,6 +61,8 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\ServiciosTutorias.dll" />
+    <Content Include="bin\ServiciosTutorias.pdb" />
     <Content Include="Service1.svc" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -75,6 +77,7 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\ServiciosTutorias.dll.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -70,12 +70,34 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="InformacionUsuarios\Academico.cs" />
     <Compile Include="Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="MenuCoordinador.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MenuJefe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MenuTutor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MenuCoordinador.xaml.cs">
+      <DependentUpon>MenuCoordinador.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MenuJefe.xaml.cs">
+      <DependentUpon>MenuJefe.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MenuTutor.xaml.cs">
+      <DependentUpon>MenuTutor.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -134,6 +156,31 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Iconos\cerrar-sesion.png" />
+    <Resource Include="Iconos\comentario.png" />
+    <Resource Include="Iconos\consulta.png" />
+    <Resource Include="Iconos\editar.png" />
+    <Resource Include="Iconos\horario.png" />
+    <Resource Include="Iconos\reporte.png" />
+    <Resource Include="Iconos\responder.png" />
+    <Resource Include="Iconos\salida.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Iconos\calendario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Iconos\calendariocierre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Iconos\consultarreporte.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Iconos\registro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Iconos\solucion.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
