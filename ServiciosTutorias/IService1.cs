@@ -16,8 +16,11 @@ namespace ServiciosTutorias {
 
         [OperationContract]
         CompositeType GetDataUsingDataContract(CompositeType composite);
+<<<<<<< HEAD
         [OperationContract]
         int Login(string user, string password);
+=======
+>>>>>>> 82ea36daeb3394d607fe0e3371fa8b926c64aea7
 
         // TODO: agregue aquí sus operaciones de servicio
     }

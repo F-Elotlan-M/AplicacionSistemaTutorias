@@ -14,6 +14,7 @@ namespace ServiciosTutorias {
             return string.Format("You entered: {0}", value);
         }
 
+<<<<<<< HEAD
         public int Login(string user, string password)
         {
             if (user == "elotlan" && password == "123456")
@@ -26,6 +27,8 @@ namespace ServiciosTutorias {
             }
         }
 
+=======
+>>>>>>> 82ea36daeb3394d607fe0e3371fa8b926c64aea7
         public CompositeType GetDataUsingDataContract(CompositeType composite) {
             if (composite == null) {
                 throw new ArgumentNullException("composite");
@@ -35,6 +38,9 @@ namespace ServiciosTutorias {
             }
             return composite;
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 82ea36daeb3394d607fe0e3371fa8b926c64aea7
     }
 }
