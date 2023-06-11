@@ -16,7 +16,8 @@
         <PasswordBox x:Name="psbPassword" HorizontalAlignment="Left" Margin="535,290,0,0" VerticalAlignment="Top" Width="154"/>
         <Label Content="Usuario:" HorizontalAlignment="Left" Margin="581,215,0,0" VerticalAlignment="Top" Foreground="#FF4C7494" FontFamily="Verdana"/>
         <Label Content="Contraseña:" HorizontalAlignment="Left" Margin="570,265,0,0" VerticalAlignment="Top" Foreground="#FF4C7494" FontFamily="Verdana"/>
-        <Button x:Name="btnLogin" Content="Iniciar sesión" HorizontalAlignment="Left" Margin="569,338,0,0" VerticalAlignment="Top" Background="#FF045CAC" BorderBrush="#FF7AB6EC" Foreground="White" FontFamily="Verdana" Click="iniciarSesion"/>
+        <Button x:Name="btnLogin" Content="Iniciar sesión" HorizontalAlignment="Left" Margin="569,338,0,0" VerticalAlignment="Top" Background="#FF045CAC" BorderBrush="#FF7AB6EC" Foreground="White" FontFamily="Verdana" Click="clicBtnIniciarSesion"/>
+        <Button x:Name="btnSalir" Content="Salir" HorizontalAlignment="Left" Margin="596,368,0,0" VerticalAlignment="Top" Background="#FFFF3E3E" BorderBrush="#FF7AB6EC" Foreground="White" FontFamily="Verdana" Click="clicBtnSalir"/>
         <Rectangle HorizontalAlignment="Left" Height="434" Stroke="Black" Fill="#045cac" VerticalAlignment="Center" Width="438"/>
     </Grid>
 </Window>

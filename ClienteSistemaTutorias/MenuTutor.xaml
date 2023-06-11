@@ -85,7 +85,7 @@
         </Button>
 
         <Label Content="Bienvenido" HorizontalAlignment="Left" Margin="342,17,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20" FontFamily="Verdana"/>
-        <Label x:Name="lblNombreTutor" Content="Nombre" HorizontalAlignment="Center" Margin="0,56,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Verdana"/>
+        
 
     </Grid>
 </Window>

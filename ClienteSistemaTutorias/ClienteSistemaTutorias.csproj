@@ -57,6 +57,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Avisos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Login.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -65,12 +69,15 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Avisos.xaml.cs">
+      <DependentUpon>Avisos.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Connected Services\ServiceReferenceTutorias\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
-    <Compile Include="InformacionUsuarios\Academico.cs" />
+    <Compile Include="InformacionUsuarios\AcademicoRecibido.cs" />
     <Compile Include="Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -115,7 +122,14 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="bin\Debug\ClienteSistemaTutorias.exe.config" />
+    <None Include="Connected Services\ServiceReferenceTutorias\ClienteSistemaTutorias.ServiceReferenceTutorias.Academico.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Connected Services\ServiceReferenceTutorias\ClienteSistemaTutorias.ServiceReferenceTutorias.CompositeType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceTutorias\ClienteSistemaTutorias.ServiceReferenceTutorias.Mensaje.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\ServiceReferenceTutorias\Service1.wsdl" />
@@ -126,6 +140,9 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Connected Services\ServiceReferenceTutorias\Service12.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceReferenceTutorias\Service13.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Properties\Settings.settings">
@@ -181,6 +198,13 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Iconos\solucion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\ClienteSistemaTutorias.exe" />
+    <Content Include="bin\Debug\ClienteSistemaTutorias.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

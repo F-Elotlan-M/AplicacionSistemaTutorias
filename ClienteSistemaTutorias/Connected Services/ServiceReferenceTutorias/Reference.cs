@@ -15,6 +15,2262 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Academico", Namespace="http://schemas.datacontract.org/2004/07/ServiciosTutorias.Modelo")]
+    [System.SerializableAttribute()]
+    public partial class Academico : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.ExperienciaEducativa[] ExperienciaEducativaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.HoraTutoria[] HoraTutoriaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.ProgramaEducativo[] ProgramaEducativoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.ProgramaEducativo[] ProgramaEducativo1Field;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.ReporteTutoriaAcademica[] ReporteTutoriaAcademicaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.Rol RolField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.SolucionProblematica[] SolucionProblematicaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.Tutorado[] TutoradoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string apellidoMaternoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string apellidoPaternoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string correoInstitucionalField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int idAcademicoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<int> idRolField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string nombreField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string numPersonalField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string passwordField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.ExperienciaEducativa[] ExperienciaEducativa {
+            get {
+                return this.ExperienciaEducativaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ExperienciaEducativaField, value) != true)) {
+                    this.ExperienciaEducativaField = value;
+                    this.RaisePropertyChanged("ExperienciaEducativa");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.HoraTutoria[] HoraTutoria {
+            get {
+                return this.HoraTutoriaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.HoraTutoriaField, value) != true)) {
+                    this.HoraTutoriaField = value;
+                    this.RaisePropertyChanged("HoraTutoria");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.ProgramaEducativo[] ProgramaEducativo {
+            get {
+                return this.ProgramaEducativoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ProgramaEducativoField, value) != true)) {
+                    this.ProgramaEducativoField = value;
+                    this.RaisePropertyChanged("ProgramaEducativo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.ProgramaEducativo[] ProgramaEducativo1 {
+            get {
+                return this.ProgramaEducativo1Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ProgramaEducativo1Field, value) != true)) {
+                    this.ProgramaEducativo1Field = value;
+                    this.RaisePropertyChanged("ProgramaEducativo1");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.ReporteTutoriaAcademica[] ReporteTutoriaAcademica {
+            get {
+                return this.ReporteTutoriaAcademicaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ReporteTutoriaAcademicaField, value) != true)) {
+                    this.ReporteTutoriaAcademicaField = value;
+                    this.RaisePropertyChanged("ReporteTutoriaAcademica");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.Rol Rol {
+            get {
+                return this.RolField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.RolField, value) != true)) {
+                    this.RolField = value;
+                    this.RaisePropertyChanged("Rol");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.SolucionProblematica[] SolucionProblematica {
+            get {
+                return this.SolucionProblematicaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.SolucionProblematicaField, value) != true)) {
+                    this.SolucionProblematicaField = value;
+                    this.RaisePropertyChanged("SolucionProblematica");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.Tutorado[] Tutorado {
+            get {
+                return this.TutoradoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.TutoradoField, value) != true)) {
+                    this.TutoradoField = value;
+                    this.RaisePropertyChanged("Tutorado");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string apellidoMaterno {
+            get {
+                return this.apellidoMaternoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.apellidoMaternoField, value) != true)) {
+                    this.apellidoMaternoField = value;
+                    this.RaisePropertyChanged("apellidoMaterno");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string apellidoPaterno {
+            get {
+                return this.apellidoPaternoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.apellidoPaternoField, value) != true)) {
+                    this.apellidoPaternoField = value;
+                    this.RaisePropertyChanged("apellidoPaterno");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string correoInstitucional {
+            get {
+                return this.correoInstitucionalField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.correoInstitucionalField, value) != true)) {
+                    this.correoInstitucionalField = value;
+                    this.RaisePropertyChanged("correoInstitucional");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int idAcademico {
+            get {
+                return this.idAcademicoField;
+            }
+            set {
+                if ((this.idAcademicoField.Equals(value) != true)) {
+                    this.idAcademicoField = value;
+                    this.RaisePropertyChanged("idAcademico");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<int> idRol {
+            get {
+                return this.idRolField;
+            }
+            set {
+                if ((this.idRolField.Equals(value) != true)) {
+                    this.idRolField = value;
+                    this.RaisePropertyChanged("idRol");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string nombre {
+            get {
+                return this.nombreField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.nombreField, value) != true)) {
+                    this.nombreField = value;
+                    this.RaisePropertyChanged("nombre");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string numPersonal {
+            get {
+                return this.numPersonalField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.numPersonalField, value) != true)) {
+                    this.numPersonalField = value;
+                    this.RaisePropertyChanged("numPersonal");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string password {
+            get {
+                return this.passwordField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.passwordField, value) != true)) {
+                    this.passwordField = value;
+                    this.RaisePropertyChanged("password");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Rol", Namespace="http://schemas.datacontract.org/2004/07/ServiciosTutorias.Modelo")]
+    [System.SerializableAttribute()]
+    public partial class Rol : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.Academico[] AcademicoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int idRolField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string tituloField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.Academico[] Academico {
+            get {
+                return this.AcademicoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AcademicoField, value) != true)) {
+                    this.AcademicoField = value;
+                    this.RaisePropertyChanged("Academico");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int idRol {
+            get {
+                return this.idRolField;
+            }
+            set {
+                if ((this.idRolField.Equals(value) != true)) {
+                    this.idRolField = value;
+                    this.RaisePropertyChanged("idRol");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string titulo {
+            get {
+                return this.tituloField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.tituloField, value) != true)) {
+                    this.tituloField = value;
+                    this.RaisePropertyChanged("titulo");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="ExperienciaEducativa", Namespace="http://schemas.datacontract.org/2004/07/ServiciosTutorias.Modelo")]
+    [System.SerializableAttribute()]
+    public partial class ExperienciaEducativa : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.Academico AcademicoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.Materia MateriaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string NRCField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<int> idAcademicoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int idExperienciaEducativaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<int> idMateriaField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.Academico Academico {
+            get {
+                return this.AcademicoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AcademicoField, value) != true)) {
+                    this.AcademicoField = value;
+                    this.RaisePropertyChanged("Academico");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.Materia Materia {
+            get {
+                return this.MateriaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MateriaField, value) != true)) {
+                    this.MateriaField = value;
+                    this.RaisePropertyChanged("Materia");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string NRC {
+            get {
+                return this.NRCField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.NRCField, value) != true)) {
+                    this.NRCField = value;
+                    this.RaisePropertyChanged("NRC");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<int> idAcademico {
+            get {
+                return this.idAcademicoField;
+            }
+            set {
+                if ((this.idAcademicoField.Equals(value) != true)) {
+                    this.idAcademicoField = value;
+                    this.RaisePropertyChanged("idAcademico");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int idExperienciaEducativa {
+            get {
+                return this.idExperienciaEducativaField;
+            }
+            set {
+                if ((this.idExperienciaEducativaField.Equals(value) != true)) {
+                    this.idExperienciaEducativaField = value;
+                    this.RaisePropertyChanged("idExperienciaEducativa");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<int> idMateria {
+            get {
+                return this.idMateriaField;
+            }
+            set {
+                if ((this.idMateriaField.Equals(value) != true)) {
+                    this.idMateriaField = value;
+                    this.RaisePropertyChanged("idMateria");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="HoraTutoria", Namespace="http://schemas.datacontract.org/2004/07/ServiciosTutorias.Modelo")]
+    [System.SerializableAttribute()]
+    public partial class HoraTutoria : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.Academico AcademicoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.Tutorado TutoradoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.TutoriaAcademica TutoriaAcademicaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<System.TimeSpan> horaTutoria1Field;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int idHoraTutoriaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<int> idTutorAcademicoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<int> idTutoradoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<int> idTutoriaAcademicaField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.Academico Academico {
+            get {
+                return this.AcademicoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AcademicoField, value) != true)) {
+                    this.AcademicoField = value;
+                    this.RaisePropertyChanged("Academico");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.Tutorado Tutorado {
+            get {
+                return this.TutoradoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.TutoradoField, value) != true)) {
+                    this.TutoradoField = value;
+                    this.RaisePropertyChanged("Tutorado");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.TutoriaAcademica TutoriaAcademica {
+            get {
+                return this.TutoriaAcademicaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.TutoriaAcademicaField, value) != true)) {
+                    this.TutoriaAcademicaField = value;
+                    this.RaisePropertyChanged("TutoriaAcademica");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<System.TimeSpan> horaTutoria1 {
+            get {
+                return this.horaTutoria1Field;
+            }
+            set {
+                if ((this.horaTutoria1Field.Equals(value) != true)) {
+                    this.horaTutoria1Field = value;
+                    this.RaisePropertyChanged("horaTutoria1");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int idHoraTutoria {
+            get {
+                return this.idHoraTutoriaField;
+            }
+            set {
+                if ((this.idHoraTutoriaField.Equals(value) != true)) {
+                    this.idHoraTutoriaField = value;
+                    this.RaisePropertyChanged("idHoraTutoria");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<int> idTutorAcademico {
+            get {
+                return this.idTutorAcademicoField;
+            }
+            set {
+                if ((this.idTutorAcademicoField.Equals(value) != true)) {
+                    this.idTutorAcademicoField = value;
+                    this.RaisePropertyChanged("idTutorAcademico");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<int> idTutorado {
+            get {
+                return this.idTutoradoField;
+            }
+            set {
+                if ((this.idTutoradoField.Equals(value) != true)) {
+                    this.idTutoradoField = value;
+                    this.RaisePropertyChanged("idTutorado");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<int> idTutoriaAcademica {
+            get {
+                return this.idTutoriaAcademicaField;
+            }
+            set {
+                if ((this.idTutoriaAcademicaField.Equals(value) != true)) {
+                    this.idTutoriaAcademicaField = value;
+                    this.RaisePropertyChanged("idTutoriaAcademica");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="ProgramaEducativo", Namespace="http://schemas.datacontract.org/2004/07/ServiciosTutorias.Modelo")]
+    [System.SerializableAttribute()]
+    public partial class ProgramaEducativo : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.Academico AcademicoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.Academico Academico1Field;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.ReporteTutoriaAcademica[] ReporteTutoriaAcademicaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.Tutorado[] TutoradoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<int> idCoordinadorTutoriasField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<int> idJefeProgramaEducativoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int idProgramaEducativoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string nombreField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.Academico Academico {
+            get {
+                return this.AcademicoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AcademicoField, value) != true)) {
+                    this.AcademicoField = value;
+                    this.RaisePropertyChanged("Academico");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.Academico Academico1 {
+            get {
+                return this.Academico1Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Academico1Field, value) != true)) {
+                    this.Academico1Field = value;
+                    this.RaisePropertyChanged("Academico1");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.ReporteTutoriaAcademica[] ReporteTutoriaAcademica {
+            get {
+                return this.ReporteTutoriaAcademicaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ReporteTutoriaAcademicaField, value) != true)) {
+                    this.ReporteTutoriaAcademicaField = value;
+                    this.RaisePropertyChanged("ReporteTutoriaAcademica");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.Tutorado[] Tutorado {
+            get {
+                return this.TutoradoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.TutoradoField, value) != true)) {
+                    this.TutoradoField = value;
+                    this.RaisePropertyChanged("Tutorado");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<int> idCoordinadorTutorias {
+            get {
+                return this.idCoordinadorTutoriasField;
+            }
+            set {
+                if ((this.idCoordinadorTutoriasField.Equals(value) != true)) {
+                    this.idCoordinadorTutoriasField = value;
+                    this.RaisePropertyChanged("idCoordinadorTutorias");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<int> idJefeProgramaEducativo {
+            get {
+                return this.idJefeProgramaEducativoField;
+            }
+            set {
+                if ((this.idJefeProgramaEducativoField.Equals(value) != true)) {
+                    this.idJefeProgramaEducativoField = value;
+                    this.RaisePropertyChanged("idJefeProgramaEducativo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int idProgramaEducativo {
+            get {
+                return this.idProgramaEducativoField;
+            }
+            set {
+                if ((this.idProgramaEducativoField.Equals(value) != true)) {
+                    this.idProgramaEducativoField = value;
+                    this.RaisePropertyChanged("idProgramaEducativo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string nombre {
+            get {
+                return this.nombreField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.nombreField, value) != true)) {
+                    this.nombreField = value;
+                    this.RaisePropertyChanged("nombre");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="ReporteTutoriaAcademica", Namespace="http://schemas.datacontract.org/2004/07/ServiciosTutorias.Modelo")]
+    [System.SerializableAttribute()]
+    public partial class ReporteTutoriaAcademica : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.Academico AcademicoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.ComentarioGeneral[] ComentarioGeneralField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.Problematica[] ProblematicaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.ProgramaEducativo ProgramaEducativoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.TutoriaAcademica TutoriaAcademicaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<int> idProgramaEducativoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int idReporteTutoriaAcademicaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<int> idTutorAcademicoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<int> idTutoriaAcademicaField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.Academico Academico {
+            get {
+                return this.AcademicoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AcademicoField, value) != true)) {
+                    this.AcademicoField = value;
+                    this.RaisePropertyChanged("Academico");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.ComentarioGeneral[] ComentarioGeneral {
+            get {
+                return this.ComentarioGeneralField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ComentarioGeneralField, value) != true)) {
+                    this.ComentarioGeneralField = value;
+                    this.RaisePropertyChanged("ComentarioGeneral");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.Problematica[] Problematica {
+            get {
+                return this.ProblematicaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ProblematicaField, value) != true)) {
+                    this.ProblematicaField = value;
+                    this.RaisePropertyChanged("Problematica");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.ProgramaEducativo ProgramaEducativo {
+            get {
+                return this.ProgramaEducativoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ProgramaEducativoField, value) != true)) {
+                    this.ProgramaEducativoField = value;
+                    this.RaisePropertyChanged("ProgramaEducativo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.TutoriaAcademica TutoriaAcademica {
+            get {
+                return this.TutoriaAcademicaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.TutoriaAcademicaField, value) != true)) {
+                    this.TutoriaAcademicaField = value;
+                    this.RaisePropertyChanged("TutoriaAcademica");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<int> idProgramaEducativo {
+            get {
+                return this.idProgramaEducativoField;
+            }
+            set {
+                if ((this.idProgramaEducativoField.Equals(value) != true)) {
+                    this.idProgramaEducativoField = value;
+                    this.RaisePropertyChanged("idProgramaEducativo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int idReporteTutoriaAcademica {
+            get {
+                return this.idReporteTutoriaAcademicaField;
+            }
+            set {
+                if ((this.idReporteTutoriaAcademicaField.Equals(value) != true)) {
+                    this.idReporteTutoriaAcademicaField = value;
+                    this.RaisePropertyChanged("idReporteTutoriaAcademica");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<int> idTutorAcademico {
+            get {
+                return this.idTutorAcademicoField;
+            }
+            set {
+                if ((this.idTutorAcademicoField.Equals(value) != true)) {
+                    this.idTutorAcademicoField = value;
+                    this.RaisePropertyChanged("idTutorAcademico");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<int> idTutoriaAcademica {
+            get {
+                return this.idTutoriaAcademicaField;
+            }
+            set {
+                if ((this.idTutoriaAcademicaField.Equals(value) != true)) {
+                    this.idTutoriaAcademicaField = value;
+                    this.RaisePropertyChanged("idTutoriaAcademica");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="SolucionProblematica", Namespace="http://schemas.datacontract.org/2004/07/ServiciosTutorias.Modelo")]
+    [System.SerializableAttribute()]
+    public partial class SolucionProblematica : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.Academico AcademicoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.Problematica ProblematicaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string descripcionField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<int> idJefeProgramaEducativoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<int> idProblematicaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int idSolucionProblematicaField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.Academico Academico {
+            get {
+                return this.AcademicoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AcademicoField, value) != true)) {
+                    this.AcademicoField = value;
+                    this.RaisePropertyChanged("Academico");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.Problematica Problematica {
+            get {
+                return this.ProblematicaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ProblematicaField, value) != true)) {
+                    this.ProblematicaField = value;
+                    this.RaisePropertyChanged("Problematica");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string descripcion {
+            get {
+                return this.descripcionField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.descripcionField, value) != true)) {
+                    this.descripcionField = value;
+                    this.RaisePropertyChanged("descripcion");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<int> idJefeProgramaEducativo {
+            get {
+                return this.idJefeProgramaEducativoField;
+            }
+            set {
+                if ((this.idJefeProgramaEducativoField.Equals(value) != true)) {
+                    this.idJefeProgramaEducativoField = value;
+                    this.RaisePropertyChanged("idJefeProgramaEducativo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<int> idProblematica {
+            get {
+                return this.idProblematicaField;
+            }
+            set {
+                if ((this.idProblematicaField.Equals(value) != true)) {
+                    this.idProblematicaField = value;
+                    this.RaisePropertyChanged("idProblematica");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int idSolucionProblematica {
+            get {
+                return this.idSolucionProblematicaField;
+            }
+            set {
+                if ((this.idSolucionProblematicaField.Equals(value) != true)) {
+                    this.idSolucionProblematicaField = value;
+                    this.RaisePropertyChanged("idSolucionProblematica");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Tutorado", Namespace="http://schemas.datacontract.org/2004/07/ServiciosTutorias.Modelo")]
+    [System.SerializableAttribute()]
+    public partial class Tutorado : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.Academico AcademicoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.Asistencia[] AsistenciaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.AutorProblematica[] AutorProblematicaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.HoraTutoria[] HoraTutoriaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.ProgramaEducativo ProgramaEducativoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string apellidoMaternoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string apellidoPaternoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string correoInstitucionalField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string correoPersonalField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<int> idProgramaEducativoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<int> idTutorAcademicoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int idTutoradoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string matriculaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string nombreField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string passwordField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.Academico Academico {
+            get {
+                return this.AcademicoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AcademicoField, value) != true)) {
+                    this.AcademicoField = value;
+                    this.RaisePropertyChanged("Academico");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.Asistencia[] Asistencia {
+            get {
+                return this.AsistenciaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AsistenciaField, value) != true)) {
+                    this.AsistenciaField = value;
+                    this.RaisePropertyChanged("Asistencia");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.AutorProblematica[] AutorProblematica {
+            get {
+                return this.AutorProblematicaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AutorProblematicaField, value) != true)) {
+                    this.AutorProblematicaField = value;
+                    this.RaisePropertyChanged("AutorProblematica");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.HoraTutoria[] HoraTutoria {
+            get {
+                return this.HoraTutoriaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.HoraTutoriaField, value) != true)) {
+                    this.HoraTutoriaField = value;
+                    this.RaisePropertyChanged("HoraTutoria");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.ProgramaEducativo ProgramaEducativo {
+            get {
+                return this.ProgramaEducativoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ProgramaEducativoField, value) != true)) {
+                    this.ProgramaEducativoField = value;
+                    this.RaisePropertyChanged("ProgramaEducativo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string apellidoMaterno {
+            get {
+                return this.apellidoMaternoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.apellidoMaternoField, value) != true)) {
+                    this.apellidoMaternoField = value;
+                    this.RaisePropertyChanged("apellidoMaterno");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string apellidoPaterno {
+            get {
+                return this.apellidoPaternoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.apellidoPaternoField, value) != true)) {
+                    this.apellidoPaternoField = value;
+                    this.RaisePropertyChanged("apellidoPaterno");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string correoInstitucional {
+            get {
+                return this.correoInstitucionalField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.correoInstitucionalField, value) != true)) {
+                    this.correoInstitucionalField = value;
+                    this.RaisePropertyChanged("correoInstitucional");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string correoPersonal {
+            get {
+                return this.correoPersonalField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.correoPersonalField, value) != true)) {
+                    this.correoPersonalField = value;
+                    this.RaisePropertyChanged("correoPersonal");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<int> idProgramaEducativo {
+            get {
+                return this.idProgramaEducativoField;
+            }
+            set {
+                if ((this.idProgramaEducativoField.Equals(value) != true)) {
+                    this.idProgramaEducativoField = value;
+                    this.RaisePropertyChanged("idProgramaEducativo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<int> idTutorAcademico {
+            get {
+                return this.idTutorAcademicoField;
+            }
+            set {
+                if ((this.idTutorAcademicoField.Equals(value) != true)) {
+                    this.idTutorAcademicoField = value;
+                    this.RaisePropertyChanged("idTutorAcademico");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int idTutorado {
+            get {
+                return this.idTutoradoField;
+            }
+            set {
+                if ((this.idTutoradoField.Equals(value) != true)) {
+                    this.idTutoradoField = value;
+                    this.RaisePropertyChanged("idTutorado");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string matricula {
+            get {
+                return this.matriculaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.matriculaField, value) != true)) {
+                    this.matriculaField = value;
+                    this.RaisePropertyChanged("matricula");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string nombre {
+            get {
+                return this.nombreField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.nombreField, value) != true)) {
+                    this.nombreField = value;
+                    this.RaisePropertyChanged("nombre");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string password {
+            get {
+                return this.passwordField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.passwordField, value) != true)) {
+                    this.passwordField = value;
+                    this.RaisePropertyChanged("password");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Materia", Namespace="http://schemas.datacontract.org/2004/07/ServiciosTutorias.Modelo")]
+    [System.SerializableAttribute()]
+    public partial class Materia : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.ExperienciaEducativa[] ExperienciaEducativaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int idMateriaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string tituloField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.ExperienciaEducativa[] ExperienciaEducativa {
+            get {
+                return this.ExperienciaEducativaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ExperienciaEducativaField, value) != true)) {
+                    this.ExperienciaEducativaField = value;
+                    this.RaisePropertyChanged("ExperienciaEducativa");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int idMateria {
+            get {
+                return this.idMateriaField;
+            }
+            set {
+                if ((this.idMateriaField.Equals(value) != true)) {
+                    this.idMateriaField = value;
+                    this.RaisePropertyChanged("idMateria");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string titulo {
+            get {
+                return this.tituloField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.tituloField, value) != true)) {
+                    this.tituloField = value;
+                    this.RaisePropertyChanged("titulo");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="TutoriaAcademica", Namespace="http://schemas.datacontract.org/2004/07/ServiciosTutorias.Modelo")]
+    [System.SerializableAttribute()]
+    public partial class TutoriaAcademica : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.Asistencia[] AsistenciaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.HoraTutoria[] HoraTutoriaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.PeriodoEscolar PeriodoEscolarField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.ReporteTutoriaAcademica[] ReporteTutoriaAcademicaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<System.DateTime> fechaLimiteReporteField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<System.DateTime> fechaSesionField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<int> idPeriodoEscolarField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int idTutoriaAcademicaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<bool> numeroSesionField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.Asistencia[] Asistencia {
+            get {
+                return this.AsistenciaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AsistenciaField, value) != true)) {
+                    this.AsistenciaField = value;
+                    this.RaisePropertyChanged("Asistencia");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.HoraTutoria[] HoraTutoria {
+            get {
+                return this.HoraTutoriaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.HoraTutoriaField, value) != true)) {
+                    this.HoraTutoriaField = value;
+                    this.RaisePropertyChanged("HoraTutoria");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.PeriodoEscolar PeriodoEscolar {
+            get {
+                return this.PeriodoEscolarField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PeriodoEscolarField, value) != true)) {
+                    this.PeriodoEscolarField = value;
+                    this.RaisePropertyChanged("PeriodoEscolar");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.ReporteTutoriaAcademica[] ReporteTutoriaAcademica {
+            get {
+                return this.ReporteTutoriaAcademicaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ReporteTutoriaAcademicaField, value) != true)) {
+                    this.ReporteTutoriaAcademicaField = value;
+                    this.RaisePropertyChanged("ReporteTutoriaAcademica");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<System.DateTime> fechaLimiteReporte {
+            get {
+                return this.fechaLimiteReporteField;
+            }
+            set {
+                if ((this.fechaLimiteReporteField.Equals(value) != true)) {
+                    this.fechaLimiteReporteField = value;
+                    this.RaisePropertyChanged("fechaLimiteReporte");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<System.DateTime> fechaSesion {
+            get {
+                return this.fechaSesionField;
+            }
+            set {
+                if ((this.fechaSesionField.Equals(value) != true)) {
+                    this.fechaSesionField = value;
+                    this.RaisePropertyChanged("fechaSesion");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<int> idPeriodoEscolar {
+            get {
+                return this.idPeriodoEscolarField;
+            }
+            set {
+                if ((this.idPeriodoEscolarField.Equals(value) != true)) {
+                    this.idPeriodoEscolarField = value;
+                    this.RaisePropertyChanged("idPeriodoEscolar");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int idTutoriaAcademica {
+            get {
+                return this.idTutoriaAcademicaField;
+            }
+            set {
+                if ((this.idTutoriaAcademicaField.Equals(value) != true)) {
+                    this.idTutoriaAcademicaField = value;
+                    this.RaisePropertyChanged("idTutoriaAcademica");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<bool> numeroSesion {
+            get {
+                return this.numeroSesionField;
+            }
+            set {
+                if ((this.numeroSesionField.Equals(value) != true)) {
+                    this.numeroSesionField = value;
+                    this.RaisePropertyChanged("numeroSesion");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Asistencia", Namespace="http://schemas.datacontract.org/2004/07/ServiciosTutorias.Modelo")]
+    [System.SerializableAttribute()]
+    public partial class Asistencia : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.Tutorado TutoradoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.TutoriaAcademica TutoriaAcademicaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int idAsistenciaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<int> idTutoradoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<int> idTutoriaAcademicaField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.Tutorado Tutorado {
+            get {
+                return this.TutoradoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.TutoradoField, value) != true)) {
+                    this.TutoradoField = value;
+                    this.RaisePropertyChanged("Tutorado");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.TutoriaAcademica TutoriaAcademica {
+            get {
+                return this.TutoriaAcademicaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.TutoriaAcademicaField, value) != true)) {
+                    this.TutoriaAcademicaField = value;
+                    this.RaisePropertyChanged("TutoriaAcademica");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int idAsistencia {
+            get {
+                return this.idAsistenciaField;
+            }
+            set {
+                if ((this.idAsistenciaField.Equals(value) != true)) {
+                    this.idAsistenciaField = value;
+                    this.RaisePropertyChanged("idAsistencia");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<int> idTutorado {
+            get {
+                return this.idTutoradoField;
+            }
+            set {
+                if ((this.idTutoradoField.Equals(value) != true)) {
+                    this.idTutoradoField = value;
+                    this.RaisePropertyChanged("idTutorado");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<int> idTutoriaAcademica {
+            get {
+                return this.idTutoriaAcademicaField;
+            }
+            set {
+                if ((this.idTutoriaAcademicaField.Equals(value) != true)) {
+                    this.idTutoriaAcademicaField = value;
+                    this.RaisePropertyChanged("idTutoriaAcademica");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="AutorProblematica", Namespace="http://schemas.datacontract.org/2004/07/ServiciosTutorias.Modelo")]
+    [System.SerializableAttribute()]
+    public partial class AutorProblematica : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.Problematica ProblematicaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.Tutorado TutoradoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<int> idAutorField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int idAutorProblematicaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<int> idProblematicaField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.Problematica Problematica {
+            get {
+                return this.ProblematicaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ProblematicaField, value) != true)) {
+                    this.ProblematicaField = value;
+                    this.RaisePropertyChanged("Problematica");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.Tutorado Tutorado {
+            get {
+                return this.TutoradoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.TutoradoField, value) != true)) {
+                    this.TutoradoField = value;
+                    this.RaisePropertyChanged("Tutorado");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<int> idAutor {
+            get {
+                return this.idAutorField;
+            }
+            set {
+                if ((this.idAutorField.Equals(value) != true)) {
+                    this.idAutorField = value;
+                    this.RaisePropertyChanged("idAutor");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int idAutorProblematica {
+            get {
+                return this.idAutorProblematicaField;
+            }
+            set {
+                if ((this.idAutorProblematicaField.Equals(value) != true)) {
+                    this.idAutorProblematicaField = value;
+                    this.RaisePropertyChanged("idAutorProblematica");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<int> idProblematica {
+            get {
+                return this.idProblematicaField;
+            }
+            set {
+                if ((this.idProblematicaField.Equals(value) != true)) {
+                    this.idProblematicaField = value;
+                    this.RaisePropertyChanged("idProblematica");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="PeriodoEscolar", Namespace="http://schemas.datacontract.org/2004/07/ServiciosTutorias.Modelo")]
+    [System.SerializableAttribute()]
+    public partial class PeriodoEscolar : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.TutoriaAcademica[] TutoriaAcademicaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int idPeriodoEscolarField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string tituloField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.TutoriaAcademica[] TutoriaAcademica {
+            get {
+                return this.TutoriaAcademicaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.TutoriaAcademicaField, value) != true)) {
+                    this.TutoriaAcademicaField = value;
+                    this.RaisePropertyChanged("TutoriaAcademica");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int idPeriodoEscolar {
+            get {
+                return this.idPeriodoEscolarField;
+            }
+            set {
+                if ((this.idPeriodoEscolarField.Equals(value) != true)) {
+                    this.idPeriodoEscolarField = value;
+                    this.RaisePropertyChanged("idPeriodoEscolar");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string titulo {
+            get {
+                return this.tituloField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.tituloField, value) != true)) {
+                    this.tituloField = value;
+                    this.RaisePropertyChanged("titulo");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="ComentarioGeneral", Namespace="http://schemas.datacontract.org/2004/07/ServiciosTutorias.Modelo")]
+    [System.SerializableAttribute()]
+    public partial class ComentarioGeneral : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.ReporteTutoriaAcademica ReporteTutoriaAcademicaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string descripcionField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int idComentarioGeneralField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<int> idReporteTutoriaAcademicaField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.ReporteTutoriaAcademica ReporteTutoriaAcademica {
+            get {
+                return this.ReporteTutoriaAcademicaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ReporteTutoriaAcademicaField, value) != true)) {
+                    this.ReporteTutoriaAcademicaField = value;
+                    this.RaisePropertyChanged("ReporteTutoriaAcademica");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string descripcion {
+            get {
+                return this.descripcionField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.descripcionField, value) != true)) {
+                    this.descripcionField = value;
+                    this.RaisePropertyChanged("descripcion");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int idComentarioGeneral {
+            get {
+                return this.idComentarioGeneralField;
+            }
+            set {
+                if ((this.idComentarioGeneralField.Equals(value) != true)) {
+                    this.idComentarioGeneralField = value;
+                    this.RaisePropertyChanged("idComentarioGeneral");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<int> idReporteTutoriaAcademica {
+            get {
+                return this.idReporteTutoriaAcademicaField;
+            }
+            set {
+                if ((this.idReporteTutoriaAcademicaField.Equals(value) != true)) {
+                    this.idReporteTutoriaAcademicaField = value;
+                    this.RaisePropertyChanged("idReporteTutoriaAcademica");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Problematica", Namespace="http://schemas.datacontract.org/2004/07/ServiciosTutorias.Modelo")]
+    [System.SerializableAttribute()]
+    public partial class Problematica : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.AutorProblematica[] AutorProblematicaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.ClasificacionProblematica ClasificacionProblematicaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.ReporteTutoriaAcademica ReporteTutoriaAcademicaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.SolucionProblematica[] SolucionProblematicaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string descripcionField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<int> idClasificacionProblematicaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int idProblematicaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<int> idReporteTutoriaAcademicaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<int> numeroIncidenciasField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.AutorProblematica[] AutorProblematica {
+            get {
+                return this.AutorProblematicaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AutorProblematicaField, value) != true)) {
+                    this.AutorProblematicaField = value;
+                    this.RaisePropertyChanged("AutorProblematica");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.ClasificacionProblematica ClasificacionProblematica {
+            get {
+                return this.ClasificacionProblematicaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ClasificacionProblematicaField, value) != true)) {
+                    this.ClasificacionProblematicaField = value;
+                    this.RaisePropertyChanged("ClasificacionProblematica");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.ReporteTutoriaAcademica ReporteTutoriaAcademica {
+            get {
+                return this.ReporteTutoriaAcademicaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ReporteTutoriaAcademicaField, value) != true)) {
+                    this.ReporteTutoriaAcademicaField = value;
+                    this.RaisePropertyChanged("ReporteTutoriaAcademica");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.SolucionProblematica[] SolucionProblematica {
+            get {
+                return this.SolucionProblematicaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.SolucionProblematicaField, value) != true)) {
+                    this.SolucionProblematicaField = value;
+                    this.RaisePropertyChanged("SolucionProblematica");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string descripcion {
+            get {
+                return this.descripcionField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.descripcionField, value) != true)) {
+                    this.descripcionField = value;
+                    this.RaisePropertyChanged("descripcion");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<int> idClasificacionProblematica {
+            get {
+                return this.idClasificacionProblematicaField;
+            }
+            set {
+                if ((this.idClasificacionProblematicaField.Equals(value) != true)) {
+                    this.idClasificacionProblematicaField = value;
+                    this.RaisePropertyChanged("idClasificacionProblematica");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int idProblematica {
+            get {
+                return this.idProblematicaField;
+            }
+            set {
+                if ((this.idProblematicaField.Equals(value) != true)) {
+                    this.idProblematicaField = value;
+                    this.RaisePropertyChanged("idProblematica");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<int> idReporteTutoriaAcademica {
+            get {
+                return this.idReporteTutoriaAcademicaField;
+            }
+            set {
+                if ((this.idReporteTutoriaAcademicaField.Equals(value) != true)) {
+                    this.idReporteTutoriaAcademicaField = value;
+                    this.RaisePropertyChanged("idReporteTutoriaAcademica");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<int> numeroIncidencias {
+            get {
+                return this.numeroIncidenciasField;
+            }
+            set {
+                if ((this.numeroIncidenciasField.Equals(value) != true)) {
+                    this.numeroIncidenciasField = value;
+                    this.RaisePropertyChanged("numeroIncidencias");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="ClasificacionProblematica", Namespace="http://schemas.datacontract.org/2004/07/ServiciosTutorias.Modelo")]
+    [System.SerializableAttribute()]
+    public partial class ClasificacionProblematica : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.Problematica[] ProblematicaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int idClasificacionProblematicaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string tituloField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.Problematica[] Problematica {
+            get {
+                return this.ProblematicaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ProblematicaField, value) != true)) {
+                    this.ProblematicaField = value;
+                    this.RaisePropertyChanged("Problematica");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int idClasificacionProblematica {
+            get {
+                return this.idClasificacionProblematicaField;
+            }
+            set {
+                if ((this.idClasificacionProblematicaField.Equals(value) != true)) {
+                    this.idClasificacionProblematicaField = value;
+                    this.RaisePropertyChanged("idClasificacionProblematica");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string titulo {
+            get {
+                return this.tituloField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.tituloField, value) != true)) {
+                    this.tituloField = value;
+                    this.RaisePropertyChanged("titulo");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="CompositeType", Namespace="http://schemas.datacontract.org/2004/07/ServiciosTutorias")]
     [System.SerializableAttribute()]
     public partial class CompositeType : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
@@ -74,6 +2330,83 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Mensaje", Namespace="http://schemas.datacontract.org/2004/07/ServiciosTutorias.Modelo")]
+    [System.SerializableAttribute()]
+    public partial class Mensaje : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private bool errorField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string mensajeTextoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.Academico usuarioAutenticadoField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public bool error {
+            get {
+                return this.errorField;
+            }
+            set {
+                if ((this.errorField.Equals(value) != true)) {
+                    this.errorField = value;
+                    this.RaisePropertyChanged("error");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string mensajeTexto {
+            get {
+                return this.mensajeTextoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.mensajeTextoField, value) != true)) {
+                    this.mensajeTextoField = value;
+                    this.RaisePropertyChanged("mensajeTexto");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.Academico usuarioAutenticado {
+            get {
+                return this.usuarioAutenticadoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.usuarioAutenticadoField, value) != true)) {
+                    this.usuarioAutenticadoField = value;
+                    this.RaisePropertyChanged("usuarioAutenticado");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReferenceTutorias.IService1")]
     public interface IService1 {
@@ -84,6 +2417,12 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetData", ReplyAction="http://tempuri.org/IService1/GetDataResponse")]
         System.Threading.Tasks.Task<string> GetDataAsync(int value);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/ObtenerUsuarios", ReplyAction="http://tempuri.org/IService1/ObtenerUsuariosResponse")]
+        ClienteSistemaTutorias.ServiceReferenceTutorias.Academico[] ObtenerUsuarios();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/ObtenerUsuarios", ReplyAction="http://tempuri.org/IService1/ObtenerUsuariosResponse")]
+        System.Threading.Tasks.Task<ClienteSistemaTutorias.ServiceReferenceTutorias.Academico[]> ObtenerUsuariosAsync();
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetDataUsingDataContract", ReplyAction="http://tempuri.org/IService1/GetDataUsingDataContractResponse")]
         ClienteSistemaTutorias.ServiceReferenceTutorias.CompositeType GetDataUsingDataContract(ClienteSistemaTutorias.ServiceReferenceTutorias.CompositeType composite);
         
@@ -91,10 +2430,16 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
         System.Threading.Tasks.Task<ClienteSistemaTutorias.ServiceReferenceTutorias.CompositeType> GetDataUsingDataContractAsync(ClienteSistemaTutorias.ServiceReferenceTutorias.CompositeType composite);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/Login", ReplyAction="http://tempuri.org/IService1/LoginResponse")]
-        int Login(string user, string password);
+        ClienteSistemaTutorias.ServiceReferenceTutorias.Mensaje Login(string correo, string password);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/Login", ReplyAction="http://tempuri.org/IService1/LoginResponse")]
-        System.Threading.Tasks.Task<int> LoginAsync(string user, string password);
+        System.Threading.Tasks.Task<ClienteSistemaTutorias.ServiceReferenceTutorias.Mensaje> LoginAsync(string correo, string password);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/LoginPrueba", ReplyAction="http://tempuri.org/IService1/LoginPruebaResponse")]
+        int LoginPrueba(string correo, string password);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/LoginPrueba", ReplyAction="http://tempuri.org/IService1/LoginPruebaResponse")]
+        System.Threading.Tasks.Task<int> LoginPruebaAsync(string correo, string password);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -132,6 +2477,14 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
             return base.Channel.GetDataAsync(value);
         }
         
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.Academico[] ObtenerUsuarios() {
+            return base.Channel.ObtenerUsuarios();
+        }
+        
+        public System.Threading.Tasks.Task<ClienteSistemaTutorias.ServiceReferenceTutorias.Academico[]> ObtenerUsuariosAsync() {
+            return base.Channel.ObtenerUsuariosAsync();
+        }
+        
         public ClienteSistemaTutorias.ServiceReferenceTutorias.CompositeType GetDataUsingDataContract(ClienteSistemaTutorias.ServiceReferenceTutorias.CompositeType composite) {
             return base.Channel.GetDataUsingDataContract(composite);
         }
@@ -140,12 +2493,20 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
             return base.Channel.GetDataUsingDataContractAsync(composite);
         }
         
-        public int Login(string user, string password) {
-            return base.Channel.Login(user, password);
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.Mensaje Login(string correo, string password) {
+            return base.Channel.Login(correo, password);
         }
         
-        public System.Threading.Tasks.Task<int> LoginAsync(string user, string password) {
-            return base.Channel.LoginAsync(user, password);
+        public System.Threading.Tasks.Task<ClienteSistemaTutorias.ServiceReferenceTutorias.Mensaje> LoginAsync(string correo, string password) {
+            return base.Channel.LoginAsync(correo, password);
+        }
+        
+        public int LoginPrueba(string correo, string password) {
+            return base.Channel.LoginPrueba(correo, password);
+        }
+        
+        public System.Threading.Tasks.Task<int> LoginPruebaAsync(string correo, string password) {
+            return base.Channel.LoginPruebaAsync(correo, password);
         }
     }
 }

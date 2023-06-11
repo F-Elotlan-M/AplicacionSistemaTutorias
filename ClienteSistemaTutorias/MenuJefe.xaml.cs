@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ClienteSistemaTutorias.ServiceReferenceTutorias;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,11 +20,18 @@ namespace ClienteSistemaTutorias
     /// </summary>
     public partial class MenuJefe : Window
     {
-        public MenuJefe()
+        public Academico academicoEnUso = new Academico();
+        public MenuJefe(Academico academicoLogeado)
         {
             InitializeComponent();
+            recibirAcademico(academicoLogeado);
+            
         }
 
+        public void recibirAcademico(Academico academicoLogeado)
+        {
+            academicoEnUso = academicoLogeado;
+        }
         private void clickBtnRegistrarComentariosgenerales(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("hola");

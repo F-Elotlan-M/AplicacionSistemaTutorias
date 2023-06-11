@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ServiciosTutorias.Modelo;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
@@ -13,30 +14,18 @@ namespace ServiciosTutorias {
         public string GetData(int value) {
             return string.Format("You entered: {0}", value);
         }
-
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
->>>>>>> 4779afe6bc608ade82119819ddf99d251231c43a
-        public int Login(string user, string password)
+        public List<Academico> ObtenerUsuarios()
         {
-            if (user == "elotlan" && password == "123456")
-            {
-                return 1;
-            }
-            else
-            {
-                return 0;
-            }
+            List<Academico> usuariosBD = AcademicoDAO.obtenerUsuarios();
+            return usuariosBD;
         }
 
-<<<<<<< HEAD
+        public Mensaje Login(string correo, string password)
+        {
+            AcademicoDAO academicoDAO = new AcademicoDAO();
+            return academicoDAO.Login(correo, password);
+        }
 
-=======
-=======
->>>>>>> 82ea36daeb3394d607fe0e3371fa8b926c64aea7
->>>>>>> 4779afe6bc608ade82119819ddf99d251231c43a
         public CompositeType GetDataUsingDataContract(CompositeType composite) {
             if (composite == null) {
                 throw new ArgumentNullException("composite");
@@ -46,12 +35,11 @@ namespace ServiciosTutorias {
             }
             return composite;
         }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 
-=======
->>>>>>> 82ea36daeb3394d607fe0e3371fa8b926c64aea7
->>>>>>> 4779afe6bc608ade82119819ddf99d251231c43a
+        public int LoginPrueba(string correo, string password)
+        {
+            AcademicoDAO academicoDAO = new AcademicoDAO();
+            return academicoDAO.LoginPrueba(correo, password);
+        }
     }
 }

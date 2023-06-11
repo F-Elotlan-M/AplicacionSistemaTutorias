@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ServiciosTutorias.Modelo;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
@@ -11,26 +12,25 @@ namespace ServiciosTutorias {
     [ServiceContract]
     public interface IService1 {
 
+        
         [OperationContract]
         string GetData(int value);
+        [OperationContract]
+        List<Academico> ObtenerUsuarios();
 
         [OperationContract]
         CompositeType GetDataUsingDataContract(CompositeType composite);
-<<<<<<< HEAD
 
         [OperationContract]
-        int Login(string user, string password);
-
-=======
-<<<<<<< HEAD
+        Mensaje Login(string correo, string password);
         [OperationContract]
-        int Login(string user, string password);
-=======
->>>>>>> 82ea36daeb3394d607fe0e3371fa8b926c64aea7
->>>>>>> 4779afe6bc608ade82119819ddf99d251231c43a
+        int LoginPrueba(string correo, string password);
+
 
         // TODO: agregue aquí sus operaciones de servicio
     }
+
+   
 
 
     // Utilice un contrato de datos, como se ilustra en el ejemplo siguiente, para agregar tipos compuestos a las operaciones de servicio.

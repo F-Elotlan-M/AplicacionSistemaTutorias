@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 17.125, 18.75" name="DataClassesTutoriasDB">
+  <DataContextMoniker Name="/DataClassesTutoriasDBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="fa375fc2-51d7-4cfc-b4d6-13c0252e92de" absoluteBounds="6.25, 16.75, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/DataClassesTutoriasDBDataContext/TutoriaAcademica" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2bb98824-0d62-4469-be3c-6766db4bfcf5" absoluteBounds="6.265, 17.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9f02be4e-224d-48d5-a46a-09374d4e6e7a" absoluteBounds="9, 14.375, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/DataClassesTutoriasDBDataContext/Tutorado" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b2a7569a-26e6-4cb1-b999-633ff250abf6" absoluteBounds="9.015, 14.835, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="42cb223b-3f87-49d8-9105-5eccc286a6d2" absoluteBounds="6.25, 9.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DataClassesTutoriasDBDataContext/SolucionProblematica" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7126df7c-1494-4c57-a650-1815c753c2b2" absoluteBounds="6.265, 10.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6a4b3161-bb58-4831-b8c5-ac16e1f809a9" absoluteBounds="0.75, 10, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/DataClassesTutoriasDBDataContext/Rol" />
+      <nestedChildShapes>
+        <elementListCompartment Id="49c0d0a0-97e1-412a-abdc-52c65090b3ea" absoluteBounds="0.765, 10.46, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e54611b8-7a8e-4362-913f-cc31eecbb5f3" absoluteBounds="9, 11.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DataClassesTutoriasDBDataContext/ReporteTutoriaAcademica" />
+      <nestedChildShapes>
+        <elementListCompartment Id="127ff318-5c34-4cc4-8052-541aff12a6c8" absoluteBounds="9.015, 12.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4939af0b-eff9-4afe-854a-981138515b58" absoluteBounds="6.25, 14.375, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DataClassesTutoriasDBDataContext/ProgramaEducativo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fa0291ff-e661-44af-9ee3-35c3bad6a328" absoluteBounds="6.265, 14.835, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fbca1530-4257-49d5-bb90-c3d1b6bc7cd2" absoluteBounds="11.75, 8.75, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/DataClassesTutoriasDBDataContext/Problematica" />
+      <nestedChildShapes>
+        <elementListCompartment Id="88679e9a-772a-4912-aa80-0d3a14ede5b6" absoluteBounds="11.765, 9.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f7100108-a01e-45dd-9004-72b14fd82ba2" absoluteBounds="3.5, 17.125, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/DataClassesTutoriasDBDataContext/PeriodoEscolar" />
+      <nestedChildShapes>
+        <elementListCompartment Id="67a2dc5d-3f2c-4b1e-a3c5-e506e04308b5" absoluteBounds="3.515, 17.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1fc68bea-0643-40a8-84a3-fbe302186a52" absoluteBounds="3.5, 7, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/DataClassesTutoriasDBDataContext/Materia" />
+      <nestedChildShapes>
+        <elementListCompartment Id="49109020-9fea-4eb4-9919-338344a73284" absoluteBounds="3.515, 7.46, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="14ba2be1-f989-4d43-8c21-8d30b124455e" absoluteBounds="14.75, 9.375, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/DataClassesTutoriasDBDataContext/HoraTutoria" />
+      <nestedChildShapes>
+        <elementListCompartment Id="199cffb8-e469-4148-aac6-383277382f23" absoluteBounds="14.765, 9.835, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1a412a40-7a0b-43e2-b7eb-b953d6b3148c" absoluteBounds="6.25, 6.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DataClassesTutoriasDBDataContext/ExperienciaEducativa" />
+      <nestedChildShapes>
+        <elementListCompartment Id="55ec991e-3635-471f-858d-6600903caebc" absoluteBounds="6.265, 7.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f5af8e90-44af-41ad-a46f-dcf53385f846" absoluteBounds="11.75, 12, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/DataClassesTutoriasDBDataContext/ComentarioGeneral" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cc038483-4acb-4118-8d7f-fb4796e8d051" absoluteBounds="11.765, 12.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="baf25dfe-c5c7-47f1-9a9b-6325a24c5856" absoluteBounds="14.5, 12.25, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/DataClassesTutoriasDBDataContext/AutorProblematica" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1c565a2a-9e24-4481-80bd-0c78a20b4444" absoluteBounds="14.515, 12.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ee1332db-46e1-428f-836c-3e5fa841feae" absoluteBounds="9, 7.875, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/DataClassesTutoriasDBDataContext/ClasificacionProblematica" />
+      <nestedChildShapes>
+        <elementListCompartment Id="be7903c1-624d-48c4-b28a-b53e5fd7ccb0" absoluteBounds="9.015, 8.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1ba7061a-b615-470c-9938-e8932974f28b" absoluteBounds="11.75, 15, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/DataClassesTutoriasDBDataContext/Asistencia" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8b130442-0db8-4d62-87e4-91aa45adb81b" absoluteBounds="11.765, 15.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b56e3432-8f3a-4ae6-9a84-9f7ada81138d" absoluteBounds="3.5, 9.375, 2, 2.3478011067708344">
+      <DataClassMoniker Name="/DataClassesTutoriasDBDataContext/Academico" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bb72041f-4a21-4579-9cf3-176bfebd98ad" absoluteBounds="3.515, 9.835, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(8.25 : 16.75); (8.625 : 16.375); (8.625 : 12.6642976888021); (9 : 12.6642976888021)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesTutoriasDBDataContext/TutoriaAcademica/TutoriaAcademica_ReporteTutoriaAcademica" />
+      <nodes>
+        <classShapeMoniker Id="fa375fc2-51d7-4cfc-b4d6-13c0252e92de" />
+        <classShapeMoniker Id="e54611b8-7a8e-4362-913f-cc31eecbb5f3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 15.1642976888021); (8.54166666666667 : 15.1642976888021 : JumpStart); (8.70833333333333 : 15.1642976888021 : JumpEnd); (9 : 15.1642976888021)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesTutoriasDBDataContext/ProgramaEducativo/ProgramaEducativo_Tutorado" />
+      <nodes>
+        <classShapeMoniker Id="4939af0b-eff9-4afe-854a-981138515b58" />
+        <classShapeMoniker Id="9f02be4e-224d-48d5-a46a-09374d4e6e7a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.25 : 14.375); (7.25 : 13.0901990332031); (8.54166666666667 : 13.0901990332031 : JumpStart); (8.70833333333333 : 13.0901990332031 : JumpEnd); (9 : 13.0901990332031)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesTutoriasDBDataContext/ProgramaEducativo/ProgramaEducativo_ReporteTutoriaAcademica" />
+      <nodes>
+        <classShapeMoniker Id="4939af0b-eff9-4afe-854a-981138515b58" />
+        <classShapeMoniker Id="e54611b8-7a8e-4362-913f-cc31eecbb5f3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.75 : 10.1354484049479); (11.4583333333333 : 10.1354484049479 : JumpStart); (11.2916666666667 : 10.1354484049479 : JumpEnd); (8.25 : 10.1354484049479)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesTutoriasDBDataContext/Problematica/Problematica_SolucionProblematica" />
+      <nodes>
+        <classShapeMoniker Id="fbca1530-4257-49d5-bb90-c3d1b6bc7cd2" />
+        <classShapeMoniker Id="42cb223b-3f87-49d8-9105-5eccc286a6d2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11 : 11.875); (11.375 : 11.5); (11.375 : 9.41147220247396); (11.75 : 9.41147220247396)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesTutoriasDBDataContext/ReporteTutoriaAcademica/ReporteTutoriaAcademica_Problematica" />
+      <nodes>
+        <classShapeMoniker Id="e54611b8-7a8e-4362-913f-cc31eecbb5f3" />
+        <classShapeMoniker Id="fbca1530-4257-49d5-bb90-c3d1b6bc7cd2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 17.7219962565104); (6.25 : 17.7219962565104)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesTutoriasDBDataContext/PeriodoEscolar/PeriodoEscolar_TutoriaAcademica" />
+      <nodes>
+        <classShapeMoniker Id="f7100108-a01e-45dd-9004-72b14fd82ba2" />
+        <classShapeMoniker Id="fa375fc2-51d7-4cfc-b4d6-13c0252e92de" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 17.845400390625); (16.65625 : 17.845400390625); (16.65625 : 11.1458968098958)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesTutoriasDBDataContext/TutoriaAcademica/TutoriaAcademica_HoraTutoria" />
+      <nodes>
+        <classShapeMoniker Id="fa375fc2-51d7-4cfc-b4d6-13c0252e92de" />
+        <classShapeMoniker Id="14ba2be1-f989-4d43-8c21-8d30b124455e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11 : 16.7780989583333); (12.6666666666667 : 16.7780989583333 : JumpStart); (12.8333333333333 : 16.7780989583333 : JumpEnd); (16.6249975 : 16.7780989583333); (16.6249975 : 11.1458968098958)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesTutoriasDBDataContext/Tutorado/Tutorado_HoraTutoria" />
+      <nodes>
+        <classShapeMoniker Id="9f02be4e-224d-48d5-a46a-09374d4e6e7a" />
+        <classShapeMoniker Id="14ba2be1-f989-4d43-8c21-8d30b124455e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 7.59699625651042); (5.79166666666667 : 7.59699625651042 : JumpStart); (5.95833333333333 : 7.59699625651042 : JumpEnd); (6.25 : 7.59699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesTutoriasDBDataContext/Materia/Materia_ExperienciaEducativa" />
+      <nodes>
+        <classShapeMoniker Id="1fc68bea-0643-40a8-84a3-fbe302186a52" />
+        <classShapeMoniker Id="1a412a40-7a0b-43e2-b7eb-b953d6b3148c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11 : 12.6931469726562); (11.75 : 12.6931469726562)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesTutoriasDBDataContext/ReporteTutoriaAcademica/ReporteTutoriaAcademica_ComentarioGeneral" />
+      <nodes>
+        <classShapeMoniker Id="e54611b8-7a8e-4362-913f-cc31eecbb5f3" />
+        <classShapeMoniker Id="f5af8e90-44af-41ad-a46f-dcf53385f846" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11 : 14.65625); (15.5 : 14.65625); (15.5 : 13.6362939453125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesTutoriasDBDataContext/Tutorado/Tutorado_AutorProblematica" />
+      <nodes>
+        <classShapeMoniker Id="9f02be4e-224d-48d5-a46a-09374d4e6e7a" />
+        <classShapeMoniker Id="baf25dfe-c5c7-47f1-9a9b-6325a24c5856" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13.75 : 9.03125); (14.59375 : 9.03125); (14.59375 : 12.25)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesTutoriasDBDataContext/Problematica/Problematica_AutorProblematica" />
+      <nodes>
+        <classShapeMoniker Id="fbca1530-4257-49d5-bb90-c3d1b6bc7cd2" />
+        <classShapeMoniker Id="baf25dfe-c5c7-47f1-9a9b-6325a24c5856" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11 : 8.90949625651042); (11.75 : 8.90949625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesTutoriasDBDataContext/ClasificacionProblematica/ClasificacionProblematica_Problematica" />
+      <nodes>
+        <classShapeMoniker Id="ee1332db-46e1-428f-836c-3e5fa841feae" />
+        <classShapeMoniker Id="fbca1530-4257-49d5-bb90-c3d1b6bc7cd2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11 : 15.6931469726563); (11.75 : 15.6931469726563)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesTutoriasDBDataContext/Tutorado/Tutorado_Asistencia" />
+      <nodes>
+        <classShapeMoniker Id="9f02be4e-224d-48d5-a46a-09374d4e6e7a" />
+        <classShapeMoniker Id="1ba7061a-b615-470c-9938-e8932974f28b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 17.4763996809896); (12.75 : 17.4763996809896); (12.75 : 16.3862939453125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesTutoriasDBDataContext/TutoriaAcademica/TutoriaAcademica_Asistencia" />
+      <nodes>
+        <classShapeMoniker Id="fa375fc2-51d7-4cfc-b4d6-13c0252e92de" />
+        <classShapeMoniker Id="1ba7061a-b615-470c-9938-e8932974f28b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.5 : 11.7228011067708); (4.5 : 16.3517976888021); (9 : 16.3517976888021)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesTutoriasDBDataContext/Academico/Academico_Tutorado" />
+      <nodes>
+        <classShapeMoniker Id="b56e3432-8f3a-4ae6-9a84-9f7ada81138d" />
+        <classShapeMoniker Id="9f02be4e-224d-48d5-a46a-09374d4e6e7a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 10.5392976888021); (6.25 : 10.5392976888021)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesTutoriasDBDataContext/Academico/Academico_SolucionProblematica" />
+      <nodes>
+        <classShapeMoniker Id="b56e3432-8f3a-4ae6-9a84-9f7ada81138d" />
+        <classShapeMoniker Id="42cb223b-3f87-49d8-9105-5eccc286a6d2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 11.5569482421875); (9.9687475 : 11.5569482421875); (9.9687475 : 11.875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesTutoriasDBDataContext/Academico/Academico_ReporteTutoriaAcademica" />
+      <nodes>
+        <classShapeMoniker Id="b56e3432-8f3a-4ae6-9a84-9f7ada81138d" />
+        <classShapeMoniker Id="e54611b8-7a8e-4362-913f-cc31eecbb5f3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.0312525 : 11.7228011067708); (5.0312525 : 15.1642976888021); (6.25 : 15.1642976888021)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesTutoriasDBDataContext/Academico/Academico_ProgramaEducativo" />
+      <nodes>
+        <classShapeMoniker Id="b56e3432-8f3a-4ae6-9a84-9f7ada81138d" />
+        <classShapeMoniker Id="4939af0b-eff9-4afe-854a-981138515b58" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.9687475 : 11.7228011067708); (3.9687475 : 14.738396344401); (4.41666666666667 : 14.738396344401 : JumpStart); (4.58333333333333 : 14.738396344401 : JumpEnd); (4.94791916666667 : 14.738396344401 : JumpStart); (5.11458583333333 : 14.738396344401 : JumpEnd); (6.25 : 14.738396344401)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesTutoriasDBDataContext/Academico/Academico_ProgramaEducativo1" />
+      <nodes>
+        <classShapeMoniker Id="b56e3432-8f3a-4ae6-9a84-9f7ada81138d" />
+        <classShapeMoniker Id="4939af0b-eff9-4afe-854a-981138515b58" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 11.4427693098958); (14.5104166666667 : 11.4427693098958 : JumpStart); (14.6770833333333 : 11.4427693098958 : JumpEnd); (15.65624625 : 11.4427693098958); (15.65624625 : 11.1458968098958)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesTutoriasDBDataContext/Academico/Academico_HoraTutoria" />
+      <nodes>
+        <classShapeMoniker Id="b56e3432-8f3a-4ae6-9a84-9f7ada81138d" />
+        <classShapeMoniker Id="14ba2be1-f989-4d43-8c21-8d30b124455e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 9.375); (5.875 : 9); (5.875 : 7.14224612825521); (6.25 : 7.14224612825521)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesTutoriasDBDataContext/Academico/Academico_ExperienciaEducativa" />
+      <nodes>
+        <classShapeMoniker Id="b56e3432-8f3a-4ae6-9a84-9f7ada81138d" />
+        <classShapeMoniker Id="1a412a40-7a0b-43e2-b7eb-b953d6b3148c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 10.5969962565104); (3.5 : 10.5969962565104)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesTutoriasDBDataContext/Rol/Rol_Academico" />
+      <nodes>
+        <classShapeMoniker Id="6a4b3161-bb58-4831-b8c5-ac16e1f809a9" />
+        <classShapeMoniker Id="b56e3432-8f3a-4ae6-9a84-9f7ada81138d" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
