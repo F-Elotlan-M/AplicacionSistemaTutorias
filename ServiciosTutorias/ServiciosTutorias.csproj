@@ -68,6 +68,8 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IAcademico.cs" />
+    <Compile Include="IProgramaEducativo.cs" />
     <Compile Include="Modelo\AcademicoDAO.cs" />
     <Compile Include="Modelo\DataClassesTutoriasDB.designer.cs">
       <AutoGen>True</AutoGen>
@@ -91,6 +93,7 @@
       <LastGenOutput>DataClassesTutoriasDB.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="libman.json" />
     <None Include="Modelo\DataClassesTutoriasDB.dbml.layout">
       <DependentUpon>DataClassesTutoriasDB.dbml</DependentUpon>
     </None>

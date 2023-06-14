@@ -1,0 +1,28 @@
+﻿<Window x:Class="ClienteSistemaTutorias.RegistrarProfesor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClienteSistemaTutorias"
+        mc:Ignorable="d"
+        Title="RegistrarProfesor" Height="450" Width="800">
+    <Grid Background="#bdd1de">
+        <Label Content="Registro de profesor" HorizontalAlignment="Center" Margin="0,24,0,0" VerticalAlignment="Top" FontFamily="Verdana" Foreground="White" FontSize="28"/>
+        <Label Content="Nombre:" HorizontalAlignment="Left" Margin="44,92,0,0" VerticalAlignment="Top" FontFamily="Verdana" Foreground="White" FontSize="18"/>
+        <Label Content="Apellido paterno:" HorizontalAlignment="Left" Margin="44,162,0,0" VerticalAlignment="Top" FontFamily="Verdana" Foreground="White" FontSize="18"/>
+        <Label Content="Apeliido materno:" HorizontalAlignment="Left" Margin="44,232,0,0" VerticalAlignment="Top" FontFamily="Verdana" Foreground="White" FontSize="18"/>
+
+        <Label Content="Correo:" HorizontalAlignment="Left" Margin="444,92,0,0" VerticalAlignment="Top" FontFamily="Verdana" Foreground="White" FontSize="18"/>
+        <Label Content="Número de personal:" HorizontalAlignment="Left" Margin="444,162,0,0" VerticalAlignment="Top" FontFamily="Verdana" Foreground="White" FontSize="18"/>
+        <Label Content="Rol:" HorizontalAlignment="Left" Margin="444,232,0,0" VerticalAlignment="Top" FontFamily="Verdana" Foreground="White" FontSize="18"/>
+        <Button Content="Aceptar" HorizontalAlignment="Left" Margin="44,365,0,0" VerticalAlignment="Top" Click="clickBtnGuardar"/>
+        <Button Content="Cancelar" HorizontalAlignment="Left" Margin="483,375,0,0" VerticalAlignment="Top" Click="clicBtnCancelar"/>
+        <TextBox x:Name="tbNombre" HorizontalAlignment="Left" Margin="44,132,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="172" Height="21" PreviewTextInput="txtCampo_PreviewTextInput"/>
+        <TextBox x:Name="tbApellidoPaterno" HorizontalAlignment="Left" Margin="44,202,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="172" Height="21" PreviewTextInput="txtCampo_PreviewTextInput"/>
+        <TextBox x:Name="tbApellidoMaterno" HorizontalAlignment="Left" Margin="44,272,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="172" Height="21" PreviewTextInput="txtCampo_PreviewTextInput"/>
+
+        <TextBox x:Name="tbCorreo" HorizontalAlignment="Left" Margin="444,132,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="172" Height="21"/>
+        <TextBox x:Name="tbNumeroPersonal" HorizontalAlignment="Left" Margin="444,202,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="172" Height="21" PreviewTextInput="txtNumeros_PreviewTextInput"/>
+        <ComboBox x:Name="cbRol" DisplayMemberPath="titulo" SelectedValuePath="idRol" HorizontalAlignment="Left" Margin="444,272,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cbRol_SelectionChanged"/>
+    </Grid>
+</Window>

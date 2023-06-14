@@ -39,9 +39,13 @@
       <xs:element minOccurs="0" name="Academico" nillable="true" type="tns:Academico" />
       <xs:element minOccurs="0" name="Materia" nillable="true" type="tns:Materia" />
       <xs:element minOccurs="0" name="NRC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PeriodoEscolar" nillable="true" type="tns:PeriodoEscolar" />
+      <xs:element minOccurs="0" name="ProgramaEducativo" nillable="true" type="tns:ProgramaEducativo" />
       <xs:element minOccurs="0" name="idAcademico" nillable="true" type="xs:int" />
       <xs:element minOccurs="0" name="idExperienciaEducativa" type="xs:int" />
       <xs:element minOccurs="0" name="idMateria" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="idPeriodoEscolar" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="idProgramaEducativo" nillable="true" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="ExperienciaEducativa" nillable="true" type="tns:ExperienciaEducativa" />
@@ -53,25 +57,53 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="Materia" nillable="true" type="tns:Materia" />
-  <xs:complexType name="ArrayOfHoraTutoria">
+  <xs:complexType name="PeriodoEscolar">
     <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="HoraTutoria" nillable="true" type="tns:HoraTutoria" />
+      <xs:element minOccurs="0" name="ExperienciaEducativa" nillable="true" type="tns:ArrayOfExperienciaEducativa" />
+      <xs:element minOccurs="0" name="FechaFin" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FechaInicio" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="TutoriaAcademica" nillable="true" type="tns:ArrayOfTutoriaAcademica" />
+      <xs:element minOccurs="0" name="idPeriodoEscolar" type="xs:int" />
+      <xs:element minOccurs="0" name="titulo" nillable="true" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
-  <xs:element name="ArrayOfHoraTutoria" nillable="true" type="tns:ArrayOfHoraTutoria" />
-  <xs:complexType name="HoraTutoria">
+  <xs:element name="PeriodoEscolar" nillable="true" type="tns:PeriodoEscolar" />
+  <xs:complexType name="ArrayOfTutoriaAcademica">
     <xs:sequence>
-      <xs:element minOccurs="0" name="Academico" nillable="true" type="tns:Academico" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TutoriaAcademica" nillable="true" type="tns:TutoriaAcademica" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTutoriaAcademica" nillable="true" type="tns:ArrayOfTutoriaAcademica" />
+  <xs:complexType name="TutoriaAcademica">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Asistencia" nillable="true" type="tns:ArrayOfAsistencia" />
+      <xs:element minOccurs="0" name="HoraTutoria" nillable="true" type="tns:ArrayOfHoraTutoria" />
+      <xs:element minOccurs="0" name="PeriodoEscolar" nillable="true" type="tns:PeriodoEscolar" />
+      <xs:element minOccurs="0" name="ReporteTutoriaAcademica" nillable="true" type="tns:ArrayOfReporteTutoriaAcademica" />
+      <xs:element minOccurs="0" name="fechaLimiteReporte" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="fechaSesion" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="idPeriodoEscolar" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="idTutoriaAcademica" type="xs:int" />
+      <xs:element minOccurs="0" name="numeroSesion" nillable="true" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TutoriaAcademica" nillable="true" type="tns:TutoriaAcademica" />
+  <xs:complexType name="ArrayOfAsistencia">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Asistencia" nillable="true" type="tns:Asistencia" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAsistencia" nillable="true" type="tns:ArrayOfAsistencia" />
+  <xs:complexType name="Asistencia">
+    <xs:sequence>
       <xs:element minOccurs="0" name="Tutorado" nillable="true" type="tns:Tutorado" />
       <xs:element minOccurs="0" name="TutoriaAcademica" nillable="true" type="tns:TutoriaAcademica" />
-      <xs:element minOccurs="0" name="horaTutoria1" nillable="true" type="ser:duration" />
-      <xs:element minOccurs="0" name="idHoraTutoria" type="xs:int" />
-      <xs:element minOccurs="0" name="idTutorAcademico" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="idAsistencia" type="xs:int" />
       <xs:element minOccurs="0" name="idTutorado" nillable="true" type="xs:int" />
       <xs:element minOccurs="0" name="idTutoriaAcademica" nillable="true" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
-  <xs:element name="HoraTutoria" nillable="true" type="tns:HoraTutoria" />
+  <xs:element name="Asistencia" nillable="true" type="tns:Asistencia" />
   <xs:complexType name="Tutorado">
     <xs:sequence>
       <xs:element minOccurs="0" name="Academico" nillable="true" type="tns:Academico" />
@@ -92,56 +124,50 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="Tutorado" nillable="true" type="tns:Tutorado" />
-  <xs:complexType name="ArrayOfAsistencia">
+  <xs:complexType name="ArrayOfAutorProblematica">
     <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="Asistencia" nillable="true" type="tns:Asistencia" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AutorProblematica" nillable="true" type="tns:AutorProblematica" />
     </xs:sequence>
   </xs:complexType>
-  <xs:element name="ArrayOfAsistencia" nillable="true" type="tns:ArrayOfAsistencia" />
-  <xs:complexType name="Asistencia">
+  <xs:element name="ArrayOfAutorProblematica" nillable="true" type="tns:ArrayOfAutorProblematica" />
+  <xs:complexType name="AutorProblematica">
     <xs:sequence>
+      <xs:element minOccurs="0" name="Problematica" nillable="true" type="tns:Problematica" />
       <xs:element minOccurs="0" name="Tutorado" nillable="true" type="tns:Tutorado" />
-      <xs:element minOccurs="0" name="TutoriaAcademica" nillable="true" type="tns:TutoriaAcademica" />
-      <xs:element minOccurs="0" name="idAsistencia" type="xs:int" />
-      <xs:element minOccurs="0" name="idTutorado" nillable="true" type="xs:int" />
-      <xs:element minOccurs="0" name="idTutoriaAcademica" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="idAutor" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="idAutorProblematica" type="xs:int" />
+      <xs:element minOccurs="0" name="idProblematica" nillable="true" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
-  <xs:element name="Asistencia" nillable="true" type="tns:Asistencia" />
-  <xs:complexType name="TutoriaAcademica">
+  <xs:element name="AutorProblematica" nillable="true" type="tns:AutorProblematica" />
+  <xs:complexType name="Problematica">
     <xs:sequence>
-      <xs:element minOccurs="0" name="Asistencia" nillable="true" type="tns:ArrayOfAsistencia" />
-      <xs:element minOccurs="0" name="HoraTutoria" nillable="true" type="tns:ArrayOfHoraTutoria" />
-      <xs:element minOccurs="0" name="PeriodoEscolar" nillable="true" type="tns:PeriodoEscolar" />
-      <xs:element minOccurs="0" name="ReporteTutoriaAcademica" nillable="true" type="tns:ArrayOfReporteTutoriaAcademica" />
-      <xs:element minOccurs="0" name="fechaLimiteReporte" nillable="true" type="xs:dateTime" />
-      <xs:element minOccurs="0" name="fechaSesion" nillable="true" type="xs:dateTime" />
-      <xs:element minOccurs="0" name="idPeriodoEscolar" nillable="true" type="xs:int" />
-      <xs:element minOccurs="0" name="idTutoriaAcademica" type="xs:int" />
-      <xs:element minOccurs="0" name="numeroSesion" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="AutorProblematica" nillable="true" type="tns:ArrayOfAutorProblematica" />
+      <xs:element minOccurs="0" name="ClasificacionProblematica" nillable="true" type="tns:ClasificacionProblematica" />
+      <xs:element minOccurs="0" name="ReporteTutoriaAcademica" nillable="true" type="tns:ReporteTutoriaAcademica" />
+      <xs:element minOccurs="0" name="SolucionProblematica" nillable="true" type="tns:ArrayOfSolucionProblematica" />
+      <xs:element minOccurs="0" name="descripcion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idClasificacionProblematica" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="idProblematica" type="xs:int" />
+      <xs:element minOccurs="0" name="idReporteTutoriaAcademica" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="numeroIncidencias" nillable="true" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
-  <xs:element name="TutoriaAcademica" nillable="true" type="tns:TutoriaAcademica" />
-  <xs:complexType name="PeriodoEscolar">
+  <xs:element name="Problematica" nillable="true" type="tns:Problematica" />
+  <xs:complexType name="ClasificacionProblematica">
     <xs:sequence>
-      <xs:element minOccurs="0" name="TutoriaAcademica" nillable="true" type="tns:ArrayOfTutoriaAcademica" />
-      <xs:element minOccurs="0" name="idPeriodoEscolar" type="xs:int" />
+      <xs:element minOccurs="0" name="Problematica" nillable="true" type="tns:ArrayOfProblematica" />
+      <xs:element minOccurs="0" name="idClasificacionProblematica" type="xs:int" />
       <xs:element minOccurs="0" name="titulo" nillable="true" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
-  <xs:element name="PeriodoEscolar" nillable="true" type="tns:PeriodoEscolar" />
-  <xs:complexType name="ArrayOfTutoriaAcademica">
+  <xs:element name="ClasificacionProblematica" nillable="true" type="tns:ClasificacionProblematica" />
+  <xs:complexType name="ArrayOfProblematica">
     <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="TutoriaAcademica" nillable="true" type="tns:TutoriaAcademica" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Problematica" nillable="true" type="tns:Problematica" />
     </xs:sequence>
   </xs:complexType>
-  <xs:element name="ArrayOfTutoriaAcademica" nillable="true" type="tns:ArrayOfTutoriaAcademica" />
-  <xs:complexType name="ArrayOfReporteTutoriaAcademica">
-    <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="ReporteTutoriaAcademica" nillable="true" type="tns:ReporteTutoriaAcademica" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="ArrayOfReporteTutoriaAcademica" nillable="true" type="tns:ArrayOfReporteTutoriaAcademica" />
+  <xs:element name="ArrayOfProblematica" nillable="true" type="tns:ArrayOfProblematica" />
   <xs:complexType name="ReporteTutoriaAcademica">
     <xs:sequence>
       <xs:element minOccurs="0" name="Academico" nillable="true" type="tns:Academico" />
@@ -171,50 +197,32 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="ComentarioGeneral" nillable="true" type="tns:ComentarioGeneral" />
-  <xs:complexType name="ArrayOfProblematica">
+  <xs:complexType name="ProgramaEducativo">
     <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="Problematica" nillable="true" type="tns:Problematica" />
+      <xs:element minOccurs="0" name="Academico" nillable="true" type="tns:Academico" />
+      <xs:element minOccurs="0" name="Academico1" nillable="true" type="tns:Academico" />
+      <xs:element minOccurs="0" name="ExperienciaEducativa" nillable="true" type="tns:ArrayOfExperienciaEducativa" />
+      <xs:element minOccurs="0" name="ReporteTutoriaAcademica" nillable="true" type="tns:ArrayOfReporteTutoriaAcademica" />
+      <xs:element minOccurs="0" name="Tutorado" nillable="true" type="tns:ArrayOfTutorado" />
+      <xs:element minOccurs="0" name="idCoordinadorTutorias" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="idJefeProgramaEducativo" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="idProgramaEducativo" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
-  <xs:element name="ArrayOfProblematica" nillable="true" type="tns:ArrayOfProblematica" />
-  <xs:complexType name="Problematica">
+  <xs:element name="ProgramaEducativo" nillable="true" type="tns:ProgramaEducativo" />
+  <xs:complexType name="ArrayOfReporteTutoriaAcademica">
     <xs:sequence>
-      <xs:element minOccurs="0" name="AutorProblematica" nillable="true" type="tns:ArrayOfAutorProblematica" />
-      <xs:element minOccurs="0" name="ClasificacionProblematica" nillable="true" type="tns:ClasificacionProblematica" />
-      <xs:element minOccurs="0" name="ReporteTutoriaAcademica" nillable="true" type="tns:ReporteTutoriaAcademica" />
-      <xs:element minOccurs="0" name="SolucionProblematica" nillable="true" type="tns:ArrayOfSolucionProblematica" />
-      <xs:element minOccurs="0" name="descripcion" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="idClasificacionProblematica" nillable="true" type="xs:int" />
-      <xs:element minOccurs="0" name="idProblematica" type="xs:int" />
-      <xs:element minOccurs="0" name="idReporteTutoriaAcademica" nillable="true" type="xs:int" />
-      <xs:element minOccurs="0" name="numeroIncidencias" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ReporteTutoriaAcademica" nillable="true" type="tns:ReporteTutoriaAcademica" />
     </xs:sequence>
   </xs:complexType>
-  <xs:element name="Problematica" nillable="true" type="tns:Problematica" />
-  <xs:complexType name="ArrayOfAutorProblematica">
+  <xs:element name="ArrayOfReporteTutoriaAcademica" nillable="true" type="tns:ArrayOfReporteTutoriaAcademica" />
+  <xs:complexType name="ArrayOfTutorado">
     <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="AutorProblematica" nillable="true" type="tns:AutorProblematica" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Tutorado" nillable="true" type="tns:Tutorado" />
     </xs:sequence>
   </xs:complexType>
-  <xs:element name="ArrayOfAutorProblematica" nillable="true" type="tns:ArrayOfAutorProblematica" />
-  <xs:complexType name="AutorProblematica">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="Problematica" nillable="true" type="tns:Problematica" />
-      <xs:element minOccurs="0" name="Tutorado" nillable="true" type="tns:Tutorado" />
-      <xs:element minOccurs="0" name="idAutor" nillable="true" type="xs:int" />
-      <xs:element minOccurs="0" name="idAutorProblematica" type="xs:int" />
-      <xs:element minOccurs="0" name="idProblematica" nillable="true" type="xs:int" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="AutorProblematica" nillable="true" type="tns:AutorProblematica" />
-  <xs:complexType name="ClasificacionProblematica">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="Problematica" nillable="true" type="tns:ArrayOfProblematica" />
-      <xs:element minOccurs="0" name="idClasificacionProblematica" type="xs:int" />
-      <xs:element minOccurs="0" name="titulo" nillable="true" type="xs:string" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="ClasificacionProblematica" nillable="true" type="tns:ClasificacionProblematica" />
+  <xs:element name="ArrayOfTutorado" nillable="true" type="tns:ArrayOfTutorado" />
   <xs:complexType name="ArrayOfSolucionProblematica">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="SolucionProblematica" nillable="true" type="tns:SolucionProblematica" />
@@ -232,25 +240,25 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="SolucionProblematica" nillable="true" type="tns:SolucionProblematica" />
-  <xs:complexType name="ProgramaEducativo">
+  <xs:complexType name="ArrayOfHoraTutoria">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HoraTutoria" nillable="true" type="tns:HoraTutoria" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHoraTutoria" nillable="true" type="tns:ArrayOfHoraTutoria" />
+  <xs:complexType name="HoraTutoria">
     <xs:sequence>
       <xs:element minOccurs="0" name="Academico" nillable="true" type="tns:Academico" />
-      <xs:element minOccurs="0" name="Academico1" nillable="true" type="tns:Academico" />
-      <xs:element minOccurs="0" name="ReporteTutoriaAcademica" nillable="true" type="tns:ArrayOfReporteTutoriaAcademica" />
-      <xs:element minOccurs="0" name="Tutorado" nillable="true" type="tns:ArrayOfTutorado" />
-      <xs:element minOccurs="0" name="idCoordinadorTutorias" nillable="true" type="xs:int" />
-      <xs:element minOccurs="0" name="idJefeProgramaEducativo" nillable="true" type="xs:int" />
-      <xs:element minOccurs="0" name="idProgramaEducativo" type="xs:int" />
-      <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Tutorado" nillable="true" type="tns:Tutorado" />
+      <xs:element minOccurs="0" name="TutoriaAcademica" nillable="true" type="tns:TutoriaAcademica" />
+      <xs:element minOccurs="0" name="horaTutoria1" nillable="true" type="ser:duration" />
+      <xs:element minOccurs="0" name="idHoraTutoria" type="xs:int" />
+      <xs:element minOccurs="0" name="idTutorAcademico" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="idTutorado" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="idTutoriaAcademica" nillable="true" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
-  <xs:element name="ProgramaEducativo" nillable="true" type="tns:ProgramaEducativo" />
-  <xs:complexType name="ArrayOfTutorado">
-    <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="Tutorado" nillable="true" type="tns:Tutorado" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="ArrayOfTutorado" nillable="true" type="tns:ArrayOfTutorado" />
+  <xs:element name="HoraTutoria" nillable="true" type="tns:HoraTutoria" />
   <xs:complexType name="ArrayOfProgramaEducativo">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="ProgramaEducativo" nillable="true" type="tns:ProgramaEducativo" />
@@ -273,4 +281,10 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="Mensaje" nillable="true" type="tns:Mensaje" />
+  <xs:complexType name="ArrayOfRol">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Rol" nillable="true" type="tns:Rol" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRol" nillable="true" type="tns:ArrayOfRol" />
 </xs:schema>

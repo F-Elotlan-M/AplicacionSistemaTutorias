@@ -73,6 +73,85 @@ namespace ServiciosTutorias.Modelo
             }
         }
 
+        public int registrarProfesor(Academico academicoNuevo)
+        {
+            try
+            {
+                DataClassesTutoriasDBDataContext conexionBD = getConnection();
+                var idRolComprobacion = conexionBD.Rol.Single(r => r.idRol == academicoNuevo.idRol);
+                var consultaRol = from consulta in conexionBD.Academico
+                                  select consulta;
+
+                int coordinadorExistente = 0;
+                int jefeExistente = 0;
+                foreach (var consulta in consultaRol) {
+                    if (consulta.idRol == 1)
+                    {
+                        jefeExistente++;
+                    }
+                    else if(consulta.idRol == 2)
+                    {
+                        coordinadorExistente++;
+                    }
+                }
+                if (academicoNuevo.idRol == 1 && jefeExistente>0)
+                {
+                    return 2;
+                }else if (academicoNuevo.idRol == 2 && coordinadorExistente>0)
+                {
+                    return 3;
+                }
+                else
+                {
+                    var academico = new Academico()
+                    {
+                        nombre = academicoNuevo.nombre,
+                        apellidoPaterno = academicoNuevo.apellidoPaterno,
+                        apellidoMaterno = academicoNuevo.apellidoMaterno,
+                        numPersonal = academicoNuevo.numPersonal,
+                        password = academicoNuevo.password,
+                        idRol = idRolComprobacion.idRol,
+                        correoInstitucional = academicoNuevo.correoInstitucional
+                    };
+                    conexionBD.Academico.InsertOnSubmit(academico);
+                    conexionBD.SubmitChanges();
+                    return 1;
+                } 
+            }
+            catch (Exception ex)
+            {
+                return 0;
+            }
+        }
+
+        public List<Rol> recuperarRoles()
+        {
+            DataClassesTutoriasDBDataContext consultaDB = getConnection();
+            List<Rol> roles = new List<Rol>();
+            IQueryable<Rol> consultaRoles = from rolesConsulta in consultaDB.Rol
+                            select rolesConsulta;
+            
+            if(consultaRoles != null)
+            {
+                foreach (var agregar in consultaRoles)
+                {
+                    Rol rolesIterable = new Rol()
+                    {
+                        idRol = agregar.idRol,
+                        titulo = agregar.titulo
+                    };
+                    roles.Add(rolesIterable);
+                }
+                return roles;
+            }
+            else
+            {
+                return roles;
+            }
+        }
+
+        
+
         public static DataClassesTutoriasDBDataContext getConnection()
         {
             return new DataClassesTutoriasDBDataContext(global::System.Configuration.

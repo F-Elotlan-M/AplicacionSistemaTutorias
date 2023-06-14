@@ -57,8 +57,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="RegistrarFechasDeCierreDeReporte.xaml.cs">
-      <DependentUpon>RegistrarFechasDeCierreDeReporte.xaml</DependentUpon>
+    <Compile Include="RegistrarProfesor.xaml.cs">
+      <DependentUpon>RegistrarProfesor.xaml</DependentUpon>
     </Compile>
     <Page Include="Avisos.xaml">
       <SubType>Designer</SubType>
@@ -97,7 +97,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="RegistrarFechasDeCierreDeReporte.xaml">
+    <Page Include="RegistrarProfesor.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -137,6 +137,9 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\ServiceReferenceTutorias\ClienteSistemaTutorias.ServiceReferenceTutorias.Mensaje.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceTutorias\ClienteSistemaTutorias.ServiceReferenceTutorias.Rol.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\ServiceReferenceTutorias\Service1.wsdl" />

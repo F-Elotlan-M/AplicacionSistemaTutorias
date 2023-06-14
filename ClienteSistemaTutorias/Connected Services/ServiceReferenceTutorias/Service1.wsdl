@@ -38,6 +38,18 @@
   <wsdl:message name="IService1_LoginPrueba_OutputMessage">
     <wsdl:part name="parameters" element="tns:LoginPruebaResponse" />
   </wsdl:message>
+  <wsdl:message name="IAcademico_registrarProfesor_InputMessage">
+    <wsdl:part name="parameters" element="tns:registrarProfesor" />
+  </wsdl:message>
+  <wsdl:message name="IAcademico_registrarProfesor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:registrarProfesorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAcademico_recuperarRoles_InputMessage">
+    <wsdl:part name="parameters" element="tns:recuperarRoles" />
+  </wsdl:message>
+  <wsdl:message name="IAcademico_recuperarRoles_OutputMessage">
+    <wsdl:part name="parameters" element="tns:recuperarRolesResponse" />
+  </wsdl:message>
   <wsdl:portType name="IService1">
     <wsdl:operation name="GetData">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetData" message="tns:IService1_GetData_InputMessage" />
@@ -58,6 +70,16 @@
     <wsdl:operation name="LoginPrueba">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/LoginPrueba" message="tns:IService1_LoginPrueba_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/LoginPruebaResponse" message="tns:IService1_LoginPrueba_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IAcademico">
+    <wsdl:operation name="registrarProfesor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAcademico/registrarProfesor" message="tns:IAcademico_registrarProfesor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAcademico/registrarProfesorResponse" message="tns:IAcademico_registrarProfesor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="recuperarRoles">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAcademico/recuperarRoles" message="tns:IAcademico_recuperarRoles_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAcademico/recuperarRolesResponse" message="tns:IAcademico_recuperarRoles_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
@@ -108,8 +130,32 @@
       </wsdl:output>
     </wsdl:operation>
   </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_IAcademico" type="tns:IAcademico">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="registrarProfesor">
+      <soap:operation soapAction="http://tempuri.org/IAcademico/registrarProfesor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="recuperarRoles">
+      <soap:operation soapAction="http://tempuri.org/IAcademico/recuperarRoles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
   <wsdl:service name="Service1">
     <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://localhost:59612/Service1.svc" />
+    </wsdl:port>
+    <wsdl:port name="BasicHttpBinding_IAcademico" binding="tns:BasicHttpBinding_IAcademico">
       <soap:address location="http://localhost:59612/Service1.svc" />
     </wsdl:port>
   </wsdl:service>

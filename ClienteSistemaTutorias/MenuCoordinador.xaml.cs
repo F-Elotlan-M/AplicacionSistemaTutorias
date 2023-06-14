@@ -26,10 +26,11 @@ namespace ClienteSistemaTutorias
             InitializeComponent();
             recibirAcademico(academicoLogeado);
         }
+        Academico academicoEnUso = new Academico();
 
         public void recibirAcademico(Academico academicoLogeado)
         {
-            Academico academicoEnUso = new Academico();
+            
             academicoEnUso = academicoLogeado;
         }
 
@@ -74,7 +75,9 @@ namespace ClienteSistemaTutorias
         }
         private void clickBtnRegistrarProfesor(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("hola");
+            RegistrarProfesor registrarProfesor = new RegistrarProfesor(academicoEnUso);
+            registrarProfesor.Show();
+            this.Close();
         }
         //clickBtnSalir
         private void clickBtnSalir(object sender, RoutedEventArgs e)

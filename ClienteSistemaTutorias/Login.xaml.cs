@@ -11,6 +11,7 @@ namespace ClienteSistemaTutorias
         {
             InitializeComponent();
         }
+        string aviso = "";
 
         private void clicBtnIniciarSesion(object sender, RoutedEventArgs e)
         {
@@ -22,7 +23,7 @@ namespace ClienteSistemaTutorias
             }
             else
             {
-                string aviso = "Hay algunos campos vacíos";
+                aviso = "Hay algunos campos vacíos";
                 Avisos avisoVentana = new Avisos(aviso);
                 avisoVentana.Show();
             }
@@ -39,7 +40,7 @@ namespace ClienteSistemaTutorias
             {
                 Mensaje academico = await conexionServicios.LoginAsync(correo, password);
                 
-                if (academico != null)
+                if (academico.usuarioAutenticado != null)
                 {
                     Academico academicoRecibido = new Academico();
                     academicoRecibido = academico.usuarioAutenticado;
@@ -60,10 +61,18 @@ namespace ClienteSistemaTutorias
                         menuTutor.Show();
                         this.Close();
                     }
+                    else
+                    {
+                        aviso = "Usted no puede acceder al sistema";
+                        Avisos avisoVentana = new Avisos(aviso);
+                        avisoVentana.Show();
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("error");
+                    aviso = "usuario y/o contraseña incorrecta";
+                    Avisos avisoVentana = new Avisos(aviso);
+                    avisoVentana.Show();
                 }
             }
             else
