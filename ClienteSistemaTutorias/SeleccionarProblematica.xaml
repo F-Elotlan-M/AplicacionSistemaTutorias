@@ -1,0 +1,21 @@
+﻿<Window x:Class="ClienteSistemaTutorias.SeleccionarProblematica"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClienteSistemaTutorias"
+        mc:Ignorable="d"
+        Title="SeleccionarProblematica" Height="450" Width="800">
+    <Grid Background="#bdd1de">
+        <DataGrid x:Name="dgProblematicas" AutoGenerateColumns="True" Margin="52,41,260,94" CanUserAddRows="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding idProblematica}" Width="50"/>
+                <DataGridTextColumn Header="Nombre" Binding="{Binding nombre}" Width="200"/>
+                <DataGridTextColumn Header="Incidencias" Binding="{Binding numeroIncidencias}" Width="100"/>
+                <DataGridTextColumn Header="Clasificación" Binding="{Binding idClasificacionProblematica}" Width="100"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Seleccionar" HorizontalAlignment="Left" Margin="620,151,0,0" VerticalAlignment="Top" Click="clickBtnSeleccionar" Height="35" Width="76"/>
+        <Button Content="Cancelar" HorizontalAlignment="Left" Margin="620,221,0,0" VerticalAlignment="Top" Click="clickBtnCancelar" Height="35" Width="76"/>
+    </Grid>
+</Window>

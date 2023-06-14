@@ -27,6 +27,16 @@ namespace ServiciosTutorias {
         int LoginPrueba(string correo, string password);
 
 
+        //metodos de SolucionDAO
+        [OperationContract]
+        List<Problematica> recuperarProblematicasSinSolucion();
+
+        [OperationContract]
+        bool registrarSolucion(SolucionProblematica solucionNueva);
+
+        [OperationContract]
+        int asignarSolucion(int idProblematica);
+
         // TODO: agregue aquí sus operaciones de servicio
     }
 

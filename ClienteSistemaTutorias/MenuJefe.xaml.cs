@@ -61,7 +61,9 @@ namespace ClienteSistemaTutorias
         }
         private void clickBtnRegistrarSolucion(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("hola");
+            SeleccionarProblematica seleccionarProblematica = new SeleccionarProblematica(academicoEnUso);
+            seleccionarProblematica.Show();
+            this.Close();
         }
         private void clickBtnConsultarReporteGeneral(object sender, RoutedEventArgs e)
         {

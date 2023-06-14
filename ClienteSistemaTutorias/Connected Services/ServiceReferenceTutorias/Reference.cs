@@ -26,7 +26,16 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
         private ClienteSistemaTutorias.ServiceReferenceTutorias.ExperienciaEducativa[] ExperienciaEducativaField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.ExperienciaEducativa[] ExperienciaEducativa1Field;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.ExperienciaEducativa[] ExperienciaEducativa2Field;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private ClienteSistemaTutorias.ServiceReferenceTutorias.HoraTutoria[] HoraTutoriaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.HoraTutoria[] HoraTutoria1Field;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private ClienteSistemaTutorias.ServiceReferenceTutorias.ProgramaEducativo[] ProgramaEducativoField;
@@ -35,16 +44,37 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
         private ClienteSistemaTutorias.ServiceReferenceTutorias.ProgramaEducativo[] ProgramaEducativo1Field;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.ProgramaEducativo[] ProgramaEducativo2Field;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.ProgramaEducativo[] ProgramaEducativo3Field;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private ClienteSistemaTutorias.ServiceReferenceTutorias.ReporteTutoriaAcademica[] ReporteTutoriaAcademicaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.ReporteTutoriaAcademica[] ReporteTutoriaAcademica1Field;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private ClienteSistemaTutorias.ServiceReferenceTutorias.Rol RolField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.Rol Rol1Field;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.Rol Rol2Field;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private ClienteSistemaTutorias.ServiceReferenceTutorias.SolucionProblematica[] SolucionProblematicaField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.SolucionProblematica[] SolucionProblematica1Field;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private ClienteSistemaTutorias.ServiceReferenceTutorias.Tutorado[] TutoradoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.Tutorado[] Tutorado1Field;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string apellidoMaternoField;
@@ -94,6 +124,32 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.ExperienciaEducativa[] ExperienciaEducativa1 {
+            get {
+                return this.ExperienciaEducativa1Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ExperienciaEducativa1Field, value) != true)) {
+                    this.ExperienciaEducativa1Field = value;
+                    this.RaisePropertyChanged("ExperienciaEducativa1");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.ExperienciaEducativa[] ExperienciaEducativa2 {
+            get {
+                return this.ExperienciaEducativa2Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ExperienciaEducativa2Field, value) != true)) {
+                    this.ExperienciaEducativa2Field = value;
+                    this.RaisePropertyChanged("ExperienciaEducativa2");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public ClienteSistemaTutorias.ServiceReferenceTutorias.HoraTutoria[] HoraTutoria {
             get {
                 return this.HoraTutoriaField;
@@ -102,6 +158,19 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
                 if ((object.ReferenceEquals(this.HoraTutoriaField, value) != true)) {
                     this.HoraTutoriaField = value;
                     this.RaisePropertyChanged("HoraTutoria");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.HoraTutoria[] HoraTutoria1 {
+            get {
+                return this.HoraTutoria1Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.HoraTutoria1Field, value) != true)) {
+                    this.HoraTutoria1Field = value;
+                    this.RaisePropertyChanged("HoraTutoria1");
                 }
             }
         }
@@ -133,6 +202,32 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.ProgramaEducativo[] ProgramaEducativo2 {
+            get {
+                return this.ProgramaEducativo2Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ProgramaEducativo2Field, value) != true)) {
+                    this.ProgramaEducativo2Field = value;
+                    this.RaisePropertyChanged("ProgramaEducativo2");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.ProgramaEducativo[] ProgramaEducativo3 {
+            get {
+                return this.ProgramaEducativo3Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ProgramaEducativo3Field, value) != true)) {
+                    this.ProgramaEducativo3Field = value;
+                    this.RaisePropertyChanged("ProgramaEducativo3");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public ClienteSistemaTutorias.ServiceReferenceTutorias.ReporteTutoriaAcademica[] ReporteTutoriaAcademica {
             get {
                 return this.ReporteTutoriaAcademicaField;
@@ -141,6 +236,19 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
                 if ((object.ReferenceEquals(this.ReporteTutoriaAcademicaField, value) != true)) {
                     this.ReporteTutoriaAcademicaField = value;
                     this.RaisePropertyChanged("ReporteTutoriaAcademica");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.ReporteTutoriaAcademica[] ReporteTutoriaAcademica1 {
+            get {
+                return this.ReporteTutoriaAcademica1Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ReporteTutoriaAcademica1Field, value) != true)) {
+                    this.ReporteTutoriaAcademica1Field = value;
+                    this.RaisePropertyChanged("ReporteTutoriaAcademica1");
                 }
             }
         }
@@ -159,6 +267,32 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.Rol Rol1 {
+            get {
+                return this.Rol1Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Rol1Field, value) != true)) {
+                    this.Rol1Field = value;
+                    this.RaisePropertyChanged("Rol1");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.Rol Rol2 {
+            get {
+                return this.Rol2Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Rol2Field, value) != true)) {
+                    this.Rol2Field = value;
+                    this.RaisePropertyChanged("Rol2");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public ClienteSistemaTutorias.ServiceReferenceTutorias.SolucionProblematica[] SolucionProblematica {
             get {
                 return this.SolucionProblematicaField;
@@ -172,6 +306,19 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.SolucionProblematica[] SolucionProblematica1 {
+            get {
+                return this.SolucionProblematica1Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.SolucionProblematica1Field, value) != true)) {
+                    this.SolucionProblematica1Field = value;
+                    this.RaisePropertyChanged("SolucionProblematica1");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public ClienteSistemaTutorias.ServiceReferenceTutorias.Tutorado[] Tutorado {
             get {
                 return this.TutoradoField;
@@ -180,6 +327,19 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
                 if ((object.ReferenceEquals(this.TutoradoField, value) != true)) {
                     this.TutoradoField = value;
                     this.RaisePropertyChanged("Tutorado");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.Tutorado[] Tutorado1 {
+            get {
+                return this.Tutorado1Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Tutorado1Field, value) != true)) {
+                    this.Tutorado1Field = value;
+                    this.RaisePropertyChanged("Tutorado1");
                 }
             }
         }
@@ -311,6 +471,12 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
         private ClienteSistemaTutorias.ServiceReferenceTutorias.Academico[] AcademicoField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.Academico[] Academico1Field;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.Academico[] Academico2Field;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int idRolField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -335,6 +501,32 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
                 if ((object.ReferenceEquals(this.AcademicoField, value) != true)) {
                     this.AcademicoField = value;
                     this.RaisePropertyChanged("Academico");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.Academico[] Academico1 {
+            get {
+                return this.Academico1Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Academico1Field, value) != true)) {
+                    this.Academico1Field = value;
+                    this.RaisePropertyChanged("Academico1");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.Academico[] Academico2 {
+            get {
+                return this.Academico2Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Academico2Field, value) != true)) {
+                    this.Academico2Field = value;
+                    this.RaisePropertyChanged("Academico2");
                 }
             }
         }
@@ -388,7 +580,19 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
         private ClienteSistemaTutorias.ServiceReferenceTutorias.Academico AcademicoField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.Academico Academico1Field;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.Academico Academico2Field;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private ClienteSistemaTutorias.ServiceReferenceTutorias.Materia MateriaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.Materia Materia1Field;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.Materia Materia2Field;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string NRCField;
@@ -438,6 +642,32 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.Academico Academico1 {
+            get {
+                return this.Academico1Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Academico1Field, value) != true)) {
+                    this.Academico1Field = value;
+                    this.RaisePropertyChanged("Academico1");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.Academico Academico2 {
+            get {
+                return this.Academico2Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Academico2Field, value) != true)) {
+                    this.Academico2Field = value;
+                    this.RaisePropertyChanged("Academico2");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public ClienteSistemaTutorias.ServiceReferenceTutorias.Materia Materia {
             get {
                 return this.MateriaField;
@@ -446,6 +676,32 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
                 if ((object.ReferenceEquals(this.MateriaField, value) != true)) {
                     this.MateriaField = value;
                     this.RaisePropertyChanged("Materia");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.Materia Materia1 {
+            get {
+                return this.Materia1Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Materia1Field, value) != true)) {
+                    this.Materia1Field = value;
+                    this.RaisePropertyChanged("Materia1");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.Materia Materia2 {
+            get {
+                return this.Materia2Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Materia2Field, value) != true)) {
+                    this.Materia2Field = value;
+                    this.RaisePropertyChanged("Materia2");
                 }
             }
         }
@@ -577,10 +833,19 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
         private ClienteSistemaTutorias.ServiceReferenceTutorias.Academico AcademicoField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.Academico Academico1Field;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private ClienteSistemaTutorias.ServiceReferenceTutorias.Tutorado TutoradoField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.Tutorado Tutorado1Field;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private ClienteSistemaTutorias.ServiceReferenceTutorias.TutoriaAcademica TutoriaAcademicaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.TutoriaAcademica TutoriaAcademica1Field;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.Nullable<System.TimeSpan> horaTutoria1Field;
@@ -621,6 +886,19 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.Academico Academico1 {
+            get {
+                return this.Academico1Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Academico1Field, value) != true)) {
+                    this.Academico1Field = value;
+                    this.RaisePropertyChanged("Academico1");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public ClienteSistemaTutorias.ServiceReferenceTutorias.Tutorado Tutorado {
             get {
                 return this.TutoradoField;
@@ -634,6 +912,19 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.Tutorado Tutorado1 {
+            get {
+                return this.Tutorado1Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Tutorado1Field, value) != true)) {
+                    this.Tutorado1Field = value;
+                    this.RaisePropertyChanged("Tutorado1");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public ClienteSistemaTutorias.ServiceReferenceTutorias.TutoriaAcademica TutoriaAcademica {
             get {
                 return this.TutoriaAcademicaField;
@@ -642,6 +933,19 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
                 if ((object.ReferenceEquals(this.TutoriaAcademicaField, value) != true)) {
                     this.TutoriaAcademicaField = value;
                     this.RaisePropertyChanged("TutoriaAcademica");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.TutoriaAcademica TutoriaAcademica1 {
+            get {
+                return this.TutoriaAcademica1Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.TutoriaAcademica1Field, value) != true)) {
+                    this.TutoriaAcademica1Field = value;
+                    this.RaisePropertyChanged("TutoriaAcademica1");
                 }
             }
         }
@@ -737,6 +1041,12 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
         private ClienteSistemaTutorias.ServiceReferenceTutorias.Academico Academico1Field;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.Academico Academico2Field;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.Academico Academico3Field;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private ClienteSistemaTutorias.ServiceReferenceTutorias.ExperienciaEducativa[] ExperienciaEducativaField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -789,6 +1099,32 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
                 if ((object.ReferenceEquals(this.Academico1Field, value) != true)) {
                     this.Academico1Field = value;
                     this.RaisePropertyChanged("Academico1");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.Academico Academico2 {
+            get {
+                return this.Academico2Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Academico2Field, value) != true)) {
+                    this.Academico2Field = value;
+                    this.RaisePropertyChanged("Academico2");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.Academico Academico3 {
+            get {
+                return this.Academico3Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Academico3Field, value) != true)) {
+                    this.Academico3Field = value;
+                    this.RaisePropertyChanged("Academico3");
                 }
             }
         }
@@ -907,16 +1243,28 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
         private ClienteSistemaTutorias.ServiceReferenceTutorias.Academico AcademicoField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.Academico Academico1Field;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private ClienteSistemaTutorias.ServiceReferenceTutorias.ComentarioGeneral[] ComentarioGeneralField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.ComentarioGeneral[] ComentarioGeneral1Field;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private ClienteSistemaTutorias.ServiceReferenceTutorias.Problematica[] ProblematicaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.Problematica[] Problematica1Field;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private ClienteSistemaTutorias.ServiceReferenceTutorias.ProgramaEducativo ProgramaEducativoField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private ClienteSistemaTutorias.ServiceReferenceTutorias.TutoriaAcademica TutoriaAcademicaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.TutoriaAcademica TutoriaAcademica1Field;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.Nullable<int> idProgramaEducativoField;
@@ -954,6 +1302,19 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.Academico Academico1 {
+            get {
+                return this.Academico1Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Academico1Field, value) != true)) {
+                    this.Academico1Field = value;
+                    this.RaisePropertyChanged("Academico1");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public ClienteSistemaTutorias.ServiceReferenceTutorias.ComentarioGeneral[] ComentarioGeneral {
             get {
                 return this.ComentarioGeneralField;
@@ -967,6 +1328,19 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.ComentarioGeneral[] ComentarioGeneral1 {
+            get {
+                return this.ComentarioGeneral1Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ComentarioGeneral1Field, value) != true)) {
+                    this.ComentarioGeneral1Field = value;
+                    this.RaisePropertyChanged("ComentarioGeneral1");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public ClienteSistemaTutorias.ServiceReferenceTutorias.Problematica[] Problematica {
             get {
                 return this.ProblematicaField;
@@ -975,6 +1349,19 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
                 if ((object.ReferenceEquals(this.ProblematicaField, value) != true)) {
                     this.ProblematicaField = value;
                     this.RaisePropertyChanged("Problematica");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.Problematica[] Problematica1 {
+            get {
+                return this.Problematica1Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Problematica1Field, value) != true)) {
+                    this.Problematica1Field = value;
+                    this.RaisePropertyChanged("Problematica1");
                 }
             }
         }
@@ -1001,6 +1388,19 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
                 if ((object.ReferenceEquals(this.TutoriaAcademicaField, value) != true)) {
                     this.TutoriaAcademicaField = value;
                     this.RaisePropertyChanged("TutoriaAcademica");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.TutoriaAcademica TutoriaAcademica1 {
+            get {
+                return this.TutoriaAcademica1Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.TutoriaAcademica1Field, value) != true)) {
+                    this.TutoriaAcademica1Field = value;
+                    this.RaisePropertyChanged("TutoriaAcademica1");
                 }
             }
         }
@@ -1080,7 +1480,13 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
         private ClienteSistemaTutorias.ServiceReferenceTutorias.Academico AcademicoField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private ClienteSistemaTutorias.ServiceReferenceTutorias.Problematica ProblematicaField;
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.Academico Academico1Field;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.Problematica[] ProblematicaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.Problematica Problematica1Field;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string descripcionField;
@@ -1118,7 +1524,20 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public ClienteSistemaTutorias.ServiceReferenceTutorias.Problematica Problematica {
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.Academico Academico1 {
+            get {
+                return this.Academico1Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Academico1Field, value) != true)) {
+                    this.Academico1Field = value;
+                    this.RaisePropertyChanged("Academico1");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.Problematica[] Problematica {
             get {
                 return this.ProblematicaField;
             }
@@ -1126,6 +1545,19 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
                 if ((object.ReferenceEquals(this.ProblematicaField, value) != true)) {
                     this.ProblematicaField = value;
                     this.RaisePropertyChanged("Problematica");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.Problematica Problematica1 {
+            get {
+                return this.Problematica1Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Problematica1Field, value) != true)) {
+                    this.Problematica1Field = value;
+                    this.RaisePropertyChanged("Problematica1");
                 }
             }
         }
@@ -1205,13 +1637,25 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
         private ClienteSistemaTutorias.ServiceReferenceTutorias.Academico AcademicoField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.Academico Academico1Field;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private ClienteSistemaTutorias.ServiceReferenceTutorias.Asistencia[] AsistenciaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.Asistencia[] Asistencia1Field;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private ClienteSistemaTutorias.ServiceReferenceTutorias.AutorProblematica[] AutorProblematicaField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.AutorProblematica[] AutorProblematica1Field;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private ClienteSistemaTutorias.ServiceReferenceTutorias.HoraTutoria[] HoraTutoriaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.HoraTutoria[] HoraTutoria1Field;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private ClienteSistemaTutorias.ServiceReferenceTutorias.ProgramaEducativo ProgramaEducativoField;
@@ -1270,6 +1714,19 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.Academico Academico1 {
+            get {
+                return this.Academico1Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Academico1Field, value) != true)) {
+                    this.Academico1Field = value;
+                    this.RaisePropertyChanged("Academico1");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public ClienteSistemaTutorias.ServiceReferenceTutorias.Asistencia[] Asistencia {
             get {
                 return this.AsistenciaField;
@@ -1278,6 +1735,19 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
                 if ((object.ReferenceEquals(this.AsistenciaField, value) != true)) {
                     this.AsistenciaField = value;
                     this.RaisePropertyChanged("Asistencia");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.Asistencia[] Asistencia1 {
+            get {
+                return this.Asistencia1Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Asistencia1Field, value) != true)) {
+                    this.Asistencia1Field = value;
+                    this.RaisePropertyChanged("Asistencia1");
                 }
             }
         }
@@ -1296,6 +1766,19 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.AutorProblematica[] AutorProblematica1 {
+            get {
+                return this.AutorProblematica1Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AutorProblematica1Field, value) != true)) {
+                    this.AutorProblematica1Field = value;
+                    this.RaisePropertyChanged("AutorProblematica1");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public ClienteSistemaTutorias.ServiceReferenceTutorias.HoraTutoria[] HoraTutoria {
             get {
                 return this.HoraTutoriaField;
@@ -1304,6 +1787,19 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
                 if ((object.ReferenceEquals(this.HoraTutoriaField, value) != true)) {
                     this.HoraTutoriaField = value;
                     this.RaisePropertyChanged("HoraTutoria");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.HoraTutoria[] HoraTutoria1 {
+            get {
+                return this.HoraTutoria1Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.HoraTutoria1Field, value) != true)) {
+                    this.HoraTutoria1Field = value;
+                    this.RaisePropertyChanged("HoraTutoria1");
                 }
             }
         }
@@ -1474,6 +1970,12 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
         private ClienteSistemaTutorias.ServiceReferenceTutorias.ExperienciaEducativa[] ExperienciaEducativaField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.ExperienciaEducativa[] ExperienciaEducativa1Field;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.ExperienciaEducativa[] ExperienciaEducativa2Field;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int idMateriaField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -1498,6 +2000,32 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
                 if ((object.ReferenceEquals(this.ExperienciaEducativaField, value) != true)) {
                     this.ExperienciaEducativaField = value;
                     this.RaisePropertyChanged("ExperienciaEducativa");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.ExperienciaEducativa[] ExperienciaEducativa1 {
+            get {
+                return this.ExperienciaEducativa1Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ExperienciaEducativa1Field, value) != true)) {
+                    this.ExperienciaEducativa1Field = value;
+                    this.RaisePropertyChanged("ExperienciaEducativa1");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.ExperienciaEducativa[] ExperienciaEducativa2 {
+            get {
+                return this.ExperienciaEducativa2Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ExperienciaEducativa2Field, value) != true)) {
+                    this.ExperienciaEducativa2Field = value;
+                    this.RaisePropertyChanged("ExperienciaEducativa2");
                 }
             }
         }
@@ -1558,6 +2086,9 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private ClienteSistemaTutorias.ServiceReferenceTutorias.TutoriaAcademica[] TutoriaAcademicaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<bool> fechasTutoriasField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int idPeriodoEscolarField;
@@ -1628,6 +2159,19 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<bool> fechasTutorias {
+            get {
+                return this.fechasTutoriasField;
+            }
+            set {
+                if ((this.fechasTutoriasField.Equals(value) != true)) {
+                    this.fechasTutoriasField = value;
+                    this.RaisePropertyChanged("fechasTutorias");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public int idPeriodoEscolar {
             get {
                 return this.idPeriodoEscolarField;
@@ -1676,13 +2220,22 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
         private ClienteSistemaTutorias.ServiceReferenceTutorias.Asistencia[] AsistenciaField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.Asistencia[] Asistencia1Field;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private ClienteSistemaTutorias.ServiceReferenceTutorias.HoraTutoria[] HoraTutoriaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.HoraTutoria[] HoraTutoria1Field;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private ClienteSistemaTutorias.ServiceReferenceTutorias.PeriodoEscolar PeriodoEscolarField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private ClienteSistemaTutorias.ServiceReferenceTutorias.ReporteTutoriaAcademica[] ReporteTutoriaAcademicaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.ReporteTutoriaAcademica[] ReporteTutoriaAcademica1Field;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.Nullable<System.DateTime> fechaLimiteReporteField;
@@ -1697,7 +2250,7 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
         private int idTutoriaAcademicaField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Nullable<bool> numeroSesionField;
+        private System.Nullable<int> numeroSesionField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -1723,6 +2276,19 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.Asistencia[] Asistencia1 {
+            get {
+                return this.Asistencia1Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Asistencia1Field, value) != true)) {
+                    this.Asistencia1Field = value;
+                    this.RaisePropertyChanged("Asistencia1");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public ClienteSistemaTutorias.ServiceReferenceTutorias.HoraTutoria[] HoraTutoria {
             get {
                 return this.HoraTutoriaField;
@@ -1731,6 +2297,19 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
                 if ((object.ReferenceEquals(this.HoraTutoriaField, value) != true)) {
                     this.HoraTutoriaField = value;
                     this.RaisePropertyChanged("HoraTutoria");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.HoraTutoria[] HoraTutoria1 {
+            get {
+                return this.HoraTutoria1Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.HoraTutoria1Field, value) != true)) {
+                    this.HoraTutoria1Field = value;
+                    this.RaisePropertyChanged("HoraTutoria1");
                 }
             }
         }
@@ -1757,6 +2336,19 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
                 if ((object.ReferenceEquals(this.ReporteTutoriaAcademicaField, value) != true)) {
                     this.ReporteTutoriaAcademicaField = value;
                     this.RaisePropertyChanged("ReporteTutoriaAcademica");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.ReporteTutoriaAcademica[] ReporteTutoriaAcademica1 {
+            get {
+                return this.ReporteTutoriaAcademica1Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ReporteTutoriaAcademica1Field, value) != true)) {
+                    this.ReporteTutoriaAcademica1Field = value;
+                    this.RaisePropertyChanged("ReporteTutoriaAcademica1");
                 }
             }
         }
@@ -1814,7 +2406,7 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<bool> numeroSesion {
+        public System.Nullable<int> numeroSesion {
             get {
                 return this.numeroSesionField;
             }
@@ -1849,7 +2441,13 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
         private ClienteSistemaTutorias.ServiceReferenceTutorias.Tutorado TutoradoField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.Tutorado Tutorado1Field;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private ClienteSistemaTutorias.ServiceReferenceTutorias.TutoriaAcademica TutoriaAcademicaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.TutoriaAcademica TutoriaAcademica1Field;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int idAsistenciaField;
@@ -1884,6 +2482,19 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.Tutorado Tutorado1 {
+            get {
+                return this.Tutorado1Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Tutorado1Field, value) != true)) {
+                    this.Tutorado1Field = value;
+                    this.RaisePropertyChanged("Tutorado1");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public ClienteSistemaTutorias.ServiceReferenceTutorias.TutoriaAcademica TutoriaAcademica {
             get {
                 return this.TutoriaAcademicaField;
@@ -1892,6 +2503,19 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
                 if ((object.ReferenceEquals(this.TutoriaAcademicaField, value) != true)) {
                     this.TutoriaAcademicaField = value;
                     this.RaisePropertyChanged("TutoriaAcademica");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.TutoriaAcademica TutoriaAcademica1 {
+            get {
+                return this.TutoriaAcademica1Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.TutoriaAcademica1Field, value) != true)) {
+                    this.TutoriaAcademica1Field = value;
+                    this.RaisePropertyChanged("TutoriaAcademica1");
                 }
             }
         }
@@ -1958,7 +2582,13 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
         private ClienteSistemaTutorias.ServiceReferenceTutorias.Problematica ProblematicaField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.Problematica Problematica1Field;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private ClienteSistemaTutorias.ServiceReferenceTutorias.Tutorado TutoradoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.Tutorado Tutorado1Field;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.Nullable<int> idAutorField;
@@ -1993,6 +2623,19 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.Problematica Problematica1 {
+            get {
+                return this.Problematica1Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Problematica1Field, value) != true)) {
+                    this.Problematica1Field = value;
+                    this.RaisePropertyChanged("Problematica1");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public ClienteSistemaTutorias.ServiceReferenceTutorias.Tutorado Tutorado {
             get {
                 return this.TutoradoField;
@@ -2001,6 +2644,19 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
                 if ((object.ReferenceEquals(this.TutoradoField, value) != true)) {
                     this.TutoradoField = value;
                     this.RaisePropertyChanged("Tutorado");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.Tutorado Tutorado1 {
+            get {
+                return this.Tutorado1Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Tutorado1Field, value) != true)) {
+                    this.Tutorado1Field = value;
+                    this.RaisePropertyChanged("Tutorado1");
                 }
             }
         }
@@ -2067,13 +2723,25 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
         private ClienteSistemaTutorias.ServiceReferenceTutorias.AutorProblematica[] AutorProblematicaField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.AutorProblematica[] AutorProblematica1Field;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private ClienteSistemaTutorias.ServiceReferenceTutorias.ClasificacionProblematica ClasificacionProblematicaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.ClasificacionProblematica ClasificacionProblematica1Field;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private ClienteSistemaTutorias.ServiceReferenceTutorias.ReporteTutoriaAcademica ReporteTutoriaAcademicaField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private ClienteSistemaTutorias.ServiceReferenceTutorias.SolucionProblematica[] SolucionProblematicaField;
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.ReporteTutoriaAcademica ReporteTutoriaAcademica1Field;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.SolucionProblematica SolucionProblematicaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.SolucionProblematica[] SolucionProblematica1Field;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string descripcionField;
@@ -2086,6 +2754,12 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.Nullable<int> idReporteTutoriaAcademicaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<int> idSolucionProblematicaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string nombreField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.Nullable<int> numeroIncidenciasField;
@@ -2114,6 +2788,19 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.AutorProblematica[] AutorProblematica1 {
+            get {
+                return this.AutorProblematica1Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AutorProblematica1Field, value) != true)) {
+                    this.AutorProblematica1Field = value;
+                    this.RaisePropertyChanged("AutorProblematica1");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public ClienteSistemaTutorias.ServiceReferenceTutorias.ClasificacionProblematica ClasificacionProblematica {
             get {
                 return this.ClasificacionProblematicaField;
@@ -2122,6 +2809,19 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
                 if ((object.ReferenceEquals(this.ClasificacionProblematicaField, value) != true)) {
                     this.ClasificacionProblematicaField = value;
                     this.RaisePropertyChanged("ClasificacionProblematica");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.ClasificacionProblematica ClasificacionProblematica1 {
+            get {
+                return this.ClasificacionProblematica1Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ClasificacionProblematica1Field, value) != true)) {
+                    this.ClasificacionProblematica1Field = value;
+                    this.RaisePropertyChanged("ClasificacionProblematica1");
                 }
             }
         }
@@ -2140,7 +2840,20 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public ClienteSistemaTutorias.ServiceReferenceTutorias.SolucionProblematica[] SolucionProblematica {
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.ReporteTutoriaAcademica ReporteTutoriaAcademica1 {
+            get {
+                return this.ReporteTutoriaAcademica1Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ReporteTutoriaAcademica1Field, value) != true)) {
+                    this.ReporteTutoriaAcademica1Field = value;
+                    this.RaisePropertyChanged("ReporteTutoriaAcademica1");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.SolucionProblematica SolucionProblematica {
             get {
                 return this.SolucionProblematicaField;
             }
@@ -2148,6 +2861,19 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
                 if ((object.ReferenceEquals(this.SolucionProblematicaField, value) != true)) {
                     this.SolucionProblematicaField = value;
                     this.RaisePropertyChanged("SolucionProblematica");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.SolucionProblematica[] SolucionProblematica1 {
+            get {
+                return this.SolucionProblematica1Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.SolucionProblematica1Field, value) != true)) {
+                    this.SolucionProblematica1Field = value;
+                    this.RaisePropertyChanged("SolucionProblematica1");
                 }
             }
         }
@@ -2205,6 +2931,32 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<int> idSolucionProblematica {
+            get {
+                return this.idSolucionProblematicaField;
+            }
+            set {
+                if ((this.idSolucionProblematicaField.Equals(value) != true)) {
+                    this.idSolucionProblematicaField = value;
+                    this.RaisePropertyChanged("idSolucionProblematica");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string nombre {
+            get {
+                return this.nombreField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.nombreField, value) != true)) {
+                    this.nombreField = value;
+                    this.RaisePropertyChanged("nombre");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public System.Nullable<int> numeroIncidencias {
             get {
                 return this.numeroIncidenciasField;
@@ -2240,6 +2992,9 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
         private ClienteSistemaTutorias.ServiceReferenceTutorias.Problematica[] ProblematicaField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.Problematica[] Problematica1Field;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int idClasificacionProblematicaField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -2264,6 +3019,19 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
                 if ((object.ReferenceEquals(this.ProblematicaField, value) != true)) {
                     this.ProblematicaField = value;
                     this.RaisePropertyChanged("Problematica");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.Problematica[] Problematica1 {
+            get {
+                return this.Problematica1Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Problematica1Field, value) != true)) {
+                    this.Problematica1Field = value;
+                    this.RaisePropertyChanged("Problematica1");
                 }
             }
         }
@@ -2317,6 +3085,9 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
         private ClienteSistemaTutorias.ServiceReferenceTutorias.ReporteTutoriaAcademica ReporteTutoriaAcademicaField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClienteSistemaTutorias.ServiceReferenceTutorias.ReporteTutoriaAcademica ReporteTutoriaAcademica1Field;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string descripcionField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -2344,6 +3115,19 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
                 if ((object.ReferenceEquals(this.ReporteTutoriaAcademicaField, value) != true)) {
                     this.ReporteTutoriaAcademicaField = value;
                     this.RaisePropertyChanged("ReporteTutoriaAcademica");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.ReporteTutoriaAcademica ReporteTutoriaAcademica1 {
+            get {
+                return this.ReporteTutoriaAcademica1Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ReporteTutoriaAcademica1Field, value) != true)) {
+                    this.ReporteTutoriaAcademica1Field = value;
+                    this.RaisePropertyChanged("ReporteTutoriaAcademica1");
                 }
             }
         }
@@ -2568,6 +3352,24 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/LoginPrueba", ReplyAction="http://tempuri.org/IService1/LoginPruebaResponse")]
         System.Threading.Tasks.Task<int> LoginPruebaAsync(string correo, string password);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/recuperarProblematicasSinSolucion", ReplyAction="http://tempuri.org/IService1/recuperarProblematicasSinSolucionResponse")]
+        ClienteSistemaTutorias.ServiceReferenceTutorias.Problematica[] recuperarProblematicasSinSolucion();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/recuperarProblematicasSinSolucion", ReplyAction="http://tempuri.org/IService1/recuperarProblematicasSinSolucionResponse")]
+        System.Threading.Tasks.Task<ClienteSistemaTutorias.ServiceReferenceTutorias.Problematica[]> recuperarProblematicasSinSolucionAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/registrarSolucion", ReplyAction="http://tempuri.org/IService1/registrarSolucionResponse")]
+        bool registrarSolucion(ClienteSistemaTutorias.ServiceReferenceTutorias.SolucionProblematica solucionNueva);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/registrarSolucion", ReplyAction="http://tempuri.org/IService1/registrarSolucionResponse")]
+        System.Threading.Tasks.Task<bool> registrarSolucionAsync(ClienteSistemaTutorias.ServiceReferenceTutorias.SolucionProblematica solucionNueva);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/asignarSolucion", ReplyAction="http://tempuri.org/IService1/asignarSolucionResponse")]
+        int asignarSolucion(int idProblematica);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/asignarSolucion", ReplyAction="http://tempuri.org/IService1/asignarSolucionResponse")]
+        System.Threading.Tasks.Task<int> asignarSolucionAsync(int idProblematica);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -2635,6 +3437,30 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
         
         public System.Threading.Tasks.Task<int> LoginPruebaAsync(string correo, string password) {
             return base.Channel.LoginPruebaAsync(correo, password);
+        }
+        
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.Problematica[] recuperarProblematicasSinSolucion() {
+            return base.Channel.recuperarProblematicasSinSolucion();
+        }
+        
+        public System.Threading.Tasks.Task<ClienteSistemaTutorias.ServiceReferenceTutorias.Problematica[]> recuperarProblematicasSinSolucionAsync() {
+            return base.Channel.recuperarProblematicasSinSolucionAsync();
+        }
+        
+        public bool registrarSolucion(ClienteSistemaTutorias.ServiceReferenceTutorias.SolucionProblematica solucionNueva) {
+            return base.Channel.registrarSolucion(solucionNueva);
+        }
+        
+        public System.Threading.Tasks.Task<bool> registrarSolucionAsync(ClienteSistemaTutorias.ServiceReferenceTutorias.SolucionProblematica solucionNueva) {
+            return base.Channel.registrarSolucionAsync(solucionNueva);
+        }
+        
+        public int asignarSolucion(int idProblematica) {
+            return base.Channel.asignarSolucion(idProblematica);
+        }
+        
+        public System.Threading.Tasks.Task<int> asignarSolucionAsync(int idProblematica) {
+            return base.Channel.asignarSolucionAsync(idProblematica);
         }
     }
     

@@ -1,0 +1,20 @@
+﻿<Window x:Class="ClienteSistemaTutorias.RegistrarSolucion"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClienteSistemaTutorias"
+        mc:Ignorable="d"
+        Title="RegistrarSolucion" Height="450" Width="800">
+    <Grid Background="#bdd1de">
+
+        <TextBlock x:Name="tbNombre" Margin="100,20,244,375" Text=""/>
+        <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="50,50,92,272">
+            <TextBlock x:Name="tblDescripción" Margin="43,38,0,0" TextWrapping="Wrap" Text="" Width="612" Height="70"/>
+        </ScrollViewer>
+        <Button Content="Guardar" HorizontalAlignment="Left" Margin="285,371,0,0" VerticalAlignment="Top" Click="clickBtnGuardar"/>
+        <Button Content="Cancelar" HorizontalAlignment="Left" Margin="485,371,0,0" VerticalAlignment="Top" Click="clickBtnCancelar"/>
+        <TextBox x:Name="tbSolucion" HorizontalAlignment="Left" Margin="95,217,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="588" Height="100" MaxLength="500"/>
+
+    </Grid>
+</Window>

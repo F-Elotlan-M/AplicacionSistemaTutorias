@@ -54,5 +54,23 @@ namespace ServiciosTutorias {
             AcademicoDAO academicoRoles = new AcademicoDAO();
             return academicoRoles.recuperarRoles();
         }
+
+        public List<Problematica> recuperarProblematicasSinSolucion()
+        {
+            SolucionDAO solucion = new SolucionDAO();
+            return solucion.recuperarProblematicasSinSolucion();
+        }
+
+        public bool registrarSolucion(SolucionProblematica solucionNueva)
+        {
+            SolucionDAO solucionDAO = new SolucionDAO();
+            return solucionDAO.registrarSolucion(solucionNueva);
+        }
+
+        public int asignarSolucion(int idProblematica)
+        {
+            SolucionDAO solucionDAO = new SolucionDAO();
+            return solucionDAO.asignarSolucion(idProblematica);
+        }
     }
 }
