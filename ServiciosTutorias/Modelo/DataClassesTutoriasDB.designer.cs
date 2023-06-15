@@ -237,6 +237,14 @@ namespace ServiciosTutorias.Modelo
 				return this.GetTable<TutoriaAcademica>();
 			}
 		}
+		
+		public System.Data.Linq.Table<ConsultaComentarios> ConsultaComentarios
+		{
+			get
+			{
+				return this.GetTable<ConsultaComentarios>();
+			}
+		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Problematica")]
@@ -381,7 +389,7 @@ namespace ServiciosTutorias.Modelo
 				{
 					if ((this._ReporteTutoriaAcademica.HasLoadedOrAssignedValue || this._ReporteTutoriaAcademica1.HasLoadedOrAssignedValue))
 					{
-						//throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
 					this.OnidReporteTutoriaAcademicaChanging(value);
 					this.SendPropertyChanging();
@@ -405,7 +413,7 @@ namespace ServiciosTutorias.Modelo
 				{
 					if ((this._ClasificacionProblematica.HasLoadedOrAssignedValue || this._ClasificacionProblematica1.HasLoadedOrAssignedValue))
 					{
-						//throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
 					this.OnidClasificacionProblematicaChanging(value);
 					this.SendPropertyChanging();
@@ -429,7 +437,7 @@ namespace ServiciosTutorias.Modelo
 				{
 					if (this._SolucionProblematica.HasLoadedOrAssignedValue)
 					{
-						//throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
 					this.OnidSolucionProblematicaChanging(value);
 					this.SendPropertyChanging();
@@ -983,7 +991,7 @@ namespace ServiciosTutorias.Modelo
 					if (((this._Rol.HasLoadedOrAssignedValue || this._Rol1.HasLoadedOrAssignedValue) 
 								|| this._Rol2.HasLoadedOrAssignedValue))
 					{
-						//throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
 					this.OnidRolChanging(value);
 					this.SendPropertyChanging();
@@ -1566,7 +1574,7 @@ namespace ServiciosTutorias.Modelo
 				{
 					if ((this._Tutorado.HasLoadedOrAssignedValue || this._Tutorado1.HasLoadedOrAssignedValue))
 					{
-						//throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
 					this.OnidTutoradoChanging(value);
 					this.SendPropertyChanging();
@@ -1590,7 +1598,7 @@ namespace ServiciosTutorias.Modelo
 				{
 					if ((this._TutoriaAcademica.HasLoadedOrAssignedValue || this._TutoriaAcademica1.HasLoadedOrAssignedValue))
 					{
-						//throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
 					this.OnidTutoriaAcademicaChanging(value);
 					this.SendPropertyChanging();
@@ -1832,7 +1840,7 @@ namespace ServiciosTutorias.Modelo
 				{
 					if ((this._Tutorado.HasLoadedOrAssignedValue || this._Tutorado1.HasLoadedOrAssignedValue))
 					{
-						//throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
 					this.OnidAutorChanging(value);
 					this.SendPropertyChanging();
@@ -1856,7 +1864,7 @@ namespace ServiciosTutorias.Modelo
 				{
 					if ((this._Problematica.HasLoadedOrAssignedValue || this._Problematica1.HasLoadedOrAssignedValue))
 					{
-						//throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
 					this.OnidProblematicaChanging(value);
 					this.SendPropertyChanging();
@@ -2254,7 +2262,7 @@ namespace ServiciosTutorias.Modelo
 				{
 					if ((this._ReporteTutoriaAcademica.HasLoadedOrAssignedValue || this._ReporteTutoriaAcademica1.HasLoadedOrAssignedValue))
 					{
-						//throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
 					this.OnidReporteTutoriaAcademicaChanging(value);
 					this.SendPropertyChanging();
@@ -2462,7 +2470,7 @@ namespace ServiciosTutorias.Modelo
 				{
 					if ((this._TutoriaAcademica.HasLoadedOrAssignedValue || this._TutoriaAcademica1.HasLoadedOrAssignedValue))
 					{
-						//throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
 					this.OnidTutoriaAcademicaChanging(value);
 					this.SendPropertyChanging();
@@ -2486,7 +2494,7 @@ namespace ServiciosTutorias.Modelo
 				{
 					if ((this._Academico.HasLoadedOrAssignedValue || this._Academico1.HasLoadedOrAssignedValue))
 					{
-						//throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
 					this.OnidTutorAcademicoChanging(value);
 					this.SendPropertyChanging();
@@ -2510,7 +2518,7 @@ namespace ServiciosTutorias.Modelo
 				{
 					if ((this._Tutorado.HasLoadedOrAssignedValue || this._Tutorado1.HasLoadedOrAssignedValue))
 					{
-						//throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
 					this.OnidTutoradoChanging(value);
 					this.SendPropertyChanging();
@@ -2865,7 +2873,7 @@ namespace ServiciosTutorias.Modelo
 					if (((this._Academico.HasLoadedOrAssignedValue || this._Academico1.HasLoadedOrAssignedValue) 
 								|| this._Academico2.HasLoadedOrAssignedValue))
 					{
-						//throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
 					this.OnidAcademicoChanging(value);
 					this.SendPropertyChanging();
@@ -2890,7 +2898,7 @@ namespace ServiciosTutorias.Modelo
 					if (((this._Materia.HasLoadedOrAssignedValue || this._Materia1.HasLoadedOrAssignedValue) 
 								|| this._Materia2.HasLoadedOrAssignedValue))
 					{
-						//throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
 					this.OnidMateriaChanging(value);
 					this.SendPropertyChanging();
@@ -2914,7 +2922,7 @@ namespace ServiciosTutorias.Modelo
 				{
 					if (this._PeriodoEscolar.HasLoadedOrAssignedValue)
 					{
-						//throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
 					this.OnidPeriodoEscolarChanging(value);
 					this.SendPropertyChanging();
@@ -2938,7 +2946,7 @@ namespace ServiciosTutorias.Modelo
 				{
 					if (this._ProgramaEducativo.HasLoadedOrAssignedValue)
 					{
-						//throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
 					this.OnidProgramaEducativoChanging(value);
 					this.SendPropertyChanging();
@@ -3719,7 +3727,7 @@ namespace ServiciosTutorias.Modelo
 				{
 					if (this._ProgramaEducativo.HasLoadedOrAssignedValue)
 					{
-						//throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
 					this.OnidProgramaEducativoChanging(value);
 					this.SendPropertyChanging();
@@ -3743,7 +3751,7 @@ namespace ServiciosTutorias.Modelo
 				{
 					if ((this._TutoriaAcademica.HasLoadedOrAssignedValue || this._TutoriaAcademica1.HasLoadedOrAssignedValue))
 					{
-						//throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
 					this.OnidTutoriaAcademicaChanging(value);
 					this.SendPropertyChanging();
@@ -3767,7 +3775,7 @@ namespace ServiciosTutorias.Modelo
 				{
 					if ((this._Academico.HasLoadedOrAssignedValue || this._Academico1.HasLoadedOrAssignedValue))
 					{
-						//throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
 					this.OnidTutorAcademicoChanging(value);
 					this.SendPropertyChanging();
@@ -4176,7 +4184,7 @@ namespace ServiciosTutorias.Modelo
 				{
 					if ((this._Academico.HasLoadedOrAssignedValue || this._Academico1.HasLoadedOrAssignedValue))
 					{
-						//throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
 					this.OnidCoordinadorTutoriasChanging(value);
 					this.SendPropertyChanging();
@@ -4200,7 +4208,7 @@ namespace ServiciosTutorias.Modelo
 				{
 					if ((this._Academico2.HasLoadedOrAssignedValue || this._Academico3.HasLoadedOrAssignedValue))
 					{
-						//throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
 					this.OnidJefeProgramaEducativoChanging(value);
 					this.SendPropertyChanging();
@@ -4711,7 +4719,7 @@ namespace ServiciosTutorias.Modelo
 				{
 					if (this._Problematica1.HasLoadedOrAssignedValue)
 					{
-						//throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
 					this.OnidProblematicaChanging(value);
 					this.SendPropertyChanging();
@@ -4735,7 +4743,7 @@ namespace ServiciosTutorias.Modelo
 				{
 					if ((this._Academico.HasLoadedOrAssignedValue || this._Academico1.HasLoadedOrAssignedValue))
 					{
-						//throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
 					this.OnidJefeProgramaEducativoChanging(value);
 					this.SendPropertyChanging();
@@ -5151,7 +5159,7 @@ namespace ServiciosTutorias.Modelo
 				{
 					if (this._ProgramaEducativo.HasLoadedOrAssignedValue)
 					{
-						//throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
 					this.OnidProgramaEducativoChanging(value);
 					this.SendPropertyChanging();
@@ -5175,7 +5183,7 @@ namespace ServiciosTutorias.Modelo
 				{
 					if ((this._Academico.HasLoadedOrAssignedValue || this._Academico1.HasLoadedOrAssignedValue))
 					{
-						//throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
 					this.OnidTutorAcademicoChanging(value);
 					this.SendPropertyChanging();
@@ -5610,7 +5618,7 @@ namespace ServiciosTutorias.Modelo
 				{
 					if (this._PeriodoEscolar.HasLoadedOrAssignedValue)
 					{
-						//throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
 					this.OnidPeriodoEscolarChanging(value);
 					this.SendPropertyChanging();
@@ -5823,6 +5831,141 @@ namespace ServiciosTutorias.Modelo
 		{
 			this.SendPropertyChanging();
 			entity.TutoriaAcademica1 = null;
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.ConsultaComentarios")]
+	public partial class ConsultaComentarios
+	{
+		
+		private int _idComentarioGeneral;
+		
+		private string _descripcion;
+		
+		private string _nombre;
+		
+		private System.Nullable<System.DateTime> _fechaSesion;
+		
+		private System.Nullable<int> _numeroSesion;
+		
+		private System.Nullable<System.DateTime> _fechaLimiteReporte;
+		
+		private System.Nullable<int> _idTutorAcademico;
+		
+		public ConsultaComentarios()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idComentarioGeneral", DbType="Int NOT NULL")]
+		public int idComentarioGeneral
+		{
+			get
+			{
+				return this._idComentarioGeneral;
+			}
+			set
+			{
+				if ((this._idComentarioGeneral != value))
+				{
+					this._idComentarioGeneral = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_descripcion", DbType="VarChar(300)")]
+		public string descripcion
+		{
+			get
+			{
+				return this._descripcion;
+			}
+			set
+			{
+				if ((this._descripcion != value))
+				{
+					this._descripcion = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_nombre", DbType="VarChar(100)")]
+		public string nombre
+		{
+			get
+			{
+				return this._nombre;
+			}
+			set
+			{
+				if ((this._nombre != value))
+				{
+					this._nombre = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fechaSesion", DbType="Date")]
+		public System.Nullable<System.DateTime> fechaSesion
+		{
+			get
+			{
+				return this._fechaSesion;
+			}
+			set
+			{
+				if ((this._fechaSesion != value))
+				{
+					this._fechaSesion = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_numeroSesion", DbType="Int")]
+		public System.Nullable<int> numeroSesion
+		{
+			get
+			{
+				return this._numeroSesion;
+			}
+			set
+			{
+				if ((this._numeroSesion != value))
+				{
+					this._numeroSesion = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fechaLimiteReporte", DbType="Date")]
+		public System.Nullable<System.DateTime> fechaLimiteReporte
+		{
+			get
+			{
+				return this._fechaLimiteReporte;
+			}
+			set
+			{
+				if ((this._fechaLimiteReporte != value))
+				{
+					this._fechaLimiteReporte = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idTutorAcademico", DbType="Int")]
+		public System.Nullable<int> idTutorAcademico
+		{
+			get
+			{
+				return this._idTutorAcademico;
+			}
+			set
+			{
+				if ((this._idTutorAcademico != value))
+				{
+					this._idTutorAcademico = value;
+				}
+			}
 		}
 	}
 }

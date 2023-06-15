@@ -78,8 +78,14 @@
     <Compile Include="RegistrarSolucion.xaml.cs">
       <DependentUpon>RegistrarSolucion.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SeleccionarComentarios.xaml.cs">
+      <DependentUpon>SeleccionarComentarios.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SeleccionarProblematica.xaml.cs">
       <DependentUpon>SeleccionarProblematica.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditarComentariosGenerales.xaml.cs">
+      <DependentUpon>EditarComentariosGenerales.xaml</DependentUpon>
     </Compile>
     <Page Include="Avisos.xaml">
       <SubType>Designer</SubType>
@@ -126,7 +132,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="SeleccionarComentarios.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="SeleccionarProblematica.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditarComentariosGenerales.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -163,6 +177,9 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\ServiceReferenceTutorias\ClienteSistemaTutorias.ServiceReferenceTutorias.CompositeType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceTutorias\ClienteSistemaTutorias.ServiceReferenceTutorias.ConsultaComentarios.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\ServiceReferenceTutorias\ClienteSistemaTutorias.ServiceReferenceTutorias.Mensaje.datasource">

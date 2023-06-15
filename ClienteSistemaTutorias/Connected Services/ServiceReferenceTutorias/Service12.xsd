@@ -330,6 +330,24 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="Mensaje" nillable="true" type="tns:Mensaje" />
+  <xs:complexType name="ArrayOfConsultaComentarios">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ConsultaComentarios" nillable="true" type="tns:ConsultaComentarios" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfConsultaComentarios" nillable="true" type="tns:ArrayOfConsultaComentarios" />
+  <xs:complexType name="ConsultaComentarios">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="descripcion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fechaLimiteReporte" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="fechaSesion" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="idComentarioGeneral" type="xs:int" />
+      <xs:element minOccurs="0" name="idTutorAcademico" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="numeroSesion" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ConsultaComentarios" nillable="true" type="tns:ConsultaComentarios" />
   <xs:complexType name="ArrayOfRol">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="Rol" nillable="true" type="tns:Rol" />

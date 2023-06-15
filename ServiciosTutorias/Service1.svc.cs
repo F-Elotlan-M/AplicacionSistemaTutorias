@@ -72,5 +72,17 @@ namespace ServiciosTutorias {
             SolucionDAO solucionDAO = new SolucionDAO();
             return solucionDAO.asignarSolucion(idProblematica);
         }
+
+        public List<ConsultaComentarios> obtenerComentarios(int idTutor)
+        {
+            ComentarioDAO comentarioDAO = new ComentarioDAO();
+            return comentarioDAO.obtenerComentarios(idTutor);
+        }
+
+        public bool realizarCambiosComentarios(ComentarioGeneral comentarioEditar)
+        {
+            ComentarioDAO comentarioDAO = new ComentarioDAO();
+            return comentarioDAO.realizarCambiosComentarios(comentarioEditar);
+        }
     }
 }

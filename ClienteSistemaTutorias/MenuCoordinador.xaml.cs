@@ -41,7 +41,9 @@ namespace ClienteSistemaTutorias
 
         private void clickBtnEditarComentariosGenerales(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("hola");
+            SeleccionarComentarios seleccionarComentarios = new SeleccionarComentarios(academicoEnUso);
+            seleccionarComentarios.Show();
+            this.Close();
         }
 
         private void clickBtnRegistrarHorarioDeSesion(object sender, RoutedEventArgs e)

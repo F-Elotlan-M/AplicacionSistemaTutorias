@@ -71,6 +71,7 @@
     <Compile Include="IAcademico.cs" />
     <Compile Include="IProgramaEducativo.cs" />
     <Compile Include="Modelo\AcademicoDAO.cs" />
+    <Compile Include="Modelo\ComentarioDAO.cs" />
     <Compile Include="Modelo\DataClassesTutoriasDB.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

@@ -56,6 +56,18 @@
   <wsdl:message name="IService1_asignarSolucion_OutputMessage">
     <wsdl:part name="parameters" element="tns:asignarSolucionResponse" />
   </wsdl:message>
+  <wsdl:message name="IService1_obtenerComentarios_InputMessage">
+    <wsdl:part name="parameters" element="tns:obtenerComentarios" />
+  </wsdl:message>
+  <wsdl:message name="IService1_obtenerComentarios_OutputMessage">
+    <wsdl:part name="parameters" element="tns:obtenerComentariosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_realizarCambiosComentarios_InputMessage">
+    <wsdl:part name="parameters" element="tns:realizarCambiosComentarios" />
+  </wsdl:message>
+  <wsdl:message name="IService1_realizarCambiosComentarios_OutputMessage">
+    <wsdl:part name="parameters" element="tns:realizarCambiosComentariosResponse" />
+  </wsdl:message>
   <wsdl:message name="IAcademico_registrarProfesor_InputMessage">
     <wsdl:part name="parameters" element="tns:registrarProfesor" />
   </wsdl:message>
@@ -100,6 +112,14 @@
     <wsdl:operation name="asignarSolucion">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/asignarSolucion" message="tns:IService1_asignarSolucion_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/asignarSolucionResponse" message="tns:IService1_asignarSolucion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="obtenerComentarios">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/obtenerComentarios" message="tns:IService1_obtenerComentarios_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/obtenerComentariosResponse" message="tns:IService1_obtenerComentarios_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="realizarCambiosComentarios">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/realizarCambiosComentarios" message="tns:IService1_realizarCambiosComentarios_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/realizarCambiosComentariosResponse" message="tns:IService1_realizarCambiosComentarios_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:portType name="IAcademico">
@@ -179,6 +199,24 @@
     </wsdl:operation>
     <wsdl:operation name="asignarSolucion">
       <soap:operation soapAction="http://tempuri.org/IService1/asignarSolucion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerComentarios">
+      <soap:operation soapAction="http://tempuri.org/IService1/obtenerComentarios" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="realizarCambiosComentarios">
+      <soap:operation soapAction="http://tempuri.org/IService1/realizarCambiosComentarios" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

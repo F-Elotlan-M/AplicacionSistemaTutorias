@@ -233,4 +233,15 @@
       <Association Name="PeriodoEscolar_TutoriaAcademica" Member="PeriodoEscolar" ThisKey="idPeriodoEscolar" OtherKey="idPeriodoEscolar" Type="PeriodoEscolar" IsForeignKey="true" />
     </Type>
   </Table>
+  <Table Name="dbo.ConsultaComentarios" Member="ConsultaComentarios">
+    <Type Name="ConsultaComentarios">
+      <Column Name="idComentarioGeneral" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="descripcion" Type="System.String" DbType="VarChar(300)" CanBeNull="true" />
+      <Column Name="nombre" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="fechaSesion" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="numeroSesion" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="fechaLimiteReporte" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="idTutorAcademico" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
 </Database>

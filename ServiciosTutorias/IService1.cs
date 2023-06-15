@@ -37,6 +37,12 @@ namespace ServiciosTutorias {
         [OperationContract]
         int asignarSolucion(int idProblematica);
 
+        //metodos de comentarioDAO
+        [OperationContract]
+        List<ConsultaComentarios> obtenerComentarios(int idTutor);
+        [OperationContract]
+        Boolean realizarCambiosComentarios(ComentarioGeneral comentarioEditar);
+
         // TODO: agregue aquí sus operaciones de servicio
     }
 

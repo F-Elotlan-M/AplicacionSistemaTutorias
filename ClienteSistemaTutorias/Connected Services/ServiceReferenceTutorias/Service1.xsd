@@ -112,10 +112,38 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="obtenerComentarios">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idTutor" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="obtenerComentariosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/ServiciosTutorias.Modelo" minOccurs="0" name="obtenerComentariosResult" nillable="true" type="q7:ArrayOfConsultaComentarios" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="realizarCambiosComentarios">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/ServiciosTutorias.Modelo" minOccurs="0" name="comentarioEditar" nillable="true" type="q8:ComentarioGeneral" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="realizarCambiosComentariosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="realizarCambiosComentariosResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
   <xs:element name="registrarProfesor">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/ServiciosTutorias.Modelo" minOccurs="0" name="profesorNuevo" nillable="true" type="q7:Academico" />
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/ServiciosTutorias.Modelo" minOccurs="0" name="profesorNuevo" nillable="true" type="q9:Academico" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -134,7 +162,7 @@
   <xs:element name="recuperarRolesResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/ServiciosTutorias.Modelo" minOccurs="0" name="recuperarRolesResult" nillable="true" type="q8:ArrayOfRol" />
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/ServiciosTutorias.Modelo" minOccurs="0" name="recuperarRolesResult" nillable="true" type="q10:ArrayOfRol" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

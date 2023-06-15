@@ -3319,6 +3319,147 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="ConsultaComentarios", Namespace="http://schemas.datacontract.org/2004/07/ServiciosTutorias.Modelo")]
+    [System.SerializableAttribute()]
+    public partial class ConsultaComentarios : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string descripcionField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<System.DateTime> fechaLimiteReporteField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<System.DateTime> fechaSesionField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int idComentarioGeneralField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<int> idTutorAcademicoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string nombreField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<int> numeroSesionField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string descripcion {
+            get {
+                return this.descripcionField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.descripcionField, value) != true)) {
+                    this.descripcionField = value;
+                    this.RaisePropertyChanged("descripcion");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<System.DateTime> fechaLimiteReporte {
+            get {
+                return this.fechaLimiteReporteField;
+            }
+            set {
+                if ((this.fechaLimiteReporteField.Equals(value) != true)) {
+                    this.fechaLimiteReporteField = value;
+                    this.RaisePropertyChanged("fechaLimiteReporte");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<System.DateTime> fechaSesion {
+            get {
+                return this.fechaSesionField;
+            }
+            set {
+                if ((this.fechaSesionField.Equals(value) != true)) {
+                    this.fechaSesionField = value;
+                    this.RaisePropertyChanged("fechaSesion");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int idComentarioGeneral {
+            get {
+                return this.idComentarioGeneralField;
+            }
+            set {
+                if ((this.idComentarioGeneralField.Equals(value) != true)) {
+                    this.idComentarioGeneralField = value;
+                    this.RaisePropertyChanged("idComentarioGeneral");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<int> idTutorAcademico {
+            get {
+                return this.idTutorAcademicoField;
+            }
+            set {
+                if ((this.idTutorAcademicoField.Equals(value) != true)) {
+                    this.idTutorAcademicoField = value;
+                    this.RaisePropertyChanged("idTutorAcademico");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string nombre {
+            get {
+                return this.nombreField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.nombreField, value) != true)) {
+                    this.nombreField = value;
+                    this.RaisePropertyChanged("nombre");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<int> numeroSesion {
+            get {
+                return this.numeroSesionField;
+            }
+            set {
+                if ((this.numeroSesionField.Equals(value) != true)) {
+                    this.numeroSesionField = value;
+                    this.RaisePropertyChanged("numeroSesion");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReferenceTutorias.IService1")]
     public interface IService1 {
@@ -3370,6 +3511,18 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/asignarSolucion", ReplyAction="http://tempuri.org/IService1/asignarSolucionResponse")]
         System.Threading.Tasks.Task<int> asignarSolucionAsync(int idProblematica);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/obtenerComentarios", ReplyAction="http://tempuri.org/IService1/obtenerComentariosResponse")]
+        ClienteSistemaTutorias.ServiceReferenceTutorias.ConsultaComentarios[] obtenerComentarios(int idTutor);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/obtenerComentarios", ReplyAction="http://tempuri.org/IService1/obtenerComentariosResponse")]
+        System.Threading.Tasks.Task<ClienteSistemaTutorias.ServiceReferenceTutorias.ConsultaComentarios[]> obtenerComentariosAsync(int idTutor);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/realizarCambiosComentarios", ReplyAction="http://tempuri.org/IService1/realizarCambiosComentariosResponse")]
+        bool realizarCambiosComentarios(ClienteSistemaTutorias.ServiceReferenceTutorias.ComentarioGeneral comentarioEditar);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/realizarCambiosComentarios", ReplyAction="http://tempuri.org/IService1/realizarCambiosComentariosResponse")]
+        System.Threading.Tasks.Task<bool> realizarCambiosComentariosAsync(ClienteSistemaTutorias.ServiceReferenceTutorias.ComentarioGeneral comentarioEditar);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -3461,6 +3614,22 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
         
         public System.Threading.Tasks.Task<int> asignarSolucionAsync(int idProblematica) {
             return base.Channel.asignarSolucionAsync(idProblematica);
+        }
+        
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.ConsultaComentarios[] obtenerComentarios(int idTutor) {
+            return base.Channel.obtenerComentarios(idTutor);
+        }
+        
+        public System.Threading.Tasks.Task<ClienteSistemaTutorias.ServiceReferenceTutorias.ConsultaComentarios[]> obtenerComentariosAsync(int idTutor) {
+            return base.Channel.obtenerComentariosAsync(idTutor);
+        }
+        
+        public bool realizarCambiosComentarios(ClienteSistemaTutorias.ServiceReferenceTutorias.ComentarioGeneral comentarioEditar) {
+            return base.Channel.realizarCambiosComentarios(comentarioEditar);
+        }
+        
+        public System.Threading.Tasks.Task<bool> realizarCambiosComentariosAsync(ClienteSistemaTutorias.ServiceReferenceTutorias.ComentarioGeneral comentarioEditar) {
+            return base.Channel.realizarCambiosComentariosAsync(comentarioEditar);
         }
     }
     

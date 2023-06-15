@@ -1,0 +1,20 @@
+﻿<Window x:Class="ClienteSistemaTutorias.SeleccionarComentarios"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClienteSistemaTutorias"
+        mc:Ignorable="d"
+        Title="SeleccionarComentarios" Height="450" Width="800">
+    <Grid Background="#bdd1de">
+        <DataGrid x:Name="dgComentarios" AutoGenerateColumns="False" Margin="48,74,0,73" CanUserAddRows="False" HorizontalAlignment="Left" Width="443">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Tutor Responsable" Binding="{Binding nombre}" Width="150"/>
+                <DataGridTextColumn Header="Fecha de la sesión" Binding="{Binding fechaSesion}" Width="150"/>
+                <DataGridTextColumn Header="Numero de sesión" Binding="{Binding numeroSesion}" Width="150"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Modificar" HorizontalAlignment="Left" Margin="542,106,0,0" VerticalAlignment="Top" Height="24" Width="63" Click="clickBtnModificar"/>
+        <Button Content="Cancelar" HorizontalAlignment="Left" Margin="542,146,0,0" VerticalAlignment="Top" Height="24" Width="63" Click="clickBtnCancelar"/>
+    </Grid>
+</Window>
