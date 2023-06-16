@@ -64,13 +64,18 @@
   <ItemGroup>
     <Content Include="bin\ServiciosTutorias.dll" />
     <Content Include="bin\ServiciosTutorias.pdb" />
+    <Content Include="IPeriodoEscolarMgt.svc" />
     <Content Include="ITutoriaAcademicaMgt.svc" />
     <Content Include="Service1.svc" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IAcademico.cs" />
+    <Compile Include="IIPeriodoEscolarMgt.cs" />
     <Compile Include="IITutoriaAcademicaMgt.cs" />
+    <Compile Include="IPeriodoEscolarMgt.svc.cs">
+      <DependentUpon>IPeriodoEscolarMgt.svc</DependentUpon>
+    </Compile>
     <Compile Include="IProgramaEducativo.cs" />
     <Compile Include="ITutoriaAcademicaMgt.svc.cs">
       <DependentUpon>ITutoriaAcademicaMgt.svc</DependentUpon>
@@ -83,6 +88,7 @@
       <DependentUpon>DataClassesTutoriasDB.dbml</DependentUpon>
     </Compile>
     <Compile Include="Modelo\Mensaje.cs" />
+    <Compile Include="Modelo\PeriodoEscolarDAO.cs" />
     <Compile Include="Modelo\SolucionDAO.cs" />
     <Compile Include="Modelo\TutoradoSesionDAO.cs" />
     <Compile Include="Modelo\TutoriaAcademicaDAO.cs" />

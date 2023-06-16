@@ -22,7 +22,7 @@
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Fecha de sesión de tutoría" Binding="{Binding fechaSesion}" Width="*" IsReadOnly="True"/>
                 <DataGridTextColumn Header="Número de sesión" Binding="{Binding numeroSesion}" Width="*" IsReadOnly="True"/>
-                <DataGridTextColumn Header="Fecha límite para entrega de reporte" Binding="{Binding fechaLimiteReporte}" Width="*" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Fecha límite para entrega de reporte" Binding="{Binding fechaLimiteReporte, StringFormat=dd/MM/yyyy}" Width="*" IsReadOnly="True"/>
             </DataGrid.Columns>
         </DataGrid>
         <Label x:Name="lbAdvertencia" Content="" HorizontalAlignment="Left" Margin="654,291,0,0" VerticalAlignment="Top" Width="136" Height="30"/>

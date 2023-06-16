@@ -16,7 +16,7 @@ namespace ClienteSistemaTutorias.Modelo
         public int respuestaRegistrarReporteTutoriaAcademico { get; set; }
         public int respuestaRegistrarAsistenciaPorTutoria { get; set; }
 
-        public int respuestaEditarFechaSesionTutoria { get; set; }
+        public int respuestaEditarFechaSesionTutoria;
         
         public TutoriaAcademicaViewModel() 
         {

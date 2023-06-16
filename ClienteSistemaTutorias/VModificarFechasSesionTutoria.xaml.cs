@@ -98,19 +98,18 @@ namespace ClienteSistemaTutorias
             TutoriaAcademicaViewModel tutoriaAcademicaViewModel = new TutoriaAcademicaViewModel();
             tutoriaAcademicaViewModel.EditarFechaSesionTutoriaServicio(idTutoriaAcadeemica, fechaSesionNueva);
             string mensaje = "";
-            if (tutoriaAcademicaViewModel.respuestaEditarFechaSesionTutoria == 1)
+            if (tutoriaAcademicaViewModel.respuestaEditarFechaSesionTutoria == 0)
             {
-                mensaje = "La operacion se realizó exitosamente.";
+                MessageBox.Show("La operacion se realizó exitosamente.");
                 cbNumeroSesion.SelectedIndex = 0;
                 dgTutoriaAcademica.ItemsSource = null;
                 dpFechaNueva.SelectedDate = null;
             }
             else
             {
-                mensaje = "La operacion no pudo completarse debido a que la nueva fecha no se encuentra dentro del tiempo establecido para el periodo escolar o otra tutoria ocupa esa fecha.";
+                MessageBox.Show("La operacion no pudo completarse debido a que la nueva fecha no se encuentra dentro del tiempo establecido para el periodo escolar o otra tutoria ocupa esa fecha.");
             }
 
-            MessageBox.Show(mensaje, "Estado de operación");
         }
 
         private Boolean validarCamposVacios()

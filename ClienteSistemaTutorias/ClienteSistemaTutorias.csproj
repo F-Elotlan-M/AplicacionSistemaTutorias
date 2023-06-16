@@ -72,11 +72,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Connected Services\ServiceReferenceIPeriodoEscolarMgt\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Connected Services\ServiceReferenceITutoriaAcademicaMgt\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="InformacionUsuarios\PeriodoEscolarViewModel.cs" />
     <Compile Include="InformacionUsuarios\TutoriaAcademicaViewModel.cs" />
     <Compile Include="RegistrarHorarioSesion.xaml.cs">
       <DependentUpon>RegistrarHorarioSesion.xaml</DependentUpon>
@@ -200,6 +206,19 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="bin\Debug\ClienteSistemaTutorias.exe.config" />
+    <None Include="Connected Services\ServiceReferenceIPeriodoEscolarMgt\ClienteSistemaTutorias.ServiceReferenceIPeriodoEscolarMgt.PeriodoEscolar.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceIPeriodoEscolarMgt\IPeriodoEscolarMgt.wsdl" />
+    <None Include="Connected Services\ServiceReferenceIPeriodoEscolarMgt\IPeriodoEscolarMgt.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceReferenceIPeriodoEscolarMgt\IPeriodoEscolarMgt1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceReferenceIPeriodoEscolarMgt\IPeriodoEscolarMgt2.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Connected Services\ServiceReferenceITutoriaAcademicaMgt\ClienteSistemaTutorias.ServiceReferenceITutoriaAcademicaMgt.TutoriaAcademica.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -265,6 +284,7 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\ServiceReferenceIPeriodoEscolarMgt\" />
     <WCFMetadataStorage Include="Connected Services\ServiceReferenceITutoriaAcademicaMgt\" />
     <WCFMetadataStorage Include="Connected Services\ServiceReferenceTutorias\" />
   </ItemGroup>
@@ -311,6 +331,13 @@
   <ItemGroup>
     <Content Include="bin\Debug\ClienteSistemaTutorias.exe" />
     <Content Include="bin\Debug\ClienteSistemaTutorias.pdb" />
+    <None Include="Connected Services\ServiceReferenceIPeriodoEscolarMgt\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Connected Services\ServiceReferenceIPeriodoEscolarMgt\configuration.svcinfo" />
+    <None Include="Connected Services\ServiceReferenceIPeriodoEscolarMgt\configuration91.svcinfo" />
+    <None Include="Connected Services\ServiceReferenceIPeriodoEscolarMgt\IPeriodoEscolarMgt.disco" />
     <None Include="Connected Services\ServiceReferenceITutoriaAcademicaMgt\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="fd1c05b4-2837-44f8-ae0a-98aae48786b9" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:59612/IPeriodoEscolarMgt.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="IPeriodoEscolarMgt.xsd" MetadataType="Schema" ID="c8f12f0e-94d7-4367-a078-f5ce03d45184" SourceId="1" SourceUrl="http://localhost:59612/IPeriodoEscolarMgt.svc?xsd=xsd0" />
+    <MetadataFile FileName="IPeriodoEscolarMgt.disco" MetadataType="Disco" ID="62abb26f-3584-45a9-a4ac-f2f7bfaba356" SourceId="1" SourceUrl="http://localhost:59612/IPeriodoEscolarMgt.svc?disco" />
+    <MetadataFile FileName="IPeriodoEscolarMgt.wsdl" MetadataType="Wsdl" ID="cd2007f2-99a4-4af4-8711-2659e040a0f8" SourceId="1" SourceUrl="http://localhost:59612/IPeriodoEscolarMgt.svc?wsdl" />
+    <MetadataFile FileName="IPeriodoEscolarMgt1.xsd" MetadataType="Schema" ID="1f489369-e6cc-420b-a9e0-21a1fdf3009b" SourceId="1" SourceUrl="http://localhost:59612/IPeriodoEscolarMgt.svc?xsd=xsd1" />
+    <MetadataFile FileName="IPeriodoEscolarMgt2.xsd" MetadataType="Schema" ID="d1391429-0f86-485a-9ea0-6e0124730948" SourceId="1" SourceUrl="http://localhost:59612/IPeriodoEscolarMgt.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
