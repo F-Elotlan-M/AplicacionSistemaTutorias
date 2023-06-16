@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ClienteSistemaTutorias"
         mc:Ignorable="d"
-        Title="RegistrarProfesor" Height="450" Width="800">
+        Title="RegistrarProfesor" Height="450" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid Background="#bdd1de">
         <Label Content="Registro de profesor" HorizontalAlignment="Center" Margin="0,24,0,0" VerticalAlignment="Top" FontFamily="Verdana" Foreground="White" FontSize="28"/>
         <Label Content="Nombre:" HorizontalAlignment="Left" Margin="44,92,0,0" VerticalAlignment="Top" FontFamily="Verdana" Foreground="White" FontSize="18"/>

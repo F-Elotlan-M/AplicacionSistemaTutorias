@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ClienteSistemaTutorias"
         mc:Ignorable="d"
-        Title="Window1" Height="450" Width="800">
-    <Grid Background="#bdd1de">
+        Title="Window1" Height="450" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid Background="#bdd1de" >
         <TextBox x:Name="tbDescripcion" HorizontalAlignment="Center" Margin="0,41,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="464" Height="246"/>
         <Button Content="Guardar cambios" HorizontalAlignment="Left" Margin="181,337,0,0" VerticalAlignment="Top" Height="34" Width="99" Click="clickBtnGuardarCambios"/>
         <Button Content="Cancelar" HorizontalAlignment="Left" Margin="533,337,0,0" VerticalAlignment="Top" Height="34" Width="99" Click="clickBtnCancelar"/>

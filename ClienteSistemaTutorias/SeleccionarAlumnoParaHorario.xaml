@@ -6,7 +6,7 @@
 
         xmlns:local="clr-namespace:ClienteSistemaTutorias"
         mc:Ignorable="d"
-        Title="SeleccionarAlumnoParaHorario" Height="450" Width="800">
+        Title="SeleccionarAlumnoParaHorario" Height="450" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid Background="#bdd1de">
         <DataGrid x:Name="dgTutorados" AutoGenerateColumns="False" Margin="48,74,0,73" CanUserAddRows="False" HorizontalAlignment="Left" Width="443" IsReadOnly="True">
             <DataGrid.Columns>

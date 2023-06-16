@@ -64,12 +64,17 @@
   <ItemGroup>
     <Content Include="bin\ServiciosTutorias.dll" />
     <Content Include="bin\ServiciosTutorias.pdb" />
+    <Content Include="ITutoriaAcademicaMgt.svc" />
     <Content Include="Service1.svc" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IAcademico.cs" />
+    <Compile Include="IITutoriaAcademicaMgt.cs" />
     <Compile Include="IProgramaEducativo.cs" />
+    <Compile Include="ITutoriaAcademicaMgt.svc.cs">
+      <DependentUpon>ITutoriaAcademicaMgt.svc</DependentUpon>
+    </Compile>
     <Compile Include="Modelo\AcademicoDAO.cs" />
     <Compile Include="Modelo\ComentarioDAO.cs" />
     <Compile Include="Modelo\DataClassesTutoriasDB.designer.cs">
@@ -80,6 +85,7 @@
     <Compile Include="Modelo\Mensaje.cs" />
     <Compile Include="Modelo\SolucionDAO.cs" />
     <Compile Include="Modelo\TutoradoSesionDAO.cs" />
+    <Compile Include="Modelo\TutoriaAcademicaDAO.cs" />
     <Compile Include="Service1.svc.cs">
       <DependentUpon>Service1.svc</DependentUpon>
     </Compile>

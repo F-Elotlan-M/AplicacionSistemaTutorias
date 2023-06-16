@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:59612/ITutoriaAcademicaMgt.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ServiciosTutorias.Modelo" />
+  <xs:import schemaLocation="http://localhost:59612/ITutoriaAcademicaMgt.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:element name="ObtenerTutoriaActual">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="numeroSesion" type="xs:int" />
+        <xs:element minOccurs="0" name="periodoAcademico" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerTutoriaActualResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/ServiciosTutorias.Modelo" minOccurs="0" name="ObtenerTutoriaActualResult" nillable="true" type="q1:ArrayOfTutoriaAcademica" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegistrarReporteTutoriaAcademica">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idProgramaEducativoNuevo" type="xs:int" />
+        <xs:element minOccurs="0" name="idTutoriaAcademicaNuevo" type="xs:int" />
+        <xs:element minOccurs="0" name="idTutorAcademicoNuevo" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegistrarReporteTutoriaAcademicaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RegistrarReporteTutoriaAcademicaResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegistrarAsistenciaPorTutoria">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="idAsistentes" nillable="true" type="q2:ArrayOfint" />
+        <xs:element minOccurs="0" name="idTutoriaAcademica" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegistrarAsistenciaPorTutoriaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RegistrarAsistenciaPorTutoriaResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EditarFechasSesionTutorias">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idTutoriaAcademica" type="xs:int" />
+        <xs:element minOccurs="0" name="fechaSesionNueva" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EditarFechasSesionTutoriasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="EditarFechasSesionTutoriasResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

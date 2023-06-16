@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="ITutoriaAcademicaMgt" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:59612/ITutoriaAcademicaMgt.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:59612/ITutoriaAcademicaMgt.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:59612/ITutoriaAcademicaMgt.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ServiciosTutorias.Modelo" />
+      <xsd:import schemaLocation="http://localhost:59612/ITutoriaAcademicaMgt.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IITutoriaAcademicaMgt_ObtenerTutoriaActual_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerTutoriaActual" />
+  </wsdl:message>
+  <wsdl:message name="IITutoriaAcademicaMgt_ObtenerTutoriaActual_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerTutoriaActualResponse" />
+  </wsdl:message>
+  <wsdl:message name="IITutoriaAcademicaMgt_RegistrarReporteTutoriaAcademica_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrarReporteTutoriaAcademica" />
+  </wsdl:message>
+  <wsdl:message name="IITutoriaAcademicaMgt_RegistrarReporteTutoriaAcademica_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrarReporteTutoriaAcademicaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IITutoriaAcademicaMgt_RegistrarAsistenciaPorTutoria_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrarAsistenciaPorTutoria" />
+  </wsdl:message>
+  <wsdl:message name="IITutoriaAcademicaMgt_RegistrarAsistenciaPorTutoria_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrarAsistenciaPorTutoriaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IITutoriaAcademicaMgt_EditarFechasSesionTutorias_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditarFechasSesionTutorias" />
+  </wsdl:message>
+  <wsdl:message name="IITutoriaAcademicaMgt_EditarFechasSesionTutorias_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditarFechasSesionTutoriasResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IITutoriaAcademicaMgt">
+    <wsdl:operation name="ObtenerTutoriaActual">
+      <wsdl:input wsaw:Action="http://tempuri.org/IITutoriaAcademicaMgt/ObtenerTutoriaActual" message="tns:IITutoriaAcademicaMgt_ObtenerTutoriaActual_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IITutoriaAcademicaMgt/ObtenerTutoriaActualResponse" message="tns:IITutoriaAcademicaMgt_ObtenerTutoriaActual_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegistrarReporteTutoriaAcademica">
+      <wsdl:input wsaw:Action="http://tempuri.org/IITutoriaAcademicaMgt/RegistrarReporteTutoriaAcademica" message="tns:IITutoriaAcademicaMgt_RegistrarReporteTutoriaAcademica_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IITutoriaAcademicaMgt/RegistrarReporteTutoriaAcademicaResponse" message="tns:IITutoriaAcademicaMgt_RegistrarReporteTutoriaAcademica_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegistrarAsistenciaPorTutoria">
+      <wsdl:input wsaw:Action="http://tempuri.org/IITutoriaAcademicaMgt/RegistrarAsistenciaPorTutoria" message="tns:IITutoriaAcademicaMgt_RegistrarAsistenciaPorTutoria_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IITutoriaAcademicaMgt/RegistrarAsistenciaPorTutoriaResponse" message="tns:IITutoriaAcademicaMgt_RegistrarAsistenciaPorTutoria_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditarFechasSesionTutorias">
+      <wsdl:input wsaw:Action="http://tempuri.org/IITutoriaAcademicaMgt/EditarFechasSesionTutorias" message="tns:IITutoriaAcademicaMgt_EditarFechasSesionTutorias_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IITutoriaAcademicaMgt/EditarFechasSesionTutoriasResponse" message="tns:IITutoriaAcademicaMgt_EditarFechasSesionTutorias_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IITutoriaAcademicaMgt" type="tns:IITutoriaAcademicaMgt">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ObtenerTutoriaActual">
+      <soap:operation soapAction="http://tempuri.org/IITutoriaAcademicaMgt/ObtenerTutoriaActual" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegistrarReporteTutoriaAcademica">
+      <soap:operation soapAction="http://tempuri.org/IITutoriaAcademicaMgt/RegistrarReporteTutoriaAcademica" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegistrarAsistenciaPorTutoria">
+      <soap:operation soapAction="http://tempuri.org/IITutoriaAcademicaMgt/RegistrarAsistenciaPorTutoria" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditarFechasSesionTutorias">
+      <soap:operation soapAction="http://tempuri.org/IITutoriaAcademicaMgt/EditarFechasSesionTutorias" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ITutoriaAcademicaMgt">
+    <wsdl:port name="BasicHttpBinding_IITutoriaAcademicaMgt" binding="tns:BasicHttpBinding_IITutoriaAcademicaMgt">
+      <soap:address location="http://localhost:59612/ITutoriaAcademicaMgt.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -72,6 +72,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Connected Services\ServiceReferenceITutoriaAcademicaMgt\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="InformacionUsuarios\TutoriaAcademicaViewModel.cs" />
     <Compile Include="RegistrarHorarioSesion.xaml.cs">
       <DependentUpon>RegistrarHorarioSesion.xaml</DependentUpon>
     </Compile>
@@ -92,6 +98,9 @@
     </Compile>
     <Compile Include="EditarComentariosGenerales.xaml.cs">
       <DependentUpon>EditarComentariosGenerales.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VModificarFechasSesionTutoria.xaml.cs">
+      <DependentUpon>VModificarFechasSesionTutoria.xaml</DependentUpon>
     </Compile>
     <Page Include="Avisos.xaml">
       <SubType>Designer</SubType>
@@ -158,6 +167,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="VModificarFechasSesionTutoria.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MenuCoordinador.xaml.cs">
@@ -187,6 +200,22 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="bin\Debug\ClienteSistemaTutorias.exe.config" />
+    <None Include="Connected Services\ServiceReferenceITutoriaAcademicaMgt\ClienteSistemaTutorias.ServiceReferenceITutoriaAcademicaMgt.TutoriaAcademica.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceITutoriaAcademicaMgt\ITutoriaAcademicaMgt.wsdl" />
+    <None Include="Connected Services\ServiceReferenceITutoriaAcademicaMgt\ITutoriaAcademicaMgt.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceReferenceITutoriaAcademicaMgt\ITutoriaAcademicaMgt1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceReferenceITutoriaAcademicaMgt\ITutoriaAcademicaMgt2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceReferenceITutoriaAcademicaMgt\ITutoriaAcademicaMgt3.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Connected Services\ServiceReferenceTutorias\ClienteSistemaTutorias.ServiceReferenceTutorias.Academico.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -236,6 +265,7 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\ServiceReferenceITutoriaAcademicaMgt\" />
     <WCFMetadataStorage Include="Connected Services\ServiceReferenceTutorias\" />
   </ItemGroup>
   <ItemGroup>
@@ -281,6 +311,13 @@
   <ItemGroup>
     <Content Include="bin\Debug\ClienteSistemaTutorias.exe" />
     <Content Include="bin\Debug\ClienteSistemaTutorias.pdb" />
+    <None Include="Connected Services\ServiceReferenceITutoriaAcademicaMgt\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Connected Services\ServiceReferenceITutoriaAcademicaMgt\configuration.svcinfo" />
+    <None Include="Connected Services\ServiceReferenceITutoriaAcademicaMgt\configuration91.svcinfo" />
+    <None Include="Connected Services\ServiceReferenceITutoriaAcademicaMgt\ITutoriaAcademicaMgt.disco" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\Release\" />

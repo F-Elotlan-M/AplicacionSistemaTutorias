@@ -1,0 +1,37 @@
+﻿<Window x:Class="ClienteSistemaTutorias.VModificarFechasSesionTutoria"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClienteSistemaTutorias"
+        mc:Ignorable="d"
+        Title="VModificarFechasSesionTutoria" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize">
+    <Grid Background="#bdd1de">
+        <Label Content="Modificar fechas de sesión de tutoría" HorizontalAlignment="Left" Margin="10,14,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
+        <Button x:Name="bttnComprobar" Content="Comprobar" HorizontalAlignment="Left" Margin="712,144,0,0" VerticalAlignment="Top" Background="White" Cursor="Hand" Click="Button_Click_Comprobar" Width="64"/>
+        <ComboBox x:Name="cbNumeroSesion" HorizontalAlignment="Left" Margin="10,143,0,0" VerticalAlignment="Top" Width="308" SelectedIndex="0">
+            <ComboBoxItem Content="Seleccione número de sesión"/>
+            <ComboBoxItem Content="1"/>
+            <ComboBoxItem Content="2"/>
+            <ComboBoxItem Content="3"/>
+        </ComboBox>
+        <ComboBox x:Name="cbPeriodoEscolar" DataContext="PeriodoEscolarViewModel" DisplayMemberPath="titulo"  SelectedValuePath="idPeriodoEscolar" HorizontalAlignment="Left" Margin="370,143,0,0" VerticalAlignment="Top" Width="308" SelectedIndex="0"/>
+        <DataGrid x:Name="dgTutoriaAcademica" AutoGenerateColumns="False" Margin="10,211,10,0" CanUserAddRows="False" Height="80" VerticalAlignment="Top" Background="White">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Fecha de sesión de tutoría" Binding="{Binding fechaSesion}" Width="*" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Número de sesión" Binding="{Binding numeroSesion}" Width="*" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Fecha límite para entrega de reporte" Binding="{Binding fechaLimiteReporte}" Width="*" IsReadOnly="True"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label x:Name="lbAdvertencia" Content="" HorizontalAlignment="Left" Margin="654,291,0,0" VerticalAlignment="Top" Width="136" Height="30"/>
+        <Button Content="Cancelar" HorizontalAlignment="Left" Margin="634,378,0,0" VerticalAlignment="Top" Background="White" Cursor="Hand" Click="Button_Click_Cancelar"/>
+        <Button Content="Modificar" HorizontalAlignment="Left" Margin="712,378,0,0" VerticalAlignment="Top" Background="White" Width="64" Cursor="Hand" Click="Button_Click_Modificar"/>
+        <Label Content="Ingrese la nueva fecha de sesión de tutoría:" HorizontalAlignment="Left" Margin="10,332,0,0" VerticalAlignment="Top"/>
+        <DatePicker x:Name="dpFechaNueva" HorizontalAlignment="Left" Margin="254,334,0,0" VerticalAlignment="Top" Width="183"/>
+        <Label Content="Número de sesión de  tutoría:" HorizontalAlignment="Left" Margin="10,112,0,0" VerticalAlignment="Top"/>
+        <Label Content="Período escolar de tutoría:" HorizontalAlignment="Left" Margin="370,112,0,0" VerticalAlignment="Top"/>
+        <Button Content="Modificar fecha límite para entrega de reporte" IsEnabled="False" HorizontalAlignment="Left" Margin="356,378,0,0" VerticalAlignment="Top" Background="White" Cursor="Hand"/>
+    </Grid>
+</Window>

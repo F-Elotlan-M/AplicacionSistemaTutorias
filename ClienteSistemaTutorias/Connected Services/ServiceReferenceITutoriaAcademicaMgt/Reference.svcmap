@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="62a20c6f-404b-43ef-a7db-43c86ef9adbe" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:59612/ITutoriaAcademicaMgt.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ITutoriaAcademicaMgt.wsdl" MetadataType="Wsdl" ID="236ae68f-f7c2-47da-a99a-f1fb7497860d" SourceId="1" SourceUrl="http://localhost:59612/ITutoriaAcademicaMgt.svc?wsdl" />
+    <MetadataFile FileName="ITutoriaAcademicaMgt.xsd" MetadataType="Schema" ID="9800aa8b-29e4-4c03-ba15-7ccc9bc9ab54" SourceId="1" SourceUrl="http://localhost:59612/ITutoriaAcademicaMgt.svc?xsd=xsd0" />
+    <MetadataFile FileName="ITutoriaAcademicaMgt1.xsd" MetadataType="Schema" ID="32a8bfd7-9bc8-4a90-ba48-e22cd47f7f69" SourceId="1" SourceUrl="http://localhost:59612/ITutoriaAcademicaMgt.svc?xsd=xsd1" />
+    <MetadataFile FileName="ITutoriaAcademicaMgt2.xsd" MetadataType="Schema" ID="7b0be5f7-51ca-4615-81e8-a4e61a8eb2de" SourceId="1" SourceUrl="http://localhost:59612/ITutoriaAcademicaMgt.svc?xsd=xsd2" />
+    <MetadataFile FileName="ITutoriaAcademicaMgt3.xsd" MetadataType="Schema" ID="7ebaba53-4062-47bf-8d25-3cdfbeaac6a2" SourceId="1" SourceUrl="http://localhost:59612/ITutoriaAcademicaMgt.svc?xsd=xsd3" />
+    <MetadataFile FileName="ITutoriaAcademicaMgt.disco" MetadataType="Disco" ID="4d337fa0-c8b3-4b59-b4f1-8292d8b2deee" SourceId="1" SourceUrl="http://localhost:59612/ITutoriaAcademicaMgt.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

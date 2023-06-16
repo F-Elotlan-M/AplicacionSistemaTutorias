@@ -83,6 +83,13 @@ namespace ClienteSistemaTutorias
             registrarProfesor.Show();
             this.Close();
         }
+ 
+        private void clickBtnModificarFechasSesion(object sender, RoutedEventArgs e)
+        {
+            VModificarFechasSesionTutoria registrarProfesor = new VModificarFechasSesionTutoria(academicoEnUso);
+            registrarProfesor.Show();
+            this.Close();
+        }
         //clickBtnSalir
         private void clickBtnSalir(object sender, RoutedEventArgs e)
         {
