@@ -72,11 +72,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="RegistrarHorarioSesion.xaml.cs">
+      <DependentUpon>RegistrarHorarioSesion.xaml</DependentUpon>
+    </Compile>
     <Compile Include="RegistrarProfesor.xaml.cs">
       <DependentUpon>RegistrarProfesor.xaml</DependentUpon>
     </Compile>
     <Compile Include="RegistrarSolucion.xaml.cs">
       <DependentUpon>RegistrarSolucion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SeleccionarAlumnoParaHorario.xaml.cs">
+      <DependentUpon>SeleccionarAlumnoParaHorario.xaml</DependentUpon>
     </Compile>
     <Compile Include="SeleccionarComentarios.xaml.cs">
       <DependentUpon>SeleccionarComentarios.xaml</DependentUpon>
@@ -124,11 +130,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="RegistrarHorarioSesion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="RegistrarProfesor.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="RegistrarSolucion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SeleccionarAlumnoParaHorario.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -182,6 +196,9 @@
     <None Include="Connected Services\ServiceReferenceTutorias\ClienteSistemaTutorias.ServiceReferenceTutorias.ConsultaComentarios.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Connected Services\ServiceReferenceTutorias\ClienteSistemaTutorias.ServiceReferenceTutorias.HorarioTutorado.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Connected Services\ServiceReferenceTutorias\ClienteSistemaTutorias.ServiceReferenceTutorias.Mensaje.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -189,6 +206,9 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\ServiceReferenceTutorias\ClienteSistemaTutorias.ServiceReferenceTutorias.Rol.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceTutorias\ClienteSistemaTutorias.ServiceReferenceTutorias.TutoriaAcademica.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\ServiceReferenceTutorias\Service1.wsdl" />

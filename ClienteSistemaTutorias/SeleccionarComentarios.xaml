@@ -7,10 +7,10 @@
         mc:Ignorable="d"
         Title="SeleccionarComentarios" Height="450" Width="800">
     <Grid Background="#bdd1de">
-        <DataGrid x:Name="dgComentarios" AutoGenerateColumns="False" Margin="48,74,0,73" CanUserAddRows="False" HorizontalAlignment="Left" Width="443">
+        <DataGrid x:Name="dgComentarios" AutoGenerateColumns="False" Margin="48,74,0,73" CanUserAddRows="False" HorizontalAlignment="Left" Width="443" IsReadOnly="True">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Tutor Responsable" Binding="{Binding nombre}" Width="150"/>
-                <DataGridTextColumn Header="Fecha de la sesión" Binding="{Binding fechaSesion}" Width="150"/>
+                <DataGridTextColumn Header="Fecha de la sesión" Binding="{Binding fechaSesion, StringFormat=dd/MM/yyyy}" Width="150"/>
                 <DataGridTextColumn Header="Numero de sesión" Binding="{Binding numeroSesion}" Width="150"/>
             </DataGrid.Columns>
         </DataGrid>

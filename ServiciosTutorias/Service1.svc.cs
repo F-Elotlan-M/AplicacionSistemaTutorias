@@ -84,5 +84,23 @@ namespace ServiciosTutorias {
             ComentarioDAO comentarioDAO = new ComentarioDAO();
             return comentarioDAO.realizarCambiosComentarios(comentarioEditar);
         }
+
+        public List<HorarioTutorado> recuperarTutoradosPorTutor(int idTutor)
+        {
+            TutoradoSesionDAO tutoradoSesionDAO = new TutoradoSesionDAO();
+            return tutoradoSesionDAO.recuperarTutoradosPorTutor(idTutor);
+        }
+
+        public List<TutoriaAcademica> obtenerSesiones()
+        {
+            TutoradoSesionDAO tutoradoSesionDAO = new TutoradoSesionDAO();
+            return tutoradoSesionDAO.obtenerSesiones();
+        }
+
+        public int registrarHorarioSesion(HoraTutoria horario)
+        {
+            TutoradoSesionDAO tutoradoSesionDAO = new TutoradoSesionDAO();
+            return tutoradoSesionDAO.registrarHorarioSesion(horario);
+        }
     }
 }

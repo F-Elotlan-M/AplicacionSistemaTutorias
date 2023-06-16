@@ -140,10 +140,50 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="recuperarTutoradosPorTutor">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idTutor" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="recuperarTutoradosPorTutorResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/ServiciosTutorias.Modelo" minOccurs="0" name="recuperarTutoradosPorTutorResult" nillable="true" type="q9:ArrayOfHorarioTutorado" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="obtenerSesiones">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="obtenerSesionesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/ServiciosTutorias.Modelo" minOccurs="0" name="obtenerSesionesResult" nillable="true" type="q10:ArrayOfTutoriaAcademica" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="registrarHorarioSesion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/ServiciosTutorias.Modelo" minOccurs="0" name="horario" nillable="true" type="q11:HoraTutoria" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="registrarHorarioSesionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="registrarHorarioSesionResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
   <xs:element name="registrarProfesor">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/ServiciosTutorias.Modelo" minOccurs="0" name="profesorNuevo" nillable="true" type="q9:Academico" />
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/ServiciosTutorias.Modelo" minOccurs="0" name="profesorNuevo" nillable="true" type="q12:Academico" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -162,7 +202,7 @@
   <xs:element name="recuperarRolesResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/ServiciosTutorias.Modelo" minOccurs="0" name="recuperarRolesResult" nillable="true" type="q10:ArrayOfRol" />
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/ServiciosTutorias.Modelo" minOccurs="0" name="recuperarRolesResult" nillable="true" type="q13:ArrayOfRol" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

@@ -48,7 +48,9 @@ namespace ClienteSistemaTutorias
 
         private void clickBtnRegistrarHorarioDeSesion(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("hola");
+            SeleccionarAlumnoParaHorario seleccionarAlumnoParaHorario = new SeleccionarAlumnoParaHorario(academicoEnUso);
+            seleccionarAlumnoParaHorario.Show();
+            this.Close();
         }
 
         private void clickBtnConsultarHorario(object sender, RoutedEventArgs e)

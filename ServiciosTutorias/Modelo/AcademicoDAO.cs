@@ -84,6 +84,7 @@ namespace ServiciosTutorias.Modelo
 
                 int coordinadorExistente = 0;
                 int jefeExistente = 0;
+                int numeroregistrado = 0;
                 foreach (var consulta in consultaRol) {
                     if (consulta.idRol == 1)
                     {
@@ -92,6 +93,9 @@ namespace ServiciosTutorias.Modelo
                     else if(consulta.idRol == 2)
                     {
                         coordinadorExistente++;
+                    }else if (consulta.numPersonal == academicoNuevo.numPersonal)
+                    {
+                        numeroregistrado++;
                     }
                 }
                 if (academicoNuevo.idRol == 1 && jefeExistente>0)
@@ -101,7 +105,10 @@ namespace ServiciosTutorias.Modelo
                 {
                     return 3;
                 }
-                else
+                else if (numeroregistrado > 0)
+                {
+                    return 4;
+                }else
                 {
                     var academico = new Academico()
                     {

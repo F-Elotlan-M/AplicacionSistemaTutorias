@@ -73,9 +73,25 @@ namespace ClienteSistemaTutorias
 
         private void clickBtnCancelar(object sender, RoutedEventArgs e)
         {
-            MenuJefe menuJefe = new MenuJefe(academicoEnUso);
-            menuJefe.Show();
-            this.Close();
+            if (academicoEnUso.idRol == 1)
+            {
+                MenuJefe menuJefe = new MenuJefe(academicoEnUso);
+                menuJefe.Show();
+                this.Close();
+            }
+            else if (academicoEnUso.idRol == 2)
+            {
+                MenuCoordinador menuCoordinador = new MenuCoordinador(academicoEnUso);
+                menuCoordinador.Show();
+                this.Close();
+            }
+            else if (academicoEnUso.idRol == 3)
+            {
+                MenuTutor menuTutor = new MenuTutor(academicoEnUso);
+                menuTutor.Show();
+                this.Close();
+            }
+            
         }
     }
 }

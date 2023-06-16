@@ -13,60 +13,63 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace ClienteSistemaTutorias
 {
     /// <summary>
-    /// Lógica de interacción para SeleccionarComentarios.xaml
+    /// Lógica de interacción para SeleccionarAlumnoParaHorario.xaml
     /// </summary>
-    public partial class SeleccionarComentarios : Window
+    public partial class SeleccionarAlumnoParaHorario : Window
     {
-        public SeleccionarComentarios(Academico academicoLogeado)
+        public SeleccionarAlumnoParaHorario(Academico academicoLogeado)
         {
             InitializeComponent();
             recibirAcademico(academicoLogeado);
-            mostrarComentarioObtenidos();
+            mostrarTutoradosObtenidos();
         }
+
         public Academico academicoEnUso = new Academico();
         public void recibirAcademico(Academico academicoLogeado)
         {
             academicoEnUso = academicoLogeado;
         }
 
-        public ObservableCollection<ConsultaComentarios> comentariosObtenidos { get; set; }
+        public ObservableCollection<HorarioTutorado> tutoradoCollection { get; set;}
 
-        public void mostrarComentarioObtenidos()
+        public void mostrarTutoradosObtenidos()
         {
-            comentariosObtenidos = new ObservableCollection<ConsultaComentarios>();
+            tutoradoCollection = new ObservableCollection<HorarioTutorado>();
             var conexion = new Service1Client();
             if (conexion != null)
             {
                 int idTutor = academicoEnUso.idAcademico;
-                ConsultaComentarios[] comentariosRecuperados = conexion.obtenerComentarios(idTutor);
-                foreach(ConsultaComentarios comentarioGeneral in comentariosRecuperados)
+                HorarioTutorado[] tutoradosRecuperados = conexion.recuperarTutoradosPorTutor(idTutor);
+                foreach (HorarioTutorado tutorado in tutoradosRecuperados)
                 {
-                    comentariosObtenidos.Add(comentarioGeneral);
+                    tutoradoCollection.Add(tutorado);
                 }
             }
             else
             {
                 MessageBox.Show("Error de conexión");
             }
-            dgComentarios.ItemsSource = comentariosObtenidos;
+            dgTutorados.ItemsSource = tutoradoCollection;
         }
 
-        private void clickBtnModificar(object sender, RoutedEventArgs e)
+
+        private void clickBtnSeleccionar(object sender, RoutedEventArgs e)
         {
-            ConsultaComentarios comentarioSeleccionado = dgComentarios.SelectedItem as ConsultaComentarios;
-            if (comentarioSeleccionado !=  null)
+            HorarioTutorado tutoradoSeleccionado = dgTutorados.SelectedItem as HorarioTutorado;
+            if (tutoradoSeleccionado != null)
             {
-                EditarComentariosGenerales editarComentariosGenerales = new EditarComentariosGenerales(academicoEnUso, comentarioSeleccionado);
-                editarComentariosGenerales.Show();
+                RegistrarHorarioSesion registrarHorarioSesion = new RegistrarHorarioSesion(academicoEnUso, tutoradoSeleccionado);
+                registrarHorarioSesion.Show();
                 this.Close();
             }
             else
             {
-                MessageBox.Show("Debe de seleccionar un registro de la lista");
+                MessageBox.Show("No se ha seleccionado un tutorado");
             }
         }
 
@@ -77,19 +80,19 @@ namespace ClienteSistemaTutorias
                 MenuJefe menuJefe = new MenuJefe(academicoEnUso);
                 menuJefe.Show();
                 this.Close();
-            }else if(academicoEnUso.idRol == 2)
+            }
+            else if (academicoEnUso.idRol == 2)
             {
                 MenuCoordinador menuCoordinador = new MenuCoordinador(academicoEnUso);
                 menuCoordinador.Show();
                 this.Close();
             }
-            else if(academicoEnUso.idRol == 3)
+            else if (academicoEnUso.idRol == 3)
             {
                 MenuTutor menuTutor = new MenuTutor(academicoEnUso);
                 menuTutor.Show();
                 this.Close();
             }
         }
-
     }
 }

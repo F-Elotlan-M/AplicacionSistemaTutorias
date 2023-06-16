@@ -244,4 +244,25 @@
       <Column Name="idTutorAcademico" Type="System.Int32" DbType="Int" CanBeNull="true" />
     </Type>
   </Table>
+  <Table Name="dbo.HorarioTutorado" Member="HorarioTutorado">
+    <Type Name="HorarioTutorado">
+      <Column Name="idTutorado" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="nombreTutorado" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="apellidoPaterno" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="apellidoMaterno" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="idAcademico" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="nombreTutor" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ConsultaDeHorarios" Member="ConsultaDeHorarios">
+    <Type Name="ConsultaDeHorarios">
+      <Column Name="idTutorado" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="nombre" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="apellidoPaterno" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="apellidoMaterno" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="idAcademico" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="nombreTutor" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="horaTutoria" Type="System.TimeSpan" DbType="Time" CanBeNull="true" />
+    </Type>
+  </Table>
 </Database>

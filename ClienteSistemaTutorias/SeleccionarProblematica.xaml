@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="SeleccionarProblematica" Height="450" Width="800">
     <Grid Background="#bdd1de">
-        <DataGrid x:Name="dgProblematicas" AutoGenerateColumns="True" Margin="52,41,260,94" CanUserAddRows="False">
+        <DataGrid x:Name="dgProblematicas" AutoGenerateColumns="False" Margin="52,41,260,94" CanUserAddRows="False" IsReadOnly="True">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="ID" Binding="{Binding idProblematica}" Width="50"/>
                 <DataGridTextColumn Header="Nombre" Binding="{Binding nombre}" Width="200"/>

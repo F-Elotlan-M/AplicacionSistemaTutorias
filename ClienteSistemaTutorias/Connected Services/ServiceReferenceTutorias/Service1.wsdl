@@ -68,6 +68,24 @@
   <wsdl:message name="IService1_realizarCambiosComentarios_OutputMessage">
     <wsdl:part name="parameters" element="tns:realizarCambiosComentariosResponse" />
   </wsdl:message>
+  <wsdl:message name="IService1_recuperarTutoradosPorTutor_InputMessage">
+    <wsdl:part name="parameters" element="tns:recuperarTutoradosPorTutor" />
+  </wsdl:message>
+  <wsdl:message name="IService1_recuperarTutoradosPorTutor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:recuperarTutoradosPorTutorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_obtenerSesiones_InputMessage">
+    <wsdl:part name="parameters" element="tns:obtenerSesiones" />
+  </wsdl:message>
+  <wsdl:message name="IService1_obtenerSesiones_OutputMessage">
+    <wsdl:part name="parameters" element="tns:obtenerSesionesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_registrarHorarioSesion_InputMessage">
+    <wsdl:part name="parameters" element="tns:registrarHorarioSesion" />
+  </wsdl:message>
+  <wsdl:message name="IService1_registrarHorarioSesion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:registrarHorarioSesionResponse" />
+  </wsdl:message>
   <wsdl:message name="IAcademico_registrarProfesor_InputMessage">
     <wsdl:part name="parameters" element="tns:registrarProfesor" />
   </wsdl:message>
@@ -120,6 +138,18 @@
     <wsdl:operation name="realizarCambiosComentarios">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/realizarCambiosComentarios" message="tns:IService1_realizarCambiosComentarios_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/realizarCambiosComentariosResponse" message="tns:IService1_realizarCambiosComentarios_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="recuperarTutoradosPorTutor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/recuperarTutoradosPorTutor" message="tns:IService1_recuperarTutoradosPorTutor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/recuperarTutoradosPorTutorResponse" message="tns:IService1_recuperarTutoradosPorTutor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="obtenerSesiones">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/obtenerSesiones" message="tns:IService1_obtenerSesiones_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/obtenerSesionesResponse" message="tns:IService1_obtenerSesiones_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="registrarHorarioSesion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/registrarHorarioSesion" message="tns:IService1_registrarHorarioSesion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/registrarHorarioSesionResponse" message="tns:IService1_registrarHorarioSesion_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:portType name="IAcademico">
@@ -217,6 +247,33 @@
     </wsdl:operation>
     <wsdl:operation name="realizarCambiosComentarios">
       <soap:operation soapAction="http://tempuri.org/IService1/realizarCambiosComentarios" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="recuperarTutoradosPorTutor">
+      <soap:operation soapAction="http://tempuri.org/IService1/recuperarTutoradosPorTutor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerSesiones">
+      <soap:operation soapAction="http://tempuri.org/IService1/obtenerSesiones" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="registrarHorarioSesion">
+      <soap:operation soapAction="http://tempuri.org/IService1/registrarHorarioSesion" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

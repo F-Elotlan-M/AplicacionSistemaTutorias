@@ -26,21 +26,23 @@ namespace ClienteSistemaTutorias
             recibirAcademico(academicoLogeado);
             
         }
-
+        Academico academicoEnUso = new Academico();
         public void recibirAcademico(Academico academicoLogeado)
         {
-            Academico academicoEnUso = new Academico();
+            
             academicoEnUso = academicoLogeado;
         }
 
         private void clickBtnRegistrarComentariosgenerales(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("hola");
+            MessageBox.Show("Hola");
         }
 
         private void clickBtnEditarComentariosGenerales(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("hola");
+            SeleccionarComentarios seleccionarComentarios = new SeleccionarComentarios(academicoEnUso);
+            seleccionarComentarios.Show();
+            this.Close();
         }
         
         private void clickBtnRegistrarFechasDeSesion(object sender, RoutedEventArgs e)

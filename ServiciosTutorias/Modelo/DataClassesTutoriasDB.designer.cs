@@ -245,6 +245,22 @@ namespace ServiciosTutorias.Modelo
 				return this.GetTable<ConsultaComentarios>();
 			}
 		}
+		
+		public System.Data.Linq.Table<HorarioTutorado> HorarioTutorado
+		{
+			get
+			{
+				return this.GetTable<HorarioTutorado>();
+			}
+		}
+		
+		public System.Data.Linq.Table<ConsultaDeHorarios> ConsultaDeHorarios
+		{
+			get
+			{
+				return this.GetTable<ConsultaDeHorarios>();
+			}
+		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Problematica")]
@@ -5964,6 +5980,258 @@ namespace ServiciosTutorias.Modelo
 				if ((this._idTutorAcademico != value))
 				{
 					this._idTutorAcademico = value;
+				}
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.HorarioTutorado")]
+	public partial class HorarioTutorado
+	{
+		
+		private int _idTutorado;
+		
+		private string _nombreTutorado;
+		
+		private string _apellidoPaterno;
+		
+		private string _apellidoMaterno;
+		
+		private int _idAcademico;
+		
+		private string _nombreTutor;
+		
+		public HorarioTutorado()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idTutorado", DbType="Int NOT NULL")]
+		public int idTutorado
+		{
+			get
+			{
+				return this._idTutorado;
+			}
+			set
+			{
+				if ((this._idTutorado != value))
+				{
+					this._idTutorado = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_nombreTutorado", DbType="VarChar(100)")]
+		public string nombreTutorado
+		{
+			get
+			{
+				return this._nombreTutorado;
+			}
+			set
+			{
+				if ((this._nombreTutorado != value))
+				{
+					this._nombreTutorado = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_apellidoPaterno", DbType="VarChar(255)")]
+		public string apellidoPaterno
+		{
+			get
+			{
+				return this._apellidoPaterno;
+			}
+			set
+			{
+				if ((this._apellidoPaterno != value))
+				{
+					this._apellidoPaterno = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_apellidoMaterno", DbType="VarChar(255)")]
+		public string apellidoMaterno
+		{
+			get
+			{
+				return this._apellidoMaterno;
+			}
+			set
+			{
+				if ((this._apellidoMaterno != value))
+				{
+					this._apellidoMaterno = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idAcademico", DbType="Int NOT NULL")]
+		public int idAcademico
+		{
+			get
+			{
+				return this._idAcademico;
+			}
+			set
+			{
+				if ((this._idAcademico != value))
+				{
+					this._idAcademico = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_nombreTutor", DbType="VarChar(100)")]
+		public string nombreTutor
+		{
+			get
+			{
+				return this._nombreTutor;
+			}
+			set
+			{
+				if ((this._nombreTutor != value))
+				{
+					this._nombreTutor = value;
+				}
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.ConsultaDeHorarios")]
+	public partial class ConsultaDeHorarios
+	{
+		
+		private int _idTutorado;
+		
+		private string _nombre;
+		
+		private string _apellidoPaterno;
+		
+		private string _apellidoMaterno;
+		
+		private int _idAcademico;
+		
+		private string _nombreTutor;
+		
+		private System.Nullable<System.TimeSpan> _horaTutoria;
+		
+		public ConsultaDeHorarios()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idTutorado", DbType="Int NOT NULL")]
+		public int idTutorado
+		{
+			get
+			{
+				return this._idTutorado;
+			}
+			set
+			{
+				if ((this._idTutorado != value))
+				{
+					this._idTutorado = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_nombre", DbType="VarChar(100)")]
+		public string nombre
+		{
+			get
+			{
+				return this._nombre;
+			}
+			set
+			{
+				if ((this._nombre != value))
+				{
+					this._nombre = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_apellidoPaterno", DbType="VarChar(255)")]
+		public string apellidoPaterno
+		{
+			get
+			{
+				return this._apellidoPaterno;
+			}
+			set
+			{
+				if ((this._apellidoPaterno != value))
+				{
+					this._apellidoPaterno = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_apellidoMaterno", DbType="VarChar(255)")]
+		public string apellidoMaterno
+		{
+			get
+			{
+				return this._apellidoMaterno;
+			}
+			set
+			{
+				if ((this._apellidoMaterno != value))
+				{
+					this._apellidoMaterno = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idAcademico", DbType="Int NOT NULL")]
+		public int idAcademico
+		{
+			get
+			{
+				return this._idAcademico;
+			}
+			set
+			{
+				if ((this._idAcademico != value))
+				{
+					this._idAcademico = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_nombreTutor", DbType="VarChar(100)")]
+		public string nombreTutor
+		{
+			get
+			{
+				return this._nombreTutor;
+			}
+			set
+			{
+				if ((this._nombreTutor != value))
+				{
+					this._nombreTutor = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_horaTutoria", DbType="Time")]
+		public System.Nullable<System.TimeSpan> horaTutoria
+		{
+			get
+			{
+				return this._horaTutoria;
+			}
+			set
+			{
+				if ((this._horaTutoria != value))
+				{
+					this._horaTutoria = value;
 				}
 			}
 		}

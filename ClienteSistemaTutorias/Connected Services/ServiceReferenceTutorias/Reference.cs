@@ -3460,6 +3460,131 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="HorarioTutorado", Namespace="http://schemas.datacontract.org/2004/07/ServiciosTutorias.Modelo")]
+    [System.SerializableAttribute()]
+    public partial class HorarioTutorado : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string apellidoMaternoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string apellidoPaternoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int idAcademicoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int idTutoradoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string nombreTutorField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string nombreTutoradoField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string apellidoMaterno {
+            get {
+                return this.apellidoMaternoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.apellidoMaternoField, value) != true)) {
+                    this.apellidoMaternoField = value;
+                    this.RaisePropertyChanged("apellidoMaterno");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string apellidoPaterno {
+            get {
+                return this.apellidoPaternoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.apellidoPaternoField, value) != true)) {
+                    this.apellidoPaternoField = value;
+                    this.RaisePropertyChanged("apellidoPaterno");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int idAcademico {
+            get {
+                return this.idAcademicoField;
+            }
+            set {
+                if ((this.idAcademicoField.Equals(value) != true)) {
+                    this.idAcademicoField = value;
+                    this.RaisePropertyChanged("idAcademico");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int idTutorado {
+            get {
+                return this.idTutoradoField;
+            }
+            set {
+                if ((this.idTutoradoField.Equals(value) != true)) {
+                    this.idTutoradoField = value;
+                    this.RaisePropertyChanged("idTutorado");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string nombreTutor {
+            get {
+                return this.nombreTutorField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.nombreTutorField, value) != true)) {
+                    this.nombreTutorField = value;
+                    this.RaisePropertyChanged("nombreTutor");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string nombreTutorado {
+            get {
+                return this.nombreTutoradoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.nombreTutoradoField, value) != true)) {
+                    this.nombreTutoradoField = value;
+                    this.RaisePropertyChanged("nombreTutorado");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReferenceTutorias.IService1")]
     public interface IService1 {
@@ -3523,6 +3648,24 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/realizarCambiosComentarios", ReplyAction="http://tempuri.org/IService1/realizarCambiosComentariosResponse")]
         System.Threading.Tasks.Task<bool> realizarCambiosComentariosAsync(ClienteSistemaTutorias.ServiceReferenceTutorias.ComentarioGeneral comentarioEditar);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/recuperarTutoradosPorTutor", ReplyAction="http://tempuri.org/IService1/recuperarTutoradosPorTutorResponse")]
+        ClienteSistemaTutorias.ServiceReferenceTutorias.HorarioTutorado[] recuperarTutoradosPorTutor(int idTutor);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/recuperarTutoradosPorTutor", ReplyAction="http://tempuri.org/IService1/recuperarTutoradosPorTutorResponse")]
+        System.Threading.Tasks.Task<ClienteSistemaTutorias.ServiceReferenceTutorias.HorarioTutorado[]> recuperarTutoradosPorTutorAsync(int idTutor);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/obtenerSesiones", ReplyAction="http://tempuri.org/IService1/obtenerSesionesResponse")]
+        ClienteSistemaTutorias.ServiceReferenceTutorias.TutoriaAcademica[] obtenerSesiones();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/obtenerSesiones", ReplyAction="http://tempuri.org/IService1/obtenerSesionesResponse")]
+        System.Threading.Tasks.Task<ClienteSistemaTutorias.ServiceReferenceTutorias.TutoriaAcademica[]> obtenerSesionesAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/registrarHorarioSesion", ReplyAction="http://tempuri.org/IService1/registrarHorarioSesionResponse")]
+        int registrarHorarioSesion(ClienteSistemaTutorias.ServiceReferenceTutorias.HoraTutoria horario);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/registrarHorarioSesion", ReplyAction="http://tempuri.org/IService1/registrarHorarioSesionResponse")]
+        System.Threading.Tasks.Task<int> registrarHorarioSesionAsync(ClienteSistemaTutorias.ServiceReferenceTutorias.HoraTutoria horario);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -3630,6 +3773,30 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
         
         public System.Threading.Tasks.Task<bool> realizarCambiosComentariosAsync(ClienteSistemaTutorias.ServiceReferenceTutorias.ComentarioGeneral comentarioEditar) {
             return base.Channel.realizarCambiosComentariosAsync(comentarioEditar);
+        }
+        
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.HorarioTutorado[] recuperarTutoradosPorTutor(int idTutor) {
+            return base.Channel.recuperarTutoradosPorTutor(idTutor);
+        }
+        
+        public System.Threading.Tasks.Task<ClienteSistemaTutorias.ServiceReferenceTutorias.HorarioTutorado[]> recuperarTutoradosPorTutorAsync(int idTutor) {
+            return base.Channel.recuperarTutoradosPorTutorAsync(idTutor);
+        }
+        
+        public ClienteSistemaTutorias.ServiceReferenceTutorias.TutoriaAcademica[] obtenerSesiones() {
+            return base.Channel.obtenerSesiones();
+        }
+        
+        public System.Threading.Tasks.Task<ClienteSistemaTutorias.ServiceReferenceTutorias.TutoriaAcademica[]> obtenerSesionesAsync() {
+            return base.Channel.obtenerSesionesAsync();
+        }
+        
+        public int registrarHorarioSesion(ClienteSistemaTutorias.ServiceReferenceTutorias.HoraTutoria horario) {
+            return base.Channel.registrarHorarioSesion(horario);
+        }
+        
+        public System.Threading.Tasks.Task<int> registrarHorarioSesionAsync(ClienteSistemaTutorias.ServiceReferenceTutorias.HoraTutoria horario) {
+            return base.Channel.registrarHorarioSesionAsync(horario);
         }
     }
     

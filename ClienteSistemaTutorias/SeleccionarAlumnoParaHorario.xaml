@@ -1,0 +1,21 @@
+﻿<Window x:Class="ClienteSistemaTutorias.SeleccionarAlumnoParaHorario"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+
+        xmlns:local="clr-namespace:ClienteSistemaTutorias"
+        mc:Ignorable="d"
+        Title="SeleccionarAlumnoParaHorario" Height="450" Width="800">
+    <Grid Background="#bdd1de">
+        <DataGrid x:Name="dgTutorados" AutoGenerateColumns="False" Margin="48,74,0,73" CanUserAddRows="False" HorizontalAlignment="Left" Width="443" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Nombre" Binding="{Binding nombreTutorado}" Width="150"/>
+                <DataGridTextColumn Header="Apellido paterno" Binding="{Binding apellidoPaterno}" Width="150"/>
+                <DataGridTextColumn Header="Apellido materno" Binding="{Binding apellidoMaterno}" Width="150"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Seleccionar" HorizontalAlignment="Left" Margin="542,106,0,0" VerticalAlignment="Top" Height="24" Width="63" Click="clickBtnSeleccionar"/>
+        <Button Content="Cancelar" HorizontalAlignment="Left" Margin="542,146,0,0" VerticalAlignment="Top" Height="24" Width="63" Click="clickBtnCancelar"/>
+    </Grid>
+</Window>

@@ -64,49 +64,61 @@ namespace ClienteSistemaTutorias
             string apellidoMaterno = tbApellidoMaterno.Text;
             string correo = tbCorreo.Text;
             string numeroMatricula = tbNumeroPersonal.Text;
-            int idRol = idRolSeleccionado;
+            int idRol = 0; 
+            idRol = idRolSeleccionado;
 
-            if (ValidarFormatoCorreo(correo)) {
-                if (idRolSeleccionado > 0) {
-                    Academico profesorNuevo = new Academico()
+            if (!string.IsNullOrEmpty(nombre) || !string.IsNullOrEmpty(apellidoPaterno) || !string.IsNullOrEmpty(apellidoMaterno) || 
+                !string.IsNullOrEmpty(correo) || !string.IsNullOrEmpty(numeroMatricula))
+            {
+                if (ValidarFormatoCorreo(correo))
+                {
+                    if (idRolSeleccionado > 0)
                     {
-                        nombre = nombre,
-                        apellidoMaterno = apellidoMaterno,
-                        apellidoPaterno = apellidoPaterno,
-                        correoInstitucional = correo,
-                        numPersonal = numeroMatricula,
-                        idRol = idRol,
-                        password = numeroMatricula,
-                        idAcademico = 1
-                    };
-                    AcademicoClient academicoClient = new AcademicoClient();
-                    int respuesta = academicoClient.registrarProfesor(profesorNuevo);
-                    if (respuesta == 1)
-                    {
-                        MessageBox.Show("Profesor registrado");
-                        tbNombre.Clear();
-                        tbApellidoPaterno.Clear();
-                        tbApellidoMaterno.Clear();
-                        tbCorreo.Clear();
-                        tbNumeroPersonal.Clear();
-                        cbRol.SelectedIndex = 0;
+                        Academico profesorNuevo = new Academico()
+                        {
+                            nombre = nombre,
+                            apellidoMaterno = apellidoMaterno,
+                            apellidoPaterno = apellidoPaterno,
+                            correoInstitucional = correo,
+                            numPersonal = numeroMatricula,
+                            idRol = idRol,
+                            password = numeroMatricula,
+                            idAcademico = 1
+                        };
+                        AcademicoClient academicoClient = new AcademicoClient();
+                        int respuesta = academicoClient.registrarProfesor(profesorNuevo);
+                        if (respuesta == 1)
+                        {
+                            MessageBox.Show("Profesor registrado");
+                            tbNombre.Clear();
+                            tbApellidoPaterno.Clear();
+                            tbApellidoMaterno.Clear();
+                            tbCorreo.Clear();
+                            tbNumeroPersonal.Clear();
+                            cbRol.SelectedIndex = 0;
+                        }
+                        else if (respuesta == 2)
+                        {
+                            MessageBox.Show("El rol de jefe de carrera ya está registrado");
+                        }
+                        else if (respuesta == 3)
+                        {
+                            MessageBox.Show("El rol de coordinador de tutorias ya está registrado");
+                        }
                     }
-                    else if(respuesta == 2)
+                    else
                     {
-                        MessageBox.Show("El rol de jefe de carrera ya está registrado");
-                    } else if (respuesta == 3)
-                    {
-                        MessageBox.Show("El rol de coordinador de tutorias ya está registrado");
+                        MessageBox.Show("No hay roles seleccionados");
                     }
                 }
                 else
                 {
-                    MessageBox.Show("No hay roles seleccionados");
+                    MessageBox.Show("El formato del correo no es válido");
                 }
             }
             else
             {
-                MessageBox.Show("El formato del correo no es válido");
+                MessageBox.Show("Hay campos vacíos");
             }
         }
 

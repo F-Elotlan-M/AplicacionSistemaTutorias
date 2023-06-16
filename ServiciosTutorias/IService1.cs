@@ -43,6 +43,14 @@ namespace ServiciosTutorias {
         [OperationContract]
         Boolean realizarCambiosComentarios(ComentarioGeneral comentarioEditar);
 
+        //metodos de tutoradoDAO
+        [OperationContract]
+        List<HorarioTutorado> recuperarTutoradosPorTutor(int idTutor);
+        [OperationContract]
+        List<TutoriaAcademica> obtenerSesiones();
+        [OperationContract]
+        int registrarHorarioSesion(HoraTutoria horario);
+
         // TODO: agregue aquí sus operaciones de servicio
     }
 

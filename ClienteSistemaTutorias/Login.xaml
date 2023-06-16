@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ClienteSistemaTutorias"
         mc:Ignorable="d"
-        Title="Inicio de sesión" Height="450" Width="800">
+        Title="Inicio de sesión" Height="450" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid>
         <Label Content="Universidad Veracruzana" HorizontalAlignment="Left" Margin="641,0,0,0" VerticalAlignment="Top" Background="#FF045CAC" Foreground="White" FontFamily="Verdana"/>
         <Label Content="Sistema" HorizontalAlignment="Left" Margin="545,80,0,0" VerticalAlignment="Top" Foreground="#FF7AB6EC" FontSize="30" FontFamily="Verdana"/>
