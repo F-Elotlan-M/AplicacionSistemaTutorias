@@ -97,46 +97,63 @@ namespace ClienteSistemaTutorias
 
         private void clickBtnAsignar(object sender, RoutedEventArgs e)
         {
-            selectedTime = cmbTime.SelectedItem.ToString();
+            
             TimeSpan horaSeleccionada;
             var sesionSeleccionada = cbSesion.SelectedItem as TutoriaAcademica;
-            idTutoria = sesionSeleccionada.idTutoriaAcademica;
             int idTutor = 0;
             idTutor = academicoEnUso.idAcademico;
             int idTutorado = 0;
             idTutorado = tutoradoSeleccionado.idTutorado;
-            if (!string.IsNullOrWhiteSpace(selectedTime) || idTutoria > 0 || idTutor > 0 || idTutorado > 0)
+            if (cbSesion.SelectedIndex !=- 1)
             {
-                if (TimeSpan.TryParse(selectedTime, out horaSeleccionada))
+                if(cmbTime.SelectedIndex != -1)
                 {
+
+                    idTutoria = sesionSeleccionada.idTutoriaAcademica;
+                    selectedTime = cmbTime.SelectedItem.ToString();
+                    if (TimeSpan.TryParse(selectedTime, out horaSeleccionada))
+                    {
                     
-                    HoraTutoria nuevoHorario = new HoraTutoria()
-                    {
-                        horaTutoria1 = horaSeleccionada,
-                        idTutoriaAcademica = idTutoria,
-                        idTutorAcademico = idTutor,
-                        idTutorado = idTutorado
-                    };
-                    Service1Client conexion = new Service1Client();
-                    int respuesta = conexion.registrarHorarioSesion(nuevoHorario);
-                    if (respuesta == 0)
-                    {
-                        MessageBox.Show("Error de conexión");
-                    }else if (respuesta == 1)
-                    {
-                        MessageBox.Show("Horario registrado exitosamente");
-                        SeleccionarAlumnoParaHorario seleccionarAlumnoParaHorario = new SeleccionarAlumnoParaHorario(academicoEnUso);
-                        seleccionarAlumnoParaHorario.Show();
-                        this.Close();
-                    }else if (respuesta == 2)
-                    {
-                        MessageBox.Show("Este horario ya fue reservado para otro estudiante");
-                    }else if (respuesta == 3)
-                    {
-                        MessageBox.Show("El tutorado ya cuenta con horario para esta sesión");
+                        HoraTutoria nuevoHorario = new HoraTutoria()
+                        {
+                            horaTutoria1 = horaSeleccionada,
+                            idTutoriaAcademica = idTutoria,
+                            idTutorAcademico = idTutor,
+                            idTutorado = idTutorado
+                        };
+                        Service1Client conexion = new Service1Client();
+                        int respuesta = conexion.registrarHorarioSesion(nuevoHorario);
+                        if (respuesta == 0)
+                        {
+                            MessageBox.Show("Error de conexión");
+                        }else if (respuesta == 1)
+                        {
+                            MessageBox.Show("Horario registrado exitosamente");
+                            SeleccionarAlumnoParaHorario seleccionarAlumnoParaHorario = new SeleccionarAlumnoParaHorario(academicoEnUso);
+                            seleccionarAlumnoParaHorario.Show();
+                            this.Close();
+                        }else if (respuesta == 2)
+                        {
+                            MessageBox.Show("Este horario ya fue reservado para otro estudiante");
+                        }else if (respuesta == 3)
+                        {
+                            MessageBox.Show("El tutorado ya cuenta con horario para esta sesión");
+                        }
+
                     }
-                   
+                    else
+                    {
+                        MessageBox.Show("El formato de la hora es incorrecto");
+                    }
                 }
+                else
+                {
+                    MessageBox.Show("Hay campos vacíos");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Hay campos vacíos");
             }
         }
 

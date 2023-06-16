@@ -24,5 +24,9 @@
         <TextBox x:Name="tbCorreo" HorizontalAlignment="Left" Margin="444,132,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="172" Height="21"/>
         <TextBox x:Name="tbNumeroPersonal" HorizontalAlignment="Left" Margin="444,202,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="172" Height="21" PreviewTextInput="txtNumeros_PreviewTextInput"/>
         <ComboBox x:Name="cbRol" DisplayMemberPath="titulo" SelectedValuePath="idRol" HorizontalAlignment="Left" Margin="444,272,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cbRol_SelectionChanged"/>
+        <Label Content="*Solo acepta números" HorizontalAlignment="Left" Margin="648,200,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label Content="*Solo acepta letras" HorizontalAlignment="Left" Margin="221,132,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label Content="*Solo acepta letras" HorizontalAlignment="Left" Margin="221,200,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label Content="*Solo acepta letras" HorizontalAlignment="Left" Margin="221,270,0,0" VerticalAlignment="Top" Foreground="White"/>
     </Grid>
 </Window>

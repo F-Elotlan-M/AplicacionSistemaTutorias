@@ -51,27 +51,35 @@ namespace ClienteSistemaTutorias
             String descripcionSolucion = tbSolucion.Text;
             int idJefeDeCarrera = academicoEnUso.idAcademico;
             int idProblematica = problematicaEnUso.idProblematica;
-            SolucionProblematica solucionNueva = new SolucionProblematica()
+            if (!string.IsNullOrEmpty(descripcionSolucion))
             {
-                descripcion = descripcionSolucion,
-                idJefeProgramaEducativo = idJefeDeCarrera,
-                idProblematica = idProblematica
-            };
-            Service1Client service1Client = new Service1Client();
-            bool respuesta = service1Client.registrarSolucion(solucionNueva);
+
+                SolucionProblematica solucionNueva = new SolucionProblematica()
+                {
+                    descripcion = descripcionSolucion,
+                    idJefeProgramaEducativo = idJefeDeCarrera,
+                    idProblematica = idProblematica
+                };
+                Service1Client service1Client = new Service1Client();
+                bool respuesta = service1Client.registrarSolucion(solucionNueva);
             
-            if(respuesta == true)
-            {
-                MessageBox.Show("solución registrada exitosamente");
-                SeleccionarProblematica seleccionarProblematica = new SeleccionarProblematica(academicoEnUso);
-                service1Client.asignarSolucion((int)solucionNueva.idProblematica);
-                seleccionarProblematica.mostrarProblematicaAcademicaSinSolucion();
-                seleccionarProblematica.Show();
-                this.Close();
+                if(respuesta == true)
+                {
+                    MessageBox.Show("solución registrada exitosamente");
+                    SeleccionarProblematica seleccionarProblematica = new SeleccionarProblematica(academicoEnUso);
+                    service1Client.asignarSolucion((int)solucionNueva.idProblematica);
+                    seleccionarProblematica.mostrarProblematicaAcademicaSinSolucion();
+                    seleccionarProblematica.Show();
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Error al registrar la solución");
+                }
             }
             else
             {
-                MessageBox.Show("Error al registrar la solución");
+                MessageBox.Show("No se ha introducido una solución");
             }
             
         }
