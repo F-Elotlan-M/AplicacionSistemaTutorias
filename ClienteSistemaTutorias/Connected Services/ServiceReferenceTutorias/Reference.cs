@@ -1486,9 +1486,6 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
         private ClienteSistemaTutorias.ServiceReferenceTutorias.Problematica[] ProblematicaField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private ClienteSistemaTutorias.ServiceReferenceTutorias.Problematica Problematica1Field;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string descripcionField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -1545,19 +1542,6 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
                 if ((object.ReferenceEquals(this.ProblematicaField, value) != true)) {
                     this.ProblematicaField = value;
                     this.RaisePropertyChanged("Problematica");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public ClienteSistemaTutorias.ServiceReferenceTutorias.Problematica Problematica1 {
-            get {
-                return this.Problematica1Field;
-            }
-            set {
-                if ((object.ReferenceEquals(this.Problematica1Field, value) != true)) {
-                    this.Problematica1Field = value;
-                    this.RaisePropertyChanged("Problematica1");
                 }
             }
         }
@@ -2741,9 +2725,6 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
         private ClienteSistemaTutorias.ServiceReferenceTutorias.SolucionProblematica SolucionProblematicaField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private ClienteSistemaTutorias.ServiceReferenceTutorias.SolucionProblematica[] SolucionProblematica1Field;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string descripcionField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -2861,19 +2842,6 @@ namespace ClienteSistemaTutorias.ServiceReferenceTutorias {
                 if ((object.ReferenceEquals(this.SolucionProblematicaField, value) != true)) {
                     this.SolucionProblematicaField = value;
                     this.RaisePropertyChanged("SolucionProblematica");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public ClienteSistemaTutorias.ServiceReferenceTutorias.SolucionProblematica[] SolucionProblematica1 {
-            get {
-                return this.SolucionProblematica1Field;
-            }
-            set {
-                if ((object.ReferenceEquals(this.SolucionProblematica1Field, value) != true)) {
-                    this.SolucionProblematica1Field = value;
-                    this.RaisePropertyChanged("SolucionProblematica1");
                 }
             }
         }

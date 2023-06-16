@@ -50,6 +50,7 @@ namespace ServiciosTutorias {
         List<TutoriaAcademica> obtenerSesiones();
         [OperationContract]
         int registrarHorarioSesion(HoraTutoria horario);
+        List<ConsultaDeHorarios> obtenerHorarios();
 
         // TODO: agregue aquí sus operaciones de servicio
     }

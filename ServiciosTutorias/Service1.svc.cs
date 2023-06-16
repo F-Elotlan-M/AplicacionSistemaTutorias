@@ -102,5 +102,11 @@ namespace ServiciosTutorias {
             TutoradoSesionDAO tutoradoSesionDAO = new TutoradoSesionDAO();
             return tutoradoSesionDAO.registrarHorarioSesion(horario);
         }
+
+        public List<ConsultaDeHorarios> obtenerHorarios()
+        {
+            TutoradoSesionDAO tutoradoSesionDAO = new TutoradoSesionDAO();
+            return tutoradoSesionDAO.obtenerHorarios();
+        }
     }
 }

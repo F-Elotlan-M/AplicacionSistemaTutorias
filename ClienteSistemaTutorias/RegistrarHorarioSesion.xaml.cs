@@ -49,6 +49,7 @@ namespace ClienteSistemaTutorias
 
         private DateTime currentTime;
         //Asignar horarios al combobox
+
         private void CmbTime_Loaded(object sender, RoutedEventArgs e)
         {
             currentTime = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 8, 0, 0);
@@ -75,11 +76,13 @@ namespace ClienteSistemaTutorias
         int idTutoria = 0;
         public async void iniciarComboBox()
         {
+
             sesionesObservables = new ObservableCollection<TutoriaAcademica>();
             var conexion = new Service1Client();
             if (conexion != null)
             {
                 TutoriaAcademica[] roles = await conexion.obtenerSesionesAsync();
+                
                 foreach (TutoriaAcademica rolesObtenidos in roles)
                 {
                     sesionesObservables.Add(rolesObtenidos);

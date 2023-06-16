@@ -7,18 +7,16 @@
         mc:Ignorable="d"
         Title="RegistrarHorarioSesion" Height="450" Width="800">
     <Grid Background="#bdd1de">
-        <ComboBox x:Name="cbSesion" DisplayMemberPath="numeroSesion" SelectedValuePath="idTutoriaAcademica" HorizontalAlignment="Left" Margin="90,218,0,0" VerticalAlignment="Top" Width="120" />
-        <ComboBox x:Name="cmbTime" HorizontalAlignment="Left" Margin="568,218,0,0" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Asignar" HorizontalAlignment="Center" Margin="0,360,0,0" VerticalAlignment="Top" Click="clickBtnAsignar"/>
-        <Button Content="Cancelar" HorizontalAlignment="Center" Margin="0,390,0,0" VerticalAlignment="Top" Click="clickBtnCancelar"/>
+        <ComboBox x:Name="cbSesion" DisplayMemberPath="numeroSesion" SelectedValuePath="idTutoriaAcademica" HorizontalAlignment="Left" Margin="90,280,0,0" VerticalAlignment="Top" Width="120" />
+        <ComboBox x:Name="cmbTime" HorizontalAlignment="Left" Margin="568,280,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Asignar" HorizontalAlignment="Center" Margin="0,336,0,0" VerticalAlignment="Top" Click="clickBtnAsignar"/>
+        <Button Content="Cancelar" HorizontalAlignment="Center" Margin="0,366,0,0" VerticalAlignment="Top" Click="clickBtnCancelar"/>
         <Label Content="Nombre tutorado:" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="White" FontFamily="Verdana" FontSize="16"/>
         <Label x:Name="lblNombreTutorado" Content="Label" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,39,0,0" Foreground="White" FontFamily="Verdana" FontSize="16"/>
         <Label x:Name="lblApellidoPaternoTutorado" Content="Label" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,70,0,0" Foreground="White" FontFamily="Verdana" FontSize="16"/>
         <Label x:Name="lblApellidoMaternoTutorado" Content="Label" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,100,0,0" Foreground="White" FontFamily="Verdana" FontSize="16"/>
-        <Label Content="Selecciona la sesión" HorizontalAlignment="Left" Margin="90,160,0,0" VerticalAlignment="Top" Foreground="White"/>
-        <Label Content="Selecciona la hora" HorizontalAlignment="Left" Margin="575,160,0,0" VerticalAlignment="Top" Foreground="White" Width="113"/>
-        <Label x:Name="lblTutoriaAcademica1" Content="* Este tutorado ya cuenta con horario para la primer fecha" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="31,245,0,0" Foreground="White" FontFamily="Verdana" FontSize="09"/>
-        <Label x:Name="lblTutoriaAcademica2" Content="* Este tutorado ya cuenta con horario para la primer fecha" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="31,265,0,0" Foreground="White" FontFamily="Verdana" FontSize="09"/>
-        <Label x:Name="lblTutoriaAcademica3" Content="*Este tutorado ya cuenta con horario para la primer fecha" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="31,285,0,0" Foreground="White" FontFamily="Verdana" FontSize="09"/>
+        <Label Content="Selecciona la sesión" HorizontalAlignment="Left" Margin="90,222,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label Content="Selecciona la hora" HorizontalAlignment="Left" Margin="575,222,0,0" VerticalAlignment="Top" Foreground="White" Width="113"/>
+
     </Grid>
 </Window>

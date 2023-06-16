@@ -126,6 +126,15 @@ namespace ServiciosTutorias.Modelo
             }
         }
 
+    
+        public List<ConsultaDeHorarios> obtenerHorarios()
+        {
+            DataClassesTutoriasDBDataContext conexionBD = getConnection();
+            IQueryable<ConsultaDeHorarios> consultaHorarios = from consulta in conexionBD.ConsultaDeHorarios
+                                                                select consulta; 
+            return consultaHorarios.ToList();
+        }
+
 
         public static DataClassesTutoriasDBDataContext getConnection()
         {
