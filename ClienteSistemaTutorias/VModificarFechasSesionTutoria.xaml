@@ -20,7 +20,7 @@
         <ComboBox x:Name="cbPeriodoEscolar" DataContext="PeriodoEscolarViewModel" DisplayMemberPath="titulo"  SelectedValuePath="idPeriodoEscolar" HorizontalAlignment="Left" Margin="370,143,0,0" VerticalAlignment="Top" Width="308" SelectedIndex="0"/>
         <DataGrid x:Name="dgTutoriaAcademica" AutoGenerateColumns="False" Margin="10,211,10,0" CanUserAddRows="False" Height="80" VerticalAlignment="Top" Background="White">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Fecha de sesión de tutoría" Binding="{Binding fechaSesion}" Width="*" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Fecha de sesión de tutoría" Binding="{Binding fechaSesion, StringFormat=dd/MM/yyyy}" Width="*" IsReadOnly="True"/>
                 <DataGridTextColumn Header="Número de sesión" Binding="{Binding numeroSesion}" Width="*" IsReadOnly="True"/>
                 <DataGridTextColumn Header="Fecha límite para entrega de reporte" Binding="{Binding fechaLimiteReporte, StringFormat=dd/MM/yyyy}" Width="*" IsReadOnly="True"/>
             </DataGrid.Columns>

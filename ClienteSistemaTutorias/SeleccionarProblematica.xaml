@@ -9,7 +9,6 @@
     <Grid Background="#bdd1de">
         <DataGrid x:Name="dgProblematicas" AutoGenerateColumns="False" Margin="52,41,260,94" CanUserAddRows="False" IsReadOnly="True">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="ID" Binding="{Binding idProblematica}" Width="50"/>
                 <DataGridTextColumn Header="Nombre" Binding="{Binding nombre}" Width="200"/>
                 <DataGridTextColumn Header="Incidencias" Binding="{Binding numeroIncidencias}" Width="100"/>
                 <DataGridTextColumn Header="Clasificación" Binding="{Binding idClasificacionProblematica}" Width="100"/>

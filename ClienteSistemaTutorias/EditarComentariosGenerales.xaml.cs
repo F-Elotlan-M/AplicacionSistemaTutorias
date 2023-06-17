@@ -41,21 +41,28 @@ namespace ClienteSistemaTutorias
         private void clickBtnGuardarCambios(object sender, RoutedEventArgs e)
         {
             string cambios = tbDescripcion.Text;
-            ComentarioGeneral comentarioGeneral = new ComentarioGeneral();
-            comentarioGeneral = new ComentarioGeneral()
+            if (!string.IsNullOrEmpty(cambios))
             {
-                idComentarioGeneral = comentariosEnUso.idComentarioGeneral,
-                descripcion = cambios
-            };
-            Service1Client conexion = new Service1Client();
-            bool respuesta = conexion.realizarCambiosComentarios(comentarioGeneral);
-            if (respuesta == true)
-            {
-                MessageBox.Show("El comentario se ha actualizado exitosamente");
+                ComentarioGeneral comentarioGeneral = new ComentarioGeneral();
+                comentarioGeneral = new ComentarioGeneral()
+                {
+                    idComentarioGeneral = comentariosEnUso.idComentarioGeneral,
+                    descripcion = cambios
+                };
+                Service1Client conexion = new Service1Client();
+                bool respuesta = conexion.realizarCambiosComentarios(comentarioGeneral);
+                if (respuesta == true)
+                {
+                    MessageBox.Show("El comentario se ha actualizado exitosamente");
+                }
+                else
+                {
+                    MessageBox.Show("Ha ocurrido un error");
+                }
             }
             else
             {
-                MessageBox.Show("Ha ocurrido un error");
+                MessageBox.Show("El comentario no puede ir vacío");
             }
         }
 

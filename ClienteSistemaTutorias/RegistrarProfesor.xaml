@@ -7,14 +7,14 @@
         mc:Ignorable="d"
         Title="RegistrarProfesor" Height="450" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid Background="#bdd1de">
-        <Label Content="Registro de profesor" HorizontalAlignment="Center" Margin="0,24,0,0" VerticalAlignment="Top" FontFamily="Verdana" Foreground="White" FontSize="28"/>
-        <Label Content="Nombre:" HorizontalAlignment="Left" Margin="44,92,0,0" VerticalAlignment="Top" FontFamily="Verdana" Foreground="White" FontSize="18"/>
-        <Label Content="Apellido paterno:" HorizontalAlignment="Left" Margin="44,162,0,0" VerticalAlignment="Top" FontFamily="Verdana" Foreground="White" FontSize="18"/>
-        <Label Content="Apeliido materno:" HorizontalAlignment="Left" Margin="44,232,0,0" VerticalAlignment="Top" FontFamily="Verdana" Foreground="White" FontSize="18"/>
+        <Label Content="Registro de profesor" HorizontalAlignment="Center" Margin="0,24,0,0" VerticalAlignment="Top" FontFamily="Verdana" Foreground="Black" FontSize="28"/>
+        <Label Content="Nombre:" HorizontalAlignment="Left" Margin="44,92,0,0" VerticalAlignment="Top" FontFamily="Verdana" Foreground="Black" FontSize="18"/>
+        <Label Content="Apellido paterno:" HorizontalAlignment="Left" Margin="44,162,0,0" VerticalAlignment="Top" FontFamily="Verdana" Foreground="Black" FontSize="18"/>
+        <Label Content="Apeliido materno:" HorizontalAlignment="Left" Margin="44,232,0,0" VerticalAlignment="Top" FontFamily="Verdana" Foreground="Black" FontSize="18"/>
 
-        <Label Content="Correo:" HorizontalAlignment="Left" Margin="444,92,0,0" VerticalAlignment="Top" FontFamily="Verdana" Foreground="White" FontSize="18"/>
-        <Label Content="Número de personal:" HorizontalAlignment="Left" Margin="444,162,0,0" VerticalAlignment="Top" FontFamily="Verdana" Foreground="White" FontSize="18"/>
-        <Label Content="Rol:" HorizontalAlignment="Left" Margin="444,232,0,0" VerticalAlignment="Top" FontFamily="Verdana" Foreground="White" FontSize="18"/>
+        <Label Content="Correo:" HorizontalAlignment="Left" Margin="444,92,0,0" VerticalAlignment="Top" FontFamily="Verdana" Foreground="Black" FontSize="18"/>
+        <Label Content="Número de personal:" HorizontalAlignment="Left" Margin="444,162,0,0" VerticalAlignment="Top" FontFamily="Verdana" Foreground="Black" FontSize="18"/>
+        <Label Content="Rol:" HorizontalAlignment="Left" Margin="444,232,0,0" VerticalAlignment="Top" FontFamily="Verdana" Foreground="Black" FontSize="18"/>
         <Button Content="Aceptar" HorizontalAlignment="Left" Margin="44,365,0,0" VerticalAlignment="Top" Click="clickBtnGuardar"/>
         <Button Content="Cancelar" HorizontalAlignment="Left" Margin="483,375,0,0" VerticalAlignment="Top" Click="clicBtnCancelar"/>
         <TextBox x:Name="tbNombre" HorizontalAlignment="Left" Margin="44,132,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="172" Height="21" PreviewTextInput="txtCampo_PreviewTextInput"/>
@@ -24,9 +24,9 @@
         <TextBox x:Name="tbCorreo" HorizontalAlignment="Left" Margin="444,132,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="172" Height="21"/>
         <TextBox x:Name="tbNumeroPersonal" HorizontalAlignment="Left" Margin="444,202,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="172" Height="21" PreviewTextInput="txtNumeros_PreviewTextInput"/>
         <ComboBox x:Name="cbRol" DisplayMemberPath="titulo" SelectedValuePath="idRol" HorizontalAlignment="Left" Margin="444,272,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cbRol_SelectionChanged"/>
-        <Label Content="*Solo acepta números" HorizontalAlignment="Left" Margin="648,200,0,0" VerticalAlignment="Top" Foreground="White"/>
-        <Label Content="*Solo acepta letras" HorizontalAlignment="Left" Margin="221,132,0,0" VerticalAlignment="Top" Foreground="White"/>
-        <Label Content="*Solo acepta letras" HorizontalAlignment="Left" Margin="221,200,0,0" VerticalAlignment="Top" Foreground="White"/>
-        <Label Content="*Solo acepta letras" HorizontalAlignment="Left" Margin="221,270,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label Content="*Solo acepta números" HorizontalAlignment="Left" Margin="648,200,0,0" VerticalAlignment="Top" Foreground="Black"/>
+        <Label Content="*Solo acepta letras" HorizontalAlignment="Left" Margin="221,132,0,0" VerticalAlignment="Top" Foreground="Black"/>
+        <Label Content="*Solo acepta letras" HorizontalAlignment="Left" Margin="221,200,0,0" VerticalAlignment="Top" Foreground="Black"/>
+        <Label Content="*Solo acepta letras" HorizontalAlignment="Left" Margin="221,270,0,0" VerticalAlignment="Top" Foreground="Black"/>
     </Grid>
 </Window>
