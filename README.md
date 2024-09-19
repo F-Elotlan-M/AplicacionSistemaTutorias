@@ -1,5 +1,5 @@
 # AplicacionSistemaTutorias
-academic tutoring system for the "Facultad de estádistica e informática"
+Academic tutoring system for the "Facultad de estádistica e informática"
 
 ## Features
 - CRUD for school term
